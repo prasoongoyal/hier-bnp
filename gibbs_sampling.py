@@ -3,6 +3,7 @@ import numpy as np
 from numpy.random import dirichlet, multinomial
 from math import exp, log, factorial
 from scipy.special import gamma as gamma_fn
+from scipy.special import gammaln as log_gamma_fn
 from copy import copy, deepcopy
 
 def get0tol(path_str, level):
@@ -126,6 +127,13 @@ def NCRP_prob(Z, gamma, num_levels):
     paths_list = freq_keys + paths_list
   return total_log_prob
 
+def filter_Z(W, Z):
+  try:
+    idx = W.tolist().index(-1)
+    return Z[:idx]
+  except ValueError:
+    return Z
+
 def likelihood(alpha, gamma, beta, Z, W, logbeta, num_levels):
   l = 0.0
   for k in beta.keys():
@@ -136,10 +144,12 @@ def likelihood(alpha, gamma, beta, Z, W, logbeta, num_levels):
   num_docs = len(Z)
   num_words = len(Z[0])
   for d in range(num_docs):
-    l += NCRP_prob(Z[d], gamma, num_levels)
+    l += NCRP_prob(filter_Z(W[d], Z[d]), gamma, num_levels)
   comp2 = l - comp1
   for d in range(num_docs):
     for n in range(num_words):
+      if W[d][n] == -1:
+        continue
       l += log(beta[Z[d][n]][int(W[d][n])])
   comp3 = l - comp2 - comp1
   #print 'likelihood components:', comp1, comp2, comp3, comp1 + comp2 + comp3
@@ -177,6 +187,8 @@ def merge_similar_paths(Z, beta):
           beta_map_to[j] = i
           for d in range(len(Z)):
             for n in range(len(Z[0])):
+              if W[d][n] == -1:
+                continue
               if (Z[d][n] == j):
                 Z[d][n] = i
   #print 'merging paths: ', len(beta),
@@ -214,6 +226,8 @@ def merge_similar_paths_with_Z(Z, beta, W, vocab_size):
     beta_counts.append([0] * vocab_size)
   for d in range(len(Z)):
     for n in range(len(Z[0])):
+      if W[d][n] == -1:
+        continue
       beta_counts[beta_keys.index(Z[d][n])][int(W[d][n])] += 1
   for i in range(beta_len):
     for j in range(i + 1, beta_len):
@@ -255,6 +269,8 @@ def sample_all_Z(Z, W, num_docs, num_words, num_levels, gamma, paths_evaluated, 
           counts[get0tol(Z[d][n], level+1)] = 1
     #print 'counts', counts
     for n in range(num_words):
+      if W[d][n] == -1:
+        continue
       # remove Z_dn from counts
       for level in range(num_levels):
         counts[get0tol(Z[d][n], level+1)] -= 1
@@ -270,7 +286,7 @@ def sample_all_Z(Z, W, num_docs, num_words, num_levels, gamma, paths_evaluated, 
 
           #raw_input()
           #          beta[k])) - logbeta
-        posterior[k] = prior[k] * beta[k][W[d][n]]
+        posterior[k] = prior[k] * beta[k][int(W[d][n])]
       #print 'posterior', posterior
       if iteration < 0:
         for k in posterior:
@@ -303,6 +319,8 @@ def sample_beta(beta, best_beta, Z, best_Z, W, num_docs, num_words, vocab_size, 
   key2idx_mapping = beta.keys()
   for dd in range(num_docs):
     for n in range(num_words):
+      if W[dd][n] == -1:
+        continue
       beta_counts[key2idx_mapping.index(Z[dd][n])][int(W[dd][n])] += 1
   # remove empty paths
   for k in range(len(beta_counts)):
@@ -338,9 +356,18 @@ def sample_beta(beta, best_beta, Z, best_Z, W, num_docs, num_words, vocab_size, 
         vocab_size)
   return beta, best_Z, best_beta, max_likelihood
 
+def read_data(filename):
+  with open(filename) as f:
+    lines = f.readlines()
+    values = map(lambda x:map(eval, x.split()), lines)
+    max_cols = max(map(lambda x:len(x), values))
+    values = map(lambda x:x + [-1]*(max_cols - len(x)), values)
+    return np.asarray(values)
+
 def main():
   #initialize parameters
-  W = np.loadtxt(sys.argv[1])
+  #W = np.loadtxt(sys.argv[1])
+  W = read_data(sys.argv[1])
   gamma = eval(sys.argv[2])
   alpha = eval(sys.argv[3])
   vocab_size = eval(sys.argv[4])
@@ -348,7 +375,7 @@ def main():
   num_levels = 4
   paths_evaluated = {}
 
-  logbeta = log(vocab_size * gamma_fn(alpha)) - log(gamma_fn(vocab_size * alpha))
+  logbeta = log(vocab_size * gamma_fn(alpha)) - log_gamma_fn(vocab_size * alpha)
   newpathdefaultprob = - vocab_size * (alpha - 1) * log(vocab_size) - logbeta
   print logbeta, newpathdefaultprob
 
@@ -370,7 +397,9 @@ def main():
   # run gibbs sampling
   for i in range(max_iters):
     print 'i', i 
-    temperature *= 0.95
+    temperature *= 0.99
+    if temperature < 0.01:
+      temperature = 0.01
     print 'T', temperature
     # sample z_dn
     Z = sample_all_Z(Z, W, num_docs, num_words, num_levels, gamma, \
