@@ -268,13 +268,13 @@ def sample_all_Z(Z, W, num_docs, num_words, num_levels, gamma, paths_evaluated, 
         except KeyError:
           counts[get0tol(Z[d][n], level+1)] = 1
     #print 'counts', counts
+    prior = nCRP(counts, gamma, num_levels, paths_evaluated)
     for n in range(num_words):
       if W[d][n] == -1:
         continue
       # remove Z_dn from counts
       for level in range(num_levels):
         counts[get0tol(Z[d][n], level+1)] -= 1
-      prior = nCRP(counts, gamma, num_levels, paths_evaluated)
       #print 'prior', prior
       posterior = {}
       for k in prior.keys():
