@@ -1,0 +1,4000 @@
+iter : 0
+Z sampled
+beta sampled
+0 -4411689.35071
+iter : 1
+Z sampled
+beta sampled
+1 -4411689.35071
+iter : 2
+Z sampled
+beta sampled
+2 -4411689.35071
+iter : 3
+Z sampled
+beta sampled
+3 -4411689.35071
+iter : 4
+Z sampled
+beta sampled
+4 -4411689.35071
+iter : 5
+Z sampled
+beta sampled
+5 -4411689.35071
+iter : 6
+Z sampled
+beta sampled
+6 -4411689.35071
+iter : 7
+Z sampled
+beta sampled
+7 -4411689.35071
+iter : 8
+Z sampled
+beta sampled
+8 -4411689.35071
+iter : 9
+Z sampled
+beta sampled
+9 -4411689.35071
+iter : 10
+Z sampled
+beta sampled
+10 -4411689.35071
+iter : 11
+Z sampled
+beta sampled
+11 -4411689.35071
+iter : 12
+Z sampled
+beta sampled
+12 -4411689.35071
+iter : 13
+Z sampled
+beta sampled
+13 -4411689.35071
+iter : 14
+Z sampled
+beta sampled
+14 -4411689.35071
+iter : 15
+Z sampled
+beta sampled
+15 -4411689.35071
+iter : 16
+Z sampled
+beta sampled
+16 -4411689.35071
+iter : 17
+Z sampled
+beta sampled
+17 -4411689.35071
+iter : 18
+Z sampled
+beta sampled
+18 -4411689.35071
+iter : 19
+Z sampled
+beta sampled
+19 -4411689.35071
+iter : 20
+Z sampled
+beta sampled
+20 -4411689.35071
+iter : 21
+Z sampled
+beta sampled
+21 -4411689.35071
+iter : 22
+Z sampled
+beta sampled
+22 -4411689.35071
+iter : 23
+Z sampled
+beta sampled
+23 -4411689.35071
+iter : 24
+Z sampled
+beta sampled
+24 -4411689.35071
+iter : 25
+Z sampled
+beta sampled
+25 -4411689.35071
+iter : 26
+Z sampled
+beta sampled
+26 -4411689.35071
+iter : 27
+Z sampled
+beta sampled
+27 -4411689.35071
+iter : 28
+Z sampled
+beta sampled
+28 -4411689.35071
+iter : 29
+Z sampled
+beta sampled
+29 -4411689.35071
+iter : 30
+Z sampled
+beta sampled
+30 -4411689.35071
+iter : 31
+Z sampled
+beta sampled
+31 -4411689.35071
+iter : 32
+Z sampled
+beta sampled
+32 -4411689.35071
+iter : 33
+Z sampled
+beta sampled
+33 -4411689.35071
+iter : 34
+Z sampled
+beta sampled
+34 -4411689.35071
+iter : 35
+Z sampled
+beta sampled
+35 -4411689.35071
+iter : 36
+Z sampled
+beta sampled
+36 -4411689.35071
+iter : 37
+Z sampled
+beta sampled
+37 -4411689.35071
+iter : 38
+Z sampled
+beta sampled
+38 -4411689.35071
+iter : 39
+Z sampled
+beta sampled
+39 -4411689.35071
+iter : 40
+Z sampled
+beta sampled
+40 -4411689.35071
+iter : 41
+Z sampled
+beta sampled
+41 -4411689.35071
+iter : 42
+Z sampled
+beta sampled
+42 -4411689.35071
+iter : 43
+Z sampled
+beta sampled
+43 -4411689.35071
+iter : 44
+Z sampled
+beta sampled
+44 -4411689.35071
+iter : 45
+Z sampled
+beta sampled
+45 -4411689.35071
+iter : 46
+Z sampled
+beta sampled
+46 -4411689.35071
+iter : 47
+Z sampled
+beta sampled
+47 -4411689.35071
+iter : 48
+Z sampled
+beta sampled
+48 -4411689.35071
+iter : 49
+Z sampled
+beta sampled
+49 -4411689.35071
+iter : 50
+Z sampled
+beta sampled
+50 -4411689.35071
+iter : 51
+Z sampled
+beta sampled
+51 -4411689.35071
+iter : 52
+Z sampled
+beta sampled
+52 -4411689.35071
+iter : 53
+Z sampled
+beta sampled
+53 -4411689.35071
+iter : 54
+Z sampled
+beta sampled
+54 -4411689.35071
+iter : 55
+Z sampled
+beta sampled
+55 -4411689.35071
+iter : 56
+Z sampled
+beta sampled
+56 -4411689.35071
+iter : 57
+Z sampled
+beta sampled
+57 -4411689.35071
+iter : 58
+Z sampled
+beta sampled
+58 -4411689.35071
+iter : 59
+Z sampled
+beta sampled
+59 -4411689.35071
+iter : 60
+Z sampled
+beta sampled
+60 -4411689.35071
+iter : 61
+Z sampled
+beta sampled
+61 -4411689.35071
+iter : 62
+Z sampled
+beta sampled
+62 -4411689.35071
+iter : 63
+Z sampled
+beta sampled
+63 -4411689.35071
+iter : 64
+Z sampled
+beta sampled
+64 -4411689.35071
+iter : 65
+Z sampled
+beta sampled
+65 -4411689.35071
+iter : 66
+Z sampled
+beta sampled
+66 -4411689.35071
+iter : 67
+Z sampled
+beta sampled
+67 -4411689.35071
+iter : 68
+Z sampled
+beta sampled
+68 -4411689.35071
+iter : 69
+Z sampled
+beta sampled
+69 -4411689.35071
+iter : 70
+Z sampled
+beta sampled
+70 -4411689.35071
+iter : 71
+Z sampled
+beta sampled
+71 -4411689.35071
+iter : 72
+Z sampled
+beta sampled
+72 -4411689.35071
+iter : 73
+Z sampled
+beta sampled
+73 -4411689.35071
+iter : 74
+Z sampled
+beta sampled
+74 -4411689.35071
+iter : 75
+Z sampled
+beta sampled
+75 -4411689.35071
+iter : 76
+Z sampled
+beta sampled
+76 -4411689.35071
+iter : 77
+Z sampled
+beta sampled
+77 -4411689.35071
+iter : 78
+Z sampled
+beta sampled
+78 -4411689.35071
+iter : 79
+Z sampled
+beta sampled
+79 -4411689.35071
+iter : 80
+Z sampled
+beta sampled
+80 -4411689.35071
+iter : 81
+Z sampled
+beta sampled
+81 -4411689.35071
+iter : 82
+Z sampled
+beta sampled
+82 -4411689.35071
+iter : 83
+Z sampled
+beta sampled
+83 -4411689.35071
+iter : 84
+Z sampled
+beta sampled
+84 -4411689.35071
+iter : 85
+Z sampled
+beta sampled
+85 -4411689.35071
+iter : 86
+Z sampled
+beta sampled
+86 -4411689.35071
+iter : 87
+Z sampled
+beta sampled
+87 -4411689.35071
+iter : 88
+Z sampled
+beta sampled
+88 -4411689.35071
+iter : 89
+Z sampled
+beta sampled
+89 -4411689.35071
+iter : 90
+Z sampled
+beta sampled
+90 -4411689.35071
+iter : 91
+Z sampled
+beta sampled
+91 -4411689.35071
+iter : 92
+Z sampled
+beta sampled
+92 -4411689.35071
+iter : 93
+Z sampled
+beta sampled
+93 -4411689.35071
+iter : 94
+Z sampled
+beta sampled
+94 -4411689.35071
+iter : 95
+Z sampled
+beta sampled
+95 -4411689.35071
+iter : 96
+Z sampled
+beta sampled
+96 -4411689.35071
+iter : 97
+Z sampled
+beta sampled
+97 -4411689.35071
+iter : 98
+Z sampled
+beta sampled
+98 -4411689.35071
+iter : 99
+Z sampled
+beta sampled
+99 -4411689.35071
+iter : 100
+Z sampled
+beta sampled
+100 -4411689.35071
+iter : 101
+Z sampled
+beta sampled
+101 -4411689.35071
+iter : 102
+Z sampled
+beta sampled
+102 -4411689.35071
+iter : 103
+Z sampled
+beta sampled
+103 -4411689.35071
+iter : 104
+Z sampled
+beta sampled
+104 -4411689.35071
+iter : 105
+Z sampled
+beta sampled
+105 -4411689.35071
+iter : 106
+Z sampled
+beta sampled
+106 -4411689.35071
+iter : 107
+Z sampled
+beta sampled
+107 -4411689.35071
+iter : 108
+Z sampled
+beta sampled
+108 -4411689.35071
+iter : 109
+Z sampled
+beta sampled
+109 -4411689.35071
+iter : 110
+Z sampled
+beta sampled
+110 -4411689.35071
+iter : 111
+Z sampled
+beta sampled
+111 -4411689.35071
+iter : 112
+Z sampled
+beta sampled
+112 -4411689.35071
+iter : 113
+Z sampled
+beta sampled
+113 -4411689.35071
+iter : 114
+Z sampled
+beta sampled
+114 -4411689.35071
+iter : 115
+Z sampled
+beta sampled
+115 -4411689.35071
+iter : 116
+Z sampled
+beta sampled
+116 -4411689.35071
+iter : 117
+Z sampled
+beta sampled
+117 -4411689.35071
+iter : 118
+Z sampled
+beta sampled
+118 -4411689.35071
+iter : 119
+Z sampled
+beta sampled
+119 -4411689.35071
+iter : 120
+Z sampled
+beta sampled
+120 -4411689.35071
+iter : 121
+Z sampled
+beta sampled
+121 -4411689.35071
+iter : 122
+Z sampled
+beta sampled
+122 -4411689.35071
+iter : 123
+Z sampled
+beta sampled
+123 -4411689.35071
+iter : 124
+Z sampled
+beta sampled
+124 -4411689.35071
+iter : 125
+Z sampled
+beta sampled
+125 -4411689.35071
+iter : 126
+Z sampled
+beta sampled
+126 -4411689.35071
+iter : 127
+Z sampled
+beta sampled
+127 -4411689.35071
+iter : 128
+Z sampled
+beta sampled
+128 -4411689.35071
+iter : 129
+Z sampled
+beta sampled
+129 -4411689.35071
+iter : 130
+Z sampled
+beta sampled
+130 -4411689.35071
+iter : 131
+Z sampled
+beta sampled
+131 -4411689.35071
+iter : 132
+Z sampled
+beta sampled
+132 -4411689.35071
+iter : 133
+Z sampled
+beta sampled
+133 -4411689.35071
+iter : 134
+Z sampled
+beta sampled
+134 -4411689.35071
+iter : 135
+Z sampled
+beta sampled
+135 -4411689.35071
+iter : 136
+Z sampled
+beta sampled
+136 -4411689.35071
+iter : 137
+Z sampled
+beta sampled
+137 -4411689.35071
+iter : 138
+Z sampled
+beta sampled
+138 -4411689.35071
+iter : 139
+Z sampled
+beta sampled
+139 -4411689.35071
+iter : 140
+Z sampled
+beta sampled
+140 -4411689.35071
+iter : 141
+Z sampled
+beta sampled
+141 -4411689.35071
+iter : 142
+Z sampled
+beta sampled
+142 -4411689.35071
+iter : 143
+Z sampled
+beta sampled
+143 -4411689.35071
+iter : 144
+Z sampled
+beta sampled
+144 -4411689.35071
+iter : 145
+Z sampled
+beta sampled
+145 -4411689.35071
+iter : 146
+Z sampled
+beta sampled
+146 -4411689.35071
+iter : 147
+Z sampled
+beta sampled
+147 -4411689.35071
+iter : 148
+Z sampled
+beta sampled
+148 -4411689.35071
+iter : 149
+Z sampled
+beta sampled
+149 -4411689.35071
+iter : 150
+Z sampled
+beta sampled
+150 -4411689.35071
+iter : 151
+Z sampled
+beta sampled
+151 -4411689.35071
+iter : 152
+Z sampled
+beta sampled
+152 -4411689.35071
+iter : 153
+Z sampled
+beta sampled
+153 -4411689.35071
+iter : 154
+Z sampled
+beta sampled
+154 -4411689.35071
+iter : 155
+Z sampled
+beta sampled
+155 -4411689.35071
+iter : 156
+Z sampled
+beta sampled
+156 -4411689.35071
+iter : 157
+Z sampled
+beta sampled
+157 -4411689.35071
+iter : 158
+Z sampled
+beta sampled
+158 -4411689.35071
+iter : 159
+Z sampled
+beta sampled
+159 -4411689.35071
+iter : 160
+Z sampled
+beta sampled
+160 -4411689.35071
+iter : 161
+Z sampled
+beta sampled
+161 -4411689.35071
+iter : 162
+Z sampled
+beta sampled
+162 -4411689.35071
+iter : 163
+Z sampled
+beta sampled
+163 -4411689.35071
+iter : 164
+Z sampled
+beta sampled
+164 -4411689.35071
+iter : 165
+Z sampled
+beta sampled
+165 -4411689.35071
+iter : 166
+Z sampled
+beta sampled
+166 -4411689.35071
+iter : 167
+Z sampled
+beta sampled
+167 -4411689.35071
+iter : 168
+Z sampled
+beta sampled
+168 -4411689.35071
+iter : 169
+Z sampled
+beta sampled
+169 -4411689.35071
+iter : 170
+Z sampled
+beta sampled
+170 -4411689.35071
+iter : 171
+Z sampled
+beta sampled
+171 -4411689.35071
+iter : 172
+Z sampled
+beta sampled
+172 -4411689.35071
+iter : 173
+Z sampled
+beta sampled
+173 -4411689.35071
+iter : 174
+Z sampled
+beta sampled
+174 -4411689.35071
+iter : 175
+Z sampled
+beta sampled
+175 -4411689.35071
+iter : 176
+Z sampled
+beta sampled
+176 -4411689.35071
+iter : 177
+Z sampled
+beta sampled
+177 -4411689.35071
+iter : 178
+Z sampled
+beta sampled
+178 -4411689.35071
+iter : 179
+Z sampled
+beta sampled
+179 -4411689.35071
+iter : 180
+Z sampled
+beta sampled
+180 -4411689.35071
+iter : 181
+Z sampled
+beta sampled
+181 -4411689.35071
+iter : 182
+Z sampled
+beta sampled
+182 -4411689.35071
+iter : 183
+Z sampled
+beta sampled
+183 -4411689.35071
+iter : 184
+Z sampled
+beta sampled
+184 -4411689.35071
+iter : 185
+Z sampled
+beta sampled
+185 -4411689.35071
+iter : 186
+Z sampled
+beta sampled
+186 -4411689.35071
+iter : 187
+Z sampled
+beta sampled
+187 -4411689.35071
+iter : 188
+Z sampled
+beta sampled
+188 -4411689.35071
+iter : 189
+Z sampled
+beta sampled
+189 -4411689.35071
+iter : 190
+Z sampled
+beta sampled
+190 -4411689.35071
+iter : 191
+Z sampled
+beta sampled
+191 -4411689.35071
+iter : 192
+Z sampled
+beta sampled
+192 -4411689.35071
+iter : 193
+Z sampled
+beta sampled
+193 -4411689.35071
+iter : 194
+Z sampled
+beta sampled
+194 -4411689.35071
+iter : 195
+Z sampled
+beta sampled
+195 -4411689.35071
+iter : 196
+Z sampled
+beta sampled
+196 -4411689.35071
+iter : 197
+Z sampled
+beta sampled
+197 -4411689.35071
+iter : 198
+Z sampled
+beta sampled
+198 -4411689.35071
+iter : 199
+Z sampled
+beta sampled
+199 -4411689.35071
+iter : 200
+Z sampled
+beta sampled
+200 -4411689.35071
+iter : 201
+Z sampled
+beta sampled
+201 -4411689.35071
+iter : 202
+Z sampled
+beta sampled
+202 -4411689.35071
+iter : 203
+Z sampled
+beta sampled
+203 -4411689.35071
+iter : 204
+Z sampled
+beta sampled
+204 -4411689.35071
+iter : 205
+Z sampled
+beta sampled
+205 -4411689.35071
+iter : 206
+Z sampled
+beta sampled
+206 -4411689.35071
+iter : 207
+Z sampled
+beta sampled
+207 -4411689.35071
+iter : 208
+Z sampled
+beta sampled
+208 -4411689.35071
+iter : 209
+Z sampled
+beta sampled
+209 -4411689.35071
+iter : 210
+Z sampled
+beta sampled
+210 -4411689.35071
+iter : 211
+Z sampled
+beta sampled
+211 -4411689.35071
+iter : 212
+Z sampled
+beta sampled
+212 -4411689.35071
+iter : 213
+Z sampled
+beta sampled
+213 -4411689.35071
+iter : 214
+Z sampled
+beta sampled
+214 -4411689.35071
+iter : 215
+Z sampled
+beta sampled
+215 -4411689.35071
+iter : 216
+Z sampled
+beta sampled
+216 -4411689.35071
+iter : 217
+Z sampled
+beta sampled
+217 -4411689.35071
+iter : 218
+Z sampled
+beta sampled
+218 -4411689.35071
+iter : 219
+Z sampled
+beta sampled
+219 -4411689.35071
+iter : 220
+Z sampled
+beta sampled
+220 -4411689.35071
+iter : 221
+Z sampled
+beta sampled
+221 -4411689.35071
+iter : 222
+Z sampled
+beta sampled
+222 -4411689.35071
+iter : 223
+Z sampled
+beta sampled
+223 -4411689.35071
+iter : 224
+Z sampled
+beta sampled
+224 -4411689.35071
+iter : 225
+Z sampled
+beta sampled
+225 -4411689.35071
+iter : 226
+Z sampled
+beta sampled
+226 -4411689.35071
+iter : 227
+Z sampled
+beta sampled
+227 -4411689.35071
+iter : 228
+Z sampled
+beta sampled
+228 -4411689.35071
+iter : 229
+Z sampled
+beta sampled
+229 -4411689.35071
+iter : 230
+Z sampled
+beta sampled
+230 -4411689.35071
+iter : 231
+Z sampled
+beta sampled
+231 -4411689.35071
+iter : 232
+Z sampled
+beta sampled
+232 -4411689.35071
+iter : 233
+Z sampled
+beta sampled
+233 -4411689.35071
+iter : 234
+Z sampled
+beta sampled
+234 -4411689.35071
+iter : 235
+Z sampled
+beta sampled
+235 -4411689.35071
+iter : 236
+Z sampled
+beta sampled
+236 -4411689.35071
+iter : 237
+Z sampled
+beta sampled
+237 -4411689.35071
+iter : 238
+Z sampled
+beta sampled
+238 -4411689.35071
+iter : 239
+Z sampled
+beta sampled
+239 -4411689.35071
+iter : 240
+Z sampled
+beta sampled
+240 -4411689.35071
+iter : 241
+Z sampled
+beta sampled
+241 -4411689.35071
+iter : 242
+Z sampled
+beta sampled
+242 -4411689.35071
+iter : 243
+Z sampled
+beta sampled
+243 -4411689.35071
+iter : 244
+Z sampled
+beta sampled
+244 -4411689.35071
+iter : 245
+Z sampled
+beta sampled
+245 -4411689.35071
+iter : 246
+Z sampled
+beta sampled
+246 -4411689.35071
+iter : 247
+Z sampled
+beta sampled
+247 -4411689.35071
+iter : 248
+Z sampled
+beta sampled
+248 -4411689.35071
+iter : 249
+Z sampled
+beta sampled
+249 -4411689.35071
+iter : 250
+Z sampled
+beta sampled
+250 -4411689.35071
+iter : 251
+Z sampled
+beta sampled
+251 -4411689.35071
+iter : 252
+Z sampled
+beta sampled
+252 -4411689.35071
+iter : 253
+Z sampled
+beta sampled
+253 -4411689.35071
+iter : 254
+Z sampled
+beta sampled
+254 -4411689.35071
+iter : 255
+Z sampled
+beta sampled
+255 -4411689.35071
+iter : 256
+Z sampled
+beta sampled
+256 -4411689.35071
+iter : 257
+Z sampled
+beta sampled
+257 -4411689.35071
+iter : 258
+Z sampled
+beta sampled
+258 -4411689.35071
+iter : 259
+Z sampled
+beta sampled
+259 -4411689.35071
+iter : 260
+Z sampled
+beta sampled
+260 -4411689.35071
+iter : 261
+Z sampled
+beta sampled
+261 -4411689.35071
+iter : 262
+Z sampled
+beta sampled
+262 -4411689.35071
+iter : 263
+Z sampled
+beta sampled
+263 -4411689.35071
+iter : 264
+Z sampled
+beta sampled
+264 -4411689.35071
+iter : 265
+Z sampled
+beta sampled
+265 -4411689.35071
+iter : 266
+Z sampled
+beta sampled
+266 -4411689.35071
+iter : 267
+Z sampled
+beta sampled
+267 -4411689.35071
+iter : 268
+Z sampled
+beta sampled
+268 -4411689.35071
+iter : 269
+Z sampled
+beta sampled
+269 -4411689.35071
+iter : 270
+Z sampled
+beta sampled
+270 -4411689.35071
+iter : 271
+Z sampled
+beta sampled
+271 -4411689.35071
+iter : 272
+Z sampled
+beta sampled
+272 -4411689.35071
+iter : 273
+Z sampled
+beta sampled
+273 -4411689.35071
+iter : 274
+Z sampled
+beta sampled
+274 -4411689.35071
+iter : 275
+Z sampled
+beta sampled
+275 -4411689.35071
+iter : 276
+Z sampled
+beta sampled
+276 -4411689.35071
+iter : 277
+Z sampled
+beta sampled
+277 -4411689.35071
+iter : 278
+Z sampled
+beta sampled
+278 -4411689.35071
+iter : 279
+Z sampled
+beta sampled
+279 -4411689.35071
+iter : 280
+Z sampled
+beta sampled
+280 -4411689.35071
+iter : 281
+Z sampled
+beta sampled
+281 -4411689.35071
+iter : 282
+Z sampled
+beta sampled
+282 -4411689.35071
+iter : 283
+Z sampled
+beta sampled
+283 -4411689.35071
+iter : 284
+Z sampled
+beta sampled
+284 -4411689.35071
+iter : 285
+Z sampled
+beta sampled
+285 -4411689.35071
+iter : 286
+Z sampled
+beta sampled
+286 -4411689.35071
+iter : 287
+Z sampled
+beta sampled
+287 -4411689.35071
+iter : 288
+Z sampled
+beta sampled
+288 -4411689.35071
+iter : 289
+Z sampled
+beta sampled
+289 -4411689.35071
+iter : 290
+Z sampled
+beta sampled
+290 -4411689.35071
+iter : 291
+Z sampled
+beta sampled
+291 -4411689.35071
+iter : 292
+Z sampled
+beta sampled
+292 -4411689.35071
+iter : 293
+Z sampled
+beta sampled
+293 -4411689.35071
+iter : 294
+Z sampled
+beta sampled
+294 -4411689.35071
+iter : 295
+Z sampled
+beta sampled
+295 -4411689.35071
+iter : 296
+Z sampled
+beta sampled
+296 -4411689.35071
+iter : 297
+Z sampled
+beta sampled
+297 -4411689.35071
+iter : 298
+Z sampled
+beta sampled
+298 -4411689.35071
+iter : 299
+Z sampled
+beta sampled
+299 -4411689.35071
+iter : 300
+Z sampled
+beta sampled
+300 -4411689.35071
+iter : 301
+Z sampled
+beta sampled
+301 -4411689.35071
+iter : 302
+Z sampled
+beta sampled
+302 -4411689.35071
+iter : 303
+Z sampled
+beta sampled
+303 -4411689.35071
+iter : 304
+Z sampled
+beta sampled
+304 -4411689.35071
+iter : 305
+Z sampled
+beta sampled
+305 -4411689.35071
+iter : 306
+Z sampled
+beta sampled
+306 -4411689.35071
+iter : 307
+Z sampled
+beta sampled
+307 -4411689.35071
+iter : 308
+Z sampled
+beta sampled
+308 -4411689.35071
+iter : 309
+Z sampled
+beta sampled
+309 -4411689.35071
+iter : 310
+Z sampled
+beta sampled
+310 -4411689.35071
+iter : 311
+Z sampled
+beta sampled
+311 -4411689.35071
+iter : 312
+Z sampled
+beta sampled
+312 -4411689.35071
+iter : 313
+Z sampled
+beta sampled
+313 -4411689.35071
+iter : 314
+Z sampled
+beta sampled
+314 -4411689.35071
+iter : 315
+Z sampled
+beta sampled
+315 -4411689.35071
+iter : 316
+Z sampled
+beta sampled
+316 -4411689.35071
+iter : 317
+Z sampled
+beta sampled
+317 -4411689.35071
+iter : 318
+Z sampled
+beta sampled
+318 -4411689.35071
+iter : 319
+Z sampled
+beta sampled
+319 -4411689.35071
+iter : 320
+Z sampled
+beta sampled
+320 -4411689.35071
+iter : 321
+Z sampled
+beta sampled
+321 -4411689.35071
+iter : 322
+Z sampled
+beta sampled
+322 -4411689.35071
+iter : 323
+Z sampled
+beta sampled
+323 -4411689.35071
+iter : 324
+Z sampled
+beta sampled
+324 -4411689.35071
+iter : 325
+Z sampled
+beta sampled
+325 -4411689.35071
+iter : 326
+Z sampled
+beta sampled
+326 -4411689.35071
+iter : 327
+Z sampled
+beta sampled
+327 -4411689.35071
+iter : 328
+Z sampled
+beta sampled
+328 -4411689.35071
+iter : 329
+Z sampled
+beta sampled
+329 -4411689.35071
+iter : 330
+Z sampled
+beta sampled
+330 -4411689.35071
+iter : 331
+Z sampled
+beta sampled
+331 -4411689.35071
+iter : 332
+Z sampled
+beta sampled
+332 -4411689.35071
+iter : 333
+Z sampled
+beta sampled
+333 -4411689.35071
+iter : 334
+Z sampled
+beta sampled
+334 -4411689.35071
+iter : 335
+Z sampled
+beta sampled
+335 -4411689.35071
+iter : 336
+Z sampled
+beta sampled
+336 -4411689.35071
+iter : 337
+Z sampled
+beta sampled
+337 -4411689.35071
+iter : 338
+Z sampled
+beta sampled
+338 -4411689.35071
+iter : 339
+Z sampled
+beta sampled
+339 -4411689.35071
+iter : 340
+Z sampled
+beta sampled
+340 -4411689.35071
+iter : 341
+Z sampled
+beta sampled
+341 -4411689.35071
+iter : 342
+Z sampled
+beta sampled
+342 -4411689.35071
+iter : 343
+Z sampled
+beta sampled
+343 -4411689.35071
+iter : 344
+Z sampled
+beta sampled
+344 -4411689.35071
+iter : 345
+Z sampled
+beta sampled
+345 -4411689.35071
+iter : 346
+Z sampled
+beta sampled
+346 -4411689.35071
+iter : 347
+Z sampled
+beta sampled
+347 -4411689.35071
+iter : 348
+Z sampled
+beta sampled
+348 -4411689.35071
+iter : 349
+Z sampled
+beta sampled
+349 -4411689.35071
+iter : 350
+Z sampled
+beta sampled
+350 -4411689.35071
+iter : 351
+Z sampled
+beta sampled
+351 -4411689.35071
+iter : 352
+Z sampled
+beta sampled
+352 -4411689.35071
+iter : 353
+Z sampled
+beta sampled
+353 -4411689.35071
+iter : 354
+Z sampled
+beta sampled
+354 -4411689.35071
+iter : 355
+Z sampled
+beta sampled
+355 -4411689.35071
+iter : 356
+Z sampled
+beta sampled
+356 -4411689.35071
+iter : 357
+Z sampled
+beta sampled
+357 -4411689.35071
+iter : 358
+Z sampled
+beta sampled
+358 -4411689.35071
+iter : 359
+Z sampled
+beta sampled
+359 -4411689.35071
+iter : 360
+Z sampled
+beta sampled
+360 -4411689.35071
+iter : 361
+Z sampled
+beta sampled
+361 -4411689.35071
+iter : 362
+Z sampled
+beta sampled
+362 -4411689.35071
+iter : 363
+Z sampled
+beta sampled
+363 -4411689.35071
+iter : 364
+Z sampled
+beta sampled
+364 -4411689.35071
+iter : 365
+Z sampled
+beta sampled
+365 -4411689.35071
+iter : 366
+Z sampled
+beta sampled
+366 -4411689.35071
+iter : 367
+Z sampled
+beta sampled
+367 -4411689.35071
+iter : 368
+Z sampled
+beta sampled
+368 -4411689.35071
+iter : 369
+Z sampled
+beta sampled
+369 -4411689.35071
+iter : 370
+Z sampled
+beta sampled
+370 -4411689.35071
+iter : 371
+Z sampled
+beta sampled
+371 -4411689.35071
+iter : 372
+Z sampled
+beta sampled
+372 -4411689.35071
+iter : 373
+Z sampled
+beta sampled
+373 -4411689.35071
+iter : 374
+Z sampled
+beta sampled
+374 -4411689.35071
+iter : 375
+Z sampled
+beta sampled
+375 -4411689.35071
+iter : 376
+Z sampled
+beta sampled
+376 -4411689.35071
+iter : 377
+Z sampled
+beta sampled
+377 -4411689.35071
+iter : 378
+Z sampled
+beta sampled
+378 -4411689.35071
+iter : 379
+Z sampled
+beta sampled
+379 -4411689.35071
+iter : 380
+Z sampled
+beta sampled
+380 -4411689.35071
+iter : 381
+Z sampled
+beta sampled
+381 -4411689.35071
+iter : 382
+Z sampled
+beta sampled
+382 -4411689.35071
+iter : 383
+Z sampled
+beta sampled
+383 -4411689.35071
+iter : 384
+Z sampled
+beta sampled
+384 -4411689.35071
+iter : 385
+Z sampled
+beta sampled
+385 -4411689.35071
+iter : 386
+Z sampled
+beta sampled
+386 -4411689.35071
+iter : 387
+Z sampled
+beta sampled
+387 -4411689.35071
+iter : 388
+Z sampled
+beta sampled
+388 -4411689.35071
+iter : 389
+Z sampled
+beta sampled
+389 -4411689.35071
+iter : 390
+Z sampled
+beta sampled
+390 -4411689.35071
+iter : 391
+Z sampled
+beta sampled
+391 -4411689.35071
+iter : 392
+Z sampled
+beta sampled
+392 -4411689.35071
+iter : 393
+Z sampled
+beta sampled
+393 -4411689.35071
+iter : 394
+Z sampled
+beta sampled
+394 -4411689.35071
+iter : 395
+Z sampled
+beta sampled
+395 -4411689.35071
+iter : 396
+Z sampled
+beta sampled
+396 -4411689.35071
+iter : 397
+Z sampled
+beta sampled
+397 -4411689.35071
+iter : 398
+Z sampled
+beta sampled
+398 -4411689.35071
+iter : 399
+Z sampled
+beta sampled
+399 -4411689.35071
+iter : 400
+Z sampled
+beta sampled
+400 -4411689.35071
+iter : 401
+Z sampled
+beta sampled
+401 -4411689.35071
+iter : 402
+Z sampled
+beta sampled
+402 -4411689.35071
+iter : 403
+Z sampled
+beta sampled
+403 -4411689.35071
+iter : 404
+Z sampled
+beta sampled
+404 -4411689.35071
+iter : 405
+Z sampled
+beta sampled
+405 -4411689.35071
+iter : 406
+Z sampled
+beta sampled
+406 -4411689.35071
+iter : 407
+Z sampled
+beta sampled
+407 -4411689.35071
+iter : 408
+Z sampled
+beta sampled
+408 -4411689.35071
+iter : 409
+Z sampled
+beta sampled
+409 -4411689.35071
+iter : 410
+Z sampled
+beta sampled
+410 -4411689.35071
+iter : 411
+Z sampled
+beta sampled
+411 -4411689.35071
+iter : 412
+Z sampled
+beta sampled
+412 -4411689.35071
+iter : 413
+Z sampled
+beta sampled
+413 -4411689.35071
+iter : 414
+Z sampled
+beta sampled
+414 -4411689.35071
+iter : 415
+Z sampled
+beta sampled
+415 -4411689.35071
+iter : 416
+Z sampled
+beta sampled
+416 -4411689.35071
+iter : 417
+Z sampled
+beta sampled
+417 -4411689.35071
+iter : 418
+Z sampled
+beta sampled
+418 -4411689.35071
+iter : 419
+Z sampled
+beta sampled
+419 -4411689.35071
+iter : 420
+Z sampled
+beta sampled
+420 -4411689.35071
+iter : 421
+Z sampled
+beta sampled
+421 -4411689.35071
+iter : 422
+Z sampled
+beta sampled
+422 -4411689.35071
+iter : 423
+Z sampled
+beta sampled
+423 -4411689.35071
+iter : 424
+Z sampled
+beta sampled
+424 -4411689.35071
+iter : 425
+Z sampled
+beta sampled
+425 -4411689.35071
+iter : 426
+Z sampled
+beta sampled
+426 -4411689.35071
+iter : 427
+Z sampled
+beta sampled
+427 -4411689.35071
+iter : 428
+Z sampled
+beta sampled
+428 -4411689.35071
+iter : 429
+Z sampled
+beta sampled
+429 -4411689.35071
+iter : 430
+Z sampled
+beta sampled
+430 -4411689.35071
+iter : 431
+Z sampled
+beta sampled
+431 -4411689.35071
+iter : 432
+Z sampled
+beta sampled
+432 -4411689.35071
+iter : 433
+Z sampled
+beta sampled
+433 -4411689.35071
+iter : 434
+Z sampled
+beta sampled
+434 -4411689.35071
+iter : 435
+Z sampled
+beta sampled
+435 -4411689.35071
+iter : 436
+Z sampled
+beta sampled
+436 -4411689.35071
+iter : 437
+Z sampled
+beta sampled
+437 -4411689.35071
+iter : 438
+Z sampled
+beta sampled
+438 -4411689.35071
+iter : 439
+Z sampled
+beta sampled
+439 -4411689.35071
+iter : 440
+Z sampled
+beta sampled
+440 -4411689.35071
+iter : 441
+Z sampled
+beta sampled
+441 -4411689.35071
+iter : 442
+Z sampled
+beta sampled
+442 -4411689.35071
+iter : 443
+Z sampled
+beta sampled
+443 -4411689.35071
+iter : 444
+Z sampled
+beta sampled
+444 -4411689.35071
+iter : 445
+Z sampled
+beta sampled
+445 -4411689.35071
+iter : 446
+Z sampled
+beta sampled
+446 -4411689.35071
+iter : 447
+Z sampled
+beta sampled
+447 -4411689.35071
+iter : 448
+Z sampled
+beta sampled
+448 -4411689.35071
+iter : 449
+Z sampled
+beta sampled
+449 -4411689.35071
+iter : 450
+Z sampled
+beta sampled
+450 -4411689.35071
+iter : 451
+Z sampled
+beta sampled
+451 -4411689.35071
+iter : 452
+Z sampled
+beta sampled
+452 -4411689.35071
+iter : 453
+Z sampled
+beta sampled
+453 -4411689.35071
+iter : 454
+Z sampled
+beta sampled
+454 -4411689.35071
+iter : 455
+Z sampled
+beta sampled
+455 -4411689.35071
+iter : 456
+Z sampled
+beta sampled
+456 -4411689.35071
+iter : 457
+Z sampled
+beta sampled
+457 -4411689.35071
+iter : 458
+Z sampled
+beta sampled
+458 -4411689.35071
+iter : 459
+Z sampled
+beta sampled
+459 -4411689.35071
+iter : 460
+Z sampled
+beta sampled
+460 -4411689.35071
+iter : 461
+Z sampled
+beta sampled
+461 -4411689.35071
+iter : 462
+Z sampled
+beta sampled
+462 -4411689.35071
+iter : 463
+Z sampled
+beta sampled
+463 -4411689.35071
+iter : 464
+Z sampled
+beta sampled
+464 -4411689.35071
+iter : 465
+Z sampled
+beta sampled
+465 -4411689.35071
+iter : 466
+Z sampled
+beta sampled
+466 -4411689.35071
+iter : 467
+Z sampled
+beta sampled
+467 -4411689.35071
+iter : 468
+Z sampled
+beta sampled
+468 -4411689.35071
+iter : 469
+Z sampled
+beta sampled
+469 -4411689.35071
+iter : 470
+Z sampled
+beta sampled
+470 -4411689.35071
+iter : 471
+Z sampled
+beta sampled
+471 -4411689.35071
+iter : 472
+Z sampled
+beta sampled
+472 -4411689.35071
+iter : 473
+Z sampled
+beta sampled
+473 -4411689.35071
+iter : 474
+Z sampled
+beta sampled
+474 -4411689.35071
+iter : 475
+Z sampled
+beta sampled
+475 -4411689.35071
+iter : 476
+Z sampled
+beta sampled
+476 -4411689.35071
+iter : 477
+Z sampled
+beta sampled
+477 -4411689.35071
+iter : 478
+Z sampled
+beta sampled
+478 -4411689.35071
+iter : 479
+Z sampled
+beta sampled
+479 -4411689.35071
+iter : 480
+Z sampled
+beta sampled
+480 -4411689.35071
+iter : 481
+Z sampled
+beta sampled
+481 -4411689.35071
+iter : 482
+Z sampled
+beta sampled
+482 -4411689.35071
+iter : 483
+Z sampled
+beta sampled
+483 -4411689.35071
+iter : 484
+Z sampled
+beta sampled
+484 -4411689.35071
+iter : 485
+Z sampled
+beta sampled
+485 -4411689.35071
+iter : 486
+Z sampled
+beta sampled
+486 -4411689.35071
+iter : 487
+Z sampled
+beta sampled
+487 -4411689.35071
+iter : 488
+Z sampled
+beta sampled
+488 -4411689.35071
+iter : 489
+Z sampled
+beta sampled
+489 -4411689.35071
+iter : 490
+Z sampled
+beta sampled
+490 -4411689.35071
+iter : 491
+Z sampled
+beta sampled
+491 -4411689.35071
+iter : 492
+Z sampled
+beta sampled
+492 -4411689.35071
+iter : 493
+Z sampled
+beta sampled
+493 -4411689.35071
+iter : 494
+Z sampled
+beta sampled
+494 -4411689.35071
+iter : 495
+Z sampled
+beta sampled
+495 -4411689.35071
+iter : 496
+Z sampled
+beta sampled
+496 -4411689.35071
+iter : 497
+Z sampled
+beta sampled
+497 -4411689.35071
+iter : 498
+Z sampled
+beta sampled
+498 -4411689.35071
+iter : 499
+Z sampled
+beta sampled
+499 -4411689.35071
+iter : 500
+Z sampled
+beta sampled
+500 -4411689.35071
+iter : 501
+Z sampled
+beta sampled
+501 -4411689.35071
+iter : 502
+Z sampled
+beta sampled
+502 -4411689.35071
+iter : 503
+Z sampled
+beta sampled
+503 -4411689.35071
+iter : 504
+Z sampled
+beta sampled
+504 -4411689.35071
+iter : 505
+Z sampled
+beta sampled
+505 -4411689.35071
+iter : 506
+Z sampled
+beta sampled
+506 -4411689.35071
+iter : 507
+Z sampled
+beta sampled
+507 -4411689.35071
+iter : 508
+Z sampled
+beta sampled
+508 -4411689.35071
+iter : 509
+Z sampled
+beta sampled
+509 -4411689.35071
+iter : 510
+Z sampled
+beta sampled
+510 -4411689.35071
+iter : 511
+Z sampled
+beta sampled
+511 -4411689.35071
+iter : 512
+Z sampled
+beta sampled
+512 -4411689.35071
+iter : 513
+Z sampled
+beta sampled
+513 -4411689.35071
+iter : 514
+Z sampled
+beta sampled
+514 -4411689.35071
+iter : 515
+Z sampled
+beta sampled
+515 -4411689.35071
+iter : 516
+Z sampled
+beta sampled
+516 -4411689.35071
+iter : 517
+Z sampled
+beta sampled
+517 -4411689.35071
+iter : 518
+Z sampled
+beta sampled
+518 -4411689.35071
+iter : 519
+Z sampled
+beta sampled
+519 -4411689.35071
+iter : 520
+Z sampled
+beta sampled
+520 -4411689.35071
+iter : 521
+Z sampled
+beta sampled
+521 -4411689.35071
+iter : 522
+Z sampled
+beta sampled
+522 -4411689.35071
+iter : 523
+Z sampled
+beta sampled
+523 -4411689.35071
+iter : 524
+Z sampled
+beta sampled
+524 -4411689.35071
+iter : 525
+Z sampled
+beta sampled
+525 -4411689.35071
+iter : 526
+Z sampled
+beta sampled
+526 -4411689.35071
+iter : 527
+Z sampled
+beta sampled
+527 -4411689.35071
+iter : 528
+Z sampled
+beta sampled
+528 -4411689.35071
+iter : 529
+Z sampled
+beta sampled
+529 -4411689.35071
+iter : 530
+Z sampled
+beta sampled
+530 -4411689.35071
+iter : 531
+Z sampled
+beta sampled
+531 -4411689.35071
+iter : 532
+Z sampled
+beta sampled
+532 -4411689.35071
+iter : 533
+Z sampled
+beta sampled
+533 -4411689.35071
+iter : 534
+Z sampled
+beta sampled
+534 -4411689.35071
+iter : 535
+Z sampled
+beta sampled
+535 -4411689.35071
+iter : 536
+Z sampled
+beta sampled
+536 -4411689.35071
+iter : 537
+Z sampled
+beta sampled
+537 -4411689.35071
+iter : 538
+Z sampled
+beta sampled
+538 -4411689.35071
+iter : 539
+Z sampled
+beta sampled
+539 -4411689.35071
+iter : 540
+Z sampled
+beta sampled
+540 -4411689.35071
+iter : 541
+Z sampled
+beta sampled
+541 -4411689.35071
+iter : 542
+Z sampled
+beta sampled
+542 -4411689.35071
+iter : 543
+Z sampled
+beta sampled
+543 -4411689.35071
+iter : 544
+Z sampled
+beta sampled
+544 -4411689.35071
+iter : 545
+Z sampled
+beta sampled
+545 -4411689.35071
+iter : 546
+Z sampled
+beta sampled
+546 -4411689.35071
+iter : 547
+Z sampled
+beta sampled
+547 -4411689.35071
+iter : 548
+Z sampled
+beta sampled
+548 -4411689.35071
+iter : 549
+Z sampled
+beta sampled
+549 -4411689.35071
+iter : 550
+Z sampled
+beta sampled
+550 -4411689.35071
+iter : 551
+Z sampled
+beta sampled
+551 -4411689.35071
+iter : 552
+Z sampled
+beta sampled
+552 -4411689.35071
+iter : 553
+Z sampled
+beta sampled
+553 -4411689.35071
+iter : 554
+Z sampled
+beta sampled
+554 -4411689.35071
+iter : 555
+Z sampled
+beta sampled
+555 -4411689.35071
+iter : 556
+Z sampled
+beta sampled
+556 -4411689.35071
+iter : 557
+Z sampled
+beta sampled
+557 -4411689.35071
+iter : 558
+Z sampled
+beta sampled
+558 -4411689.35071
+iter : 559
+Z sampled
+beta sampled
+559 -4411689.35071
+iter : 560
+Z sampled
+beta sampled
+560 -4411689.35071
+iter : 561
+Z sampled
+beta sampled
+561 -4411689.35071
+iter : 562
+Z sampled
+beta sampled
+562 -4411689.35071
+iter : 563
+Z sampled
+beta sampled
+563 -4411689.35071
+iter : 564
+Z sampled
+beta sampled
+564 -4411689.35071
+iter : 565
+Z sampled
+beta sampled
+565 -4411689.35071
+iter : 566
+Z sampled
+beta sampled
+566 -4411689.35071
+iter : 567
+Z sampled
+beta sampled
+567 -4411689.35071
+iter : 568
+Z sampled
+beta sampled
+568 -4411689.35071
+iter : 569
+Z sampled
+beta sampled
+569 -4411689.35071
+iter : 570
+Z sampled
+beta sampled
+570 -4411689.35071
+iter : 571
+Z sampled
+beta sampled
+571 -4411689.35071
+iter : 572
+Z sampled
+beta sampled
+572 -4411689.35071
+iter : 573
+Z sampled
+beta sampled
+573 -4411689.35071
+iter : 574
+Z sampled
+beta sampled
+574 -4411689.35071
+iter : 575
+Z sampled
+beta sampled
+575 -4411689.35071
+iter : 576
+Z sampled
+beta sampled
+576 -4411689.35071
+iter : 577
+Z sampled
+beta sampled
+577 -4411689.35071
+iter : 578
+Z sampled
+beta sampled
+578 -4411689.35071
+iter : 579
+Z sampled
+beta sampled
+579 -4411689.35071
+iter : 580
+Z sampled
+beta sampled
+580 -4411689.35071
+iter : 581
+Z sampled
+beta sampled
+581 -4411689.35071
+iter : 582
+Z sampled
+beta sampled
+582 -4411689.35071
+iter : 583
+Z sampled
+beta sampled
+583 -4411689.35071
+iter : 584
+Z sampled
+beta sampled
+584 -4411689.35071
+iter : 585
+Z sampled
+beta sampled
+585 -4411689.35071
+iter : 586
+Z sampled
+beta sampled
+586 -4411689.35071
+iter : 587
+Z sampled
+beta sampled
+587 -4411689.35071
+iter : 588
+Z sampled
+beta sampled
+588 -4411689.35071
+iter : 589
+Z sampled
+beta sampled
+589 -4411689.35071
+iter : 590
+Z sampled
+beta sampled
+590 -4411689.35071
+iter : 591
+Z sampled
+beta sampled
+591 -4411689.35071
+iter : 592
+Z sampled
+beta sampled
+592 -4411689.35071
+iter : 593
+Z sampled
+beta sampled
+593 -4411689.35071
+iter : 594
+Z sampled
+beta sampled
+594 -4411689.35071
+iter : 595
+Z sampled
+beta sampled
+595 -4411689.35071
+iter : 596
+Z sampled
+beta sampled
+596 -4411689.35071
+iter : 597
+Z sampled
+beta sampled
+597 -4411689.35071
+iter : 598
+Z sampled
+beta sampled
+598 -4411689.35071
+iter : 599
+Z sampled
+beta sampled
+599 -4411689.35071
+iter : 600
+Z sampled
+beta sampled
+600 -4411689.35071
+iter : 601
+Z sampled
+beta sampled
+601 -4411689.35071
+iter : 602
+Z sampled
+beta sampled
+602 -4411689.35071
+iter : 603
+Z sampled
+beta sampled
+603 -4411689.35071
+iter : 604
+Z sampled
+beta sampled
+604 -4411689.35071
+iter : 605
+Z sampled
+beta sampled
+605 -4411689.35071
+iter : 606
+Z sampled
+beta sampled
+606 -4411689.35071
+iter : 607
+Z sampled
+beta sampled
+607 -4411689.35071
+iter : 608
+Z sampled
+beta sampled
+608 -4411689.35071
+iter : 609
+Z sampled
+beta sampled
+609 -4411689.35071
+iter : 610
+Z sampled
+beta sampled
+610 -4411689.35071
+iter : 611
+Z sampled
+beta sampled
+611 -4411689.35071
+iter : 612
+Z sampled
+beta sampled
+612 -4411689.35071
+iter : 613
+Z sampled
+beta sampled
+613 -4411689.35071
+iter : 614
+Z sampled
+beta sampled
+614 -4411689.35071
+iter : 615
+Z sampled
+beta sampled
+615 -4411689.35071
+iter : 616
+Z sampled
+beta sampled
+616 -4411689.35071
+iter : 617
+Z sampled
+beta sampled
+617 -4411689.35071
+iter : 618
+Z sampled
+beta sampled
+618 -4411689.35071
+iter : 619
+Z sampled
+beta sampled
+619 -4411689.35071
+iter : 620
+Z sampled
+beta sampled
+620 -4411689.35071
+iter : 621
+Z sampled
+beta sampled
+621 -4411689.35071
+iter : 622
+Z sampled
+beta sampled
+622 -4411689.35071
+iter : 623
+Z sampled
+beta sampled
+623 -4411689.35071
+iter : 624
+Z sampled
+beta sampled
+624 -4411689.35071
+iter : 625
+Z sampled
+beta sampled
+625 -4411689.35071
+iter : 626
+Z sampled
+beta sampled
+626 -4411689.35071
+iter : 627
+Z sampled
+beta sampled
+627 -4411689.35071
+iter : 628
+Z sampled
+beta sampled
+628 -4411689.35071
+iter : 629
+Z sampled
+beta sampled
+629 -4411689.35071
+iter : 630
+Z sampled
+beta sampled
+630 -4411689.35071
+iter : 631
+Z sampled
+beta sampled
+631 -4411689.35071
+iter : 632
+Z sampled
+beta sampled
+632 -4411689.35071
+iter : 633
+Z sampled
+beta sampled
+633 -4411689.35071
+iter : 634
+Z sampled
+beta sampled
+634 -4411689.35071
+iter : 635
+Z sampled
+beta sampled
+635 -4411689.35071
+iter : 636
+Z sampled
+beta sampled
+636 -4411689.35071
+iter : 637
+Z sampled
+beta sampled
+637 -4411689.35071
+iter : 638
+Z sampled
+beta sampled
+638 -4411689.35071
+iter : 639
+Z sampled
+beta sampled
+639 -4411689.35071
+iter : 640
+Z sampled
+beta sampled
+640 -4411689.35071
+iter : 641
+Z sampled
+beta sampled
+641 -4411689.35071
+iter : 642
+Z sampled
+beta sampled
+642 -4411689.35071
+iter : 643
+Z sampled
+beta sampled
+643 -4411689.35071
+iter : 644
+Z sampled
+beta sampled
+644 -4411689.35071
+iter : 645
+Z sampled
+beta sampled
+645 -4411689.35071
+iter : 646
+Z sampled
+beta sampled
+646 -4411689.35071
+iter : 647
+Z sampled
+beta sampled
+647 -4411689.35071
+iter : 648
+Z sampled
+beta sampled
+648 -4411689.35071
+iter : 649
+Z sampled
+beta sampled
+649 -4411689.35071
+iter : 650
+Z sampled
+beta sampled
+650 -4411689.35071
+iter : 651
+Z sampled
+beta sampled
+651 -4411689.35071
+iter : 652
+Z sampled
+beta sampled
+652 -4411689.35071
+iter : 653
+Z sampled
+beta sampled
+653 -4411689.35071
+iter : 654
+Z sampled
+beta sampled
+654 -4411689.35071
+iter : 655
+Z sampled
+beta sampled
+655 -4411689.35071
+iter : 656
+Z sampled
+beta sampled
+656 -4411689.35071
+iter : 657
+Z sampled
+beta sampled
+657 -4411689.35071
+iter : 658
+Z sampled
+beta sampled
+658 -4411689.35071
+iter : 659
+Z sampled
+beta sampled
+659 -4411689.35071
+iter : 660
+Z sampled
+beta sampled
+660 -4411689.35071
+iter : 661
+Z sampled
+beta sampled
+661 -4411689.35071
+iter : 662
+Z sampled
+beta sampled
+662 -4411689.35071
+iter : 663
+Z sampled
+beta sampled
+663 -4411689.35071
+iter : 664
+Z sampled
+beta sampled
+664 -4411689.35071
+iter : 665
+Z sampled
+beta sampled
+665 -4411689.35071
+iter : 666
+Z sampled
+beta sampled
+666 -4411689.35071
+iter : 667
+Z sampled
+beta sampled
+667 -4411689.35071
+iter : 668
+Z sampled
+beta sampled
+668 -4411689.35071
+iter : 669
+Z sampled
+beta sampled
+669 -4411689.35071
+iter : 670
+Z sampled
+beta sampled
+670 -4411689.35071
+iter : 671
+Z sampled
+beta sampled
+671 -4411689.35071
+iter : 672
+Z sampled
+beta sampled
+672 -4411689.35071
+iter : 673
+Z sampled
+beta sampled
+673 -4411689.35071
+iter : 674
+Z sampled
+beta sampled
+674 -4411689.35071
+iter : 675
+Z sampled
+beta sampled
+675 -4411689.35071
+iter : 676
+Z sampled
+beta sampled
+676 -4411689.35071
+iter : 677
+Z sampled
+beta sampled
+677 -4411689.35071
+iter : 678
+Z sampled
+beta sampled
+678 -4411689.35071
+iter : 679
+Z sampled
+beta sampled
+679 -4411689.35071
+iter : 680
+Z sampled
+beta sampled
+680 -4411689.35071
+iter : 681
+Z sampled
+beta sampled
+681 -4411689.35071
+iter : 682
+Z sampled
+beta sampled
+682 -4411689.35071
+iter : 683
+Z sampled
+beta sampled
+683 -4411689.35071
+iter : 684
+Z sampled
+beta sampled
+684 -4411689.35071
+iter : 685
+Z sampled
+beta sampled
+685 -4411689.35071
+iter : 686
+Z sampled
+beta sampled
+686 -4411689.35071
+iter : 687
+Z sampled
+beta sampled
+687 -4411689.35071
+iter : 688
+Z sampled
+beta sampled
+688 -4411689.35071
+iter : 689
+Z sampled
+beta sampled
+689 -4411689.35071
+iter : 690
+Z sampled
+beta sampled
+690 -4411689.35071
+iter : 691
+Z sampled
+beta sampled
+691 -4411689.35071
+iter : 692
+Z sampled
+beta sampled
+692 -4411689.35071
+iter : 693
+Z sampled
+beta sampled
+693 -4411689.35071
+iter : 694
+Z sampled
+beta sampled
+694 -4411689.35071
+iter : 695
+Z sampled
+beta sampled
+695 -4411689.35071
+iter : 696
+Z sampled
+beta sampled
+696 -4411689.35071
+iter : 697
+Z sampled
+beta sampled
+697 -4411689.35071
+iter : 698
+Z sampled
+beta sampled
+698 -4411689.35071
+iter : 699
+Z sampled
+beta sampled
+699 -4411689.35071
+iter : 700
+Z sampled
+beta sampled
+700 -4411689.35071
+iter : 701
+Z sampled
+beta sampled
+701 -4411689.35071
+iter : 702
+Z sampled
+beta sampled
+702 -4411689.35071
+iter : 703
+Z sampled
+beta sampled
+703 -4411689.35071
+iter : 704
+Z sampled
+beta sampled
+704 -4411689.35071
+iter : 705
+Z sampled
+beta sampled
+705 -4411689.35071
+iter : 706
+Z sampled
+beta sampled
+706 -4411689.35071
+iter : 707
+Z sampled
+beta sampled
+707 -4411689.35071
+iter : 708
+Z sampled
+beta sampled
+708 -4411689.35071
+iter : 709
+Z sampled
+beta sampled
+709 -4411689.35071
+iter : 710
+Z sampled
+beta sampled
+710 -4411689.35071
+iter : 711
+Z sampled
+beta sampled
+711 -4411689.35071
+iter : 712
+Z sampled
+beta sampled
+712 -4411689.35071
+iter : 713
+Z sampled
+beta sampled
+713 -4411689.35071
+iter : 714
+Z sampled
+beta sampled
+714 -4411689.35071
+iter : 715
+Z sampled
+beta sampled
+715 -4411689.35071
+iter : 716
+Z sampled
+beta sampled
+716 -4411689.35071
+iter : 717
+Z sampled
+beta sampled
+717 -4411689.35071
+iter : 718
+Z sampled
+beta sampled
+718 -4411689.35071
+iter : 719
+Z sampled
+beta sampled
+719 -4411689.35071
+iter : 720
+Z sampled
+beta sampled
+720 -4411689.35071
+iter : 721
+Z sampled
+beta sampled
+721 -4411689.35071
+iter : 722
+Z sampled
+beta sampled
+722 -4411689.35071
+iter : 723
+Z sampled
+beta sampled
+723 -4411689.35071
+iter : 724
+Z sampled
+beta sampled
+724 -4411689.35071
+iter : 725
+Z sampled
+beta sampled
+725 -4411689.35071
+iter : 726
+Z sampled
+beta sampled
+726 -4411689.35071
+iter : 727
+Z sampled
+beta sampled
+727 -4411689.35071
+iter : 728
+Z sampled
+beta sampled
+728 -4411689.35071
+iter : 729
+Z sampled
+beta sampled
+729 -4411689.35071
+iter : 730
+Z sampled
+beta sampled
+730 -4411689.35071
+iter : 731
+Z sampled
+beta sampled
+731 -4411689.35071
+iter : 732
+Z sampled
+beta sampled
+732 -4411689.35071
+iter : 733
+Z sampled
+beta sampled
+733 -4411689.35071
+iter : 734
+Z sampled
+beta sampled
+734 -4411689.35071
+iter : 735
+Z sampled
+beta sampled
+735 -4411689.35071
+iter : 736
+Z sampled
+beta sampled
+736 -4411689.35071
+iter : 737
+Z sampled
+beta sampled
+737 -4411689.35071
+iter : 738
+Z sampled
+beta sampled
+738 -4411689.35071
+iter : 739
+Z sampled
+beta sampled
+739 -4411689.35071
+iter : 740
+Z sampled
+beta sampled
+740 -4411689.35071
+iter : 741
+Z sampled
+beta sampled
+741 -4411689.35071
+iter : 742
+Z sampled
+beta sampled
+742 -4411689.35071
+iter : 743
+Z sampled
+beta sampled
+743 -4411689.35071
+iter : 744
+Z sampled
+beta sampled
+744 -4411689.35071
+iter : 745
+Z sampled
+beta sampled
+745 -4411689.35071
+iter : 746
+Z sampled
+beta sampled
+746 -4411689.35071
+iter : 747
+Z sampled
+beta sampled
+747 -4411689.35071
+iter : 748
+Z sampled
+beta sampled
+748 -4411689.35071
+iter : 749
+Z sampled
+beta sampled
+749 -4411689.35071
+iter : 750
+Z sampled
+beta sampled
+750 -4411689.35071
+iter : 751
+Z sampled
+beta sampled
+751 -4411689.35071
+iter : 752
+Z sampled
+beta sampled
+752 -4411689.35071
+iter : 753
+Z sampled
+beta sampled
+753 -4411689.35071
+iter : 754
+Z sampled
+beta sampled
+754 -4411689.35071
+iter : 755
+Z sampled
+beta sampled
+755 -4411689.35071
+iter : 756
+Z sampled
+beta sampled
+756 -4411689.35071
+iter : 757
+Z sampled
+beta sampled
+757 -4411689.35071
+iter : 758
+Z sampled
+beta sampled
+758 -4411689.35071
+iter : 759
+Z sampled
+beta sampled
+759 -4411689.35071
+iter : 760
+Z sampled
+beta sampled
+760 -4411689.35071
+iter : 761
+Z sampled
+beta sampled
+761 -4411689.35071
+iter : 762
+Z sampled
+beta sampled
+762 -4411689.35071
+iter : 763
+Z sampled
+beta sampled
+763 -4411689.35071
+iter : 764
+Z sampled
+beta sampled
+764 -4411689.35071
+iter : 765
+Z sampled
+beta sampled
+765 -4411689.35071
+iter : 766
+Z sampled
+beta sampled
+766 -4411689.35071
+iter : 767
+Z sampled
+beta sampled
+767 -4411689.35071
+iter : 768
+Z sampled
+beta sampled
+768 -4411689.35071
+iter : 769
+Z sampled
+beta sampled
+769 -4411689.35071
+iter : 770
+Z sampled
+beta sampled
+770 -4411689.35071
+iter : 771
+Z sampled
+beta sampled
+771 -4411689.35071
+iter : 772
+Z sampled
+beta sampled
+772 -4411689.35071
+iter : 773
+Z sampled
+beta sampled
+773 -4411689.35071
+iter : 774
+Z sampled
+beta sampled
+774 -4411689.35071
+iter : 775
+Z sampled
+beta sampled
+775 -4411689.35071
+iter : 776
+Z sampled
+beta sampled
+776 -4411689.35071
+iter : 777
+Z sampled
+beta sampled
+777 -4411689.35071
+iter : 778
+Z sampled
+beta sampled
+778 -4411689.35071
+iter : 779
+Z sampled
+beta sampled
+779 -4411689.35071
+iter : 780
+Z sampled
+beta sampled
+780 -4411689.35071
+iter : 781
+Z sampled
+beta sampled
+781 -4411689.35071
+iter : 782
+Z sampled
+beta sampled
+782 -4411689.35071
+iter : 783
+Z sampled
+beta sampled
+783 -4411689.35071
+iter : 784
+Z sampled
+beta sampled
+784 -4411689.35071
+iter : 785
+Z sampled
+beta sampled
+785 -4411689.35071
+iter : 786
+Z sampled
+beta sampled
+786 -4411689.35071
+iter : 787
+Z sampled
+beta sampled
+787 -4411689.35071
+iter : 788
+Z sampled
+beta sampled
+788 -4411689.35071
+iter : 789
+Z sampled
+beta sampled
+789 -4411689.35071
+iter : 790
+Z sampled
+beta sampled
+790 -4411689.35071
+iter : 791
+Z sampled
+beta sampled
+791 -4411689.35071
+iter : 792
+Z sampled
+beta sampled
+792 -4411689.35071
+iter : 793
+Z sampled
+beta sampled
+793 -4411689.35071
+iter : 794
+Z sampled
+beta sampled
+794 -4411689.35071
+iter : 795
+Z sampled
+beta sampled
+795 -4411689.35071
+iter : 796
+Z sampled
+beta sampled
+796 -4411689.35071
+iter : 797
+Z sampled
+beta sampled
+797 -4411689.35071
+iter : 798
+Z sampled
+beta sampled
+798 -4411689.35071
+iter : 799
+Z sampled
+beta sampled
+799 -4411689.35071
+iter : 800
+Z sampled
+beta sampled
+800 -4411689.35071
+iter : 801
+Z sampled
+beta sampled
+801 -4411689.35071
+iter : 802
+Z sampled
+beta sampled
+802 -4411689.35071
+iter : 803
+Z sampled
+beta sampled
+803 -4411689.35071
+iter : 804
+Z sampled
+beta sampled
+804 -4411689.35071
+iter : 805
+Z sampled
+beta sampled
+805 -4411689.35071
+iter : 806
+Z sampled
+beta sampled
+806 -4411689.35071
+iter : 807
+Z sampled
+beta sampled
+807 -4411689.35071
+iter : 808
+Z sampled
+beta sampled
+808 -4411689.35071
+iter : 809
+Z sampled
+beta sampled
+809 -4411689.35071
+iter : 810
+Z sampled
+beta sampled
+810 -4411689.35071
+iter : 811
+Z sampled
+beta sampled
+811 -4411689.35071
+iter : 812
+Z sampled
+beta sampled
+812 -4411689.35071
+iter : 813
+Z sampled
+beta sampled
+813 -4411689.35071
+iter : 814
+Z sampled
+beta sampled
+814 -4411689.35071
+iter : 815
+Z sampled
+beta sampled
+815 -4411689.35071
+iter : 816
+Z sampled
+beta sampled
+816 -4411689.35071
+iter : 817
+Z sampled
+beta sampled
+817 -4411689.35071
+iter : 818
+Z sampled
+beta sampled
+818 -4411689.35071
+iter : 819
+Z sampled
+beta sampled
+819 -4411689.35071
+iter : 820
+Z sampled
+beta sampled
+820 -4411689.35071
+iter : 821
+Z sampled
+beta sampled
+821 -4411689.35071
+iter : 822
+Z sampled
+beta sampled
+822 -4411689.35071
+iter : 823
+Z sampled
+beta sampled
+823 -4411689.35071
+iter : 824
+Z sampled
+beta sampled
+824 -4411689.35071
+iter : 825
+Z sampled
+beta sampled
+825 -4411689.35071
+iter : 826
+Z sampled
+beta sampled
+826 -4411689.35071
+iter : 827
+Z sampled
+beta sampled
+827 -4411689.35071
+iter : 828
+Z sampled
+beta sampled
+828 -4411689.35071
+iter : 829
+Z sampled
+beta sampled
+829 -4411689.35071
+iter : 830
+Z sampled
+beta sampled
+830 -4411689.35071
+iter : 831
+Z sampled
+beta sampled
+831 -4411689.35071
+iter : 832
+Z sampled
+beta sampled
+832 -4411689.35071
+iter : 833
+Z sampled
+beta sampled
+833 -4411689.35071
+iter : 834
+Z sampled
+beta sampled
+834 -4411689.35071
+iter : 835
+Z sampled
+beta sampled
+835 -4411689.35071
+iter : 836
+Z sampled
+beta sampled
+836 -4411689.35071
+iter : 837
+Z sampled
+beta sampled
+837 -4411689.35071
+iter : 838
+Z sampled
+beta sampled
+838 -4411689.35071
+iter : 839
+Z sampled
+beta sampled
+839 -4411689.35071
+iter : 840
+Z sampled
+beta sampled
+840 -4411689.35071
+iter : 841
+Z sampled
+beta sampled
+841 -4411689.35071
+iter : 842
+Z sampled
+beta sampled
+842 -4411689.35071
+iter : 843
+Z sampled
+beta sampled
+843 -4411689.35071
+iter : 844
+Z sampled
+beta sampled
+844 -4411689.35071
+iter : 845
+Z sampled
+beta sampled
+845 -4411689.35071
+iter : 846
+Z sampled
+beta sampled
+846 -4411689.35071
+iter : 847
+Z sampled
+beta sampled
+847 -4411689.35071
+iter : 848
+Z sampled
+beta sampled
+848 -4411689.35071
+iter : 849
+Z sampled
+beta sampled
+849 -4411689.35071
+iter : 850
+Z sampled
+beta sampled
+850 -4411689.35071
+iter : 851
+Z sampled
+beta sampled
+851 -4411689.35071
+iter : 852
+Z sampled
+beta sampled
+852 -4411689.35071
+iter : 853
+Z sampled
+beta sampled
+853 -4411689.35071
+iter : 854
+Z sampled
+beta sampled
+854 -4411689.35071
+iter : 855
+Z sampled
+beta sampled
+855 -4411689.35071
+iter : 856
+Z sampled
+beta sampled
+856 -4411689.35071
+iter : 857
+Z sampled
+beta sampled
+857 -4411689.35071
+iter : 858
+Z sampled
+beta sampled
+858 -4411689.35071
+iter : 859
+Z sampled
+beta sampled
+859 -4411689.35071
+iter : 860
+Z sampled
+beta sampled
+860 -4411689.35071
+iter : 861
+Z sampled
+beta sampled
+861 -4411689.35071
+iter : 862
+Z sampled
+beta sampled
+862 -4411689.35071
+iter : 863
+Z sampled
+beta sampled
+863 -4411689.35071
+iter : 864
+Z sampled
+beta sampled
+864 -4411689.35071
+iter : 865
+Z sampled
+beta sampled
+865 -4411689.35071
+iter : 866
+Z sampled
+beta sampled
+866 -4411689.35071
+iter : 867
+Z sampled
+beta sampled
+867 -4411689.35071
+iter : 868
+Z sampled
+beta sampled
+868 -4411689.35071
+iter : 869
+Z sampled
+beta sampled
+869 -4411689.35071
+iter : 870
+Z sampled
+beta sampled
+870 -4411689.35071
+iter : 871
+Z sampled
+beta sampled
+871 -4411689.35071
+iter : 872
+Z sampled
+beta sampled
+872 -4411689.35071
+iter : 873
+Z sampled
+beta sampled
+873 -4411689.35071
+iter : 874
+Z sampled
+beta sampled
+874 -4411689.35071
+iter : 875
+Z sampled
+beta sampled
+875 -4411689.35071
+iter : 876
+Z sampled
+beta sampled
+876 -4411689.35071
+iter : 877
+Z sampled
+beta sampled
+877 -4411689.35071
+iter : 878
+Z sampled
+beta sampled
+878 -4411689.35071
+iter : 879
+Z sampled
+beta sampled
+879 -4411689.35071
+iter : 880
+Z sampled
+beta sampled
+880 -4411689.35071
+iter : 881
+Z sampled
+beta sampled
+881 -4411689.35071
+iter : 882
+Z sampled
+beta sampled
+882 -4411689.35071
+iter : 883
+Z sampled
+beta sampled
+883 -4411689.35071
+iter : 884
+Z sampled
+beta sampled
+884 -4411689.35071
+iter : 885
+Z sampled
+beta sampled
+885 -4411689.35071
+iter : 886
+Z sampled
+beta sampled
+886 -4411689.35071
+iter : 887
+Z sampled
+beta sampled
+887 -4411689.35071
+iter : 888
+Z sampled
+beta sampled
+888 -4411689.35071
+iter : 889
+Z sampled
+beta sampled
+889 -4411689.35071
+iter : 890
+Z sampled
+beta sampled
+890 -4411689.35071
+iter : 891
+Z sampled
+beta sampled
+891 -4411689.35071
+iter : 892
+Z sampled
+beta sampled
+892 -4411689.35071
+iter : 893
+Z sampled
+beta sampled
+893 -4411689.35071
+iter : 894
+Z sampled
+beta sampled
+894 -4411689.35071
+iter : 895
+Z sampled
+beta sampled
+895 -4411689.35071
+iter : 896
+Z sampled
+beta sampled
+896 -4411689.35071
+iter : 897
+Z sampled
+beta sampled
+897 -4411689.35071
+iter : 898
+Z sampled
+beta sampled
+898 -4411689.35071
+iter : 899
+Z sampled
+beta sampled
+899 -4411689.35071
+iter : 900
+Z sampled
+beta sampled
+900 -4411689.35071
+iter : 901
+Z sampled
+beta sampled
+901 -4411689.35071
+iter : 902
+Z sampled
+beta sampled
+902 -4411689.35071
+iter : 903
+Z sampled
+beta sampled
+903 -4411689.35071
+iter : 904
+Z sampled
+beta sampled
+904 -4411689.35071
+iter : 905
+Z sampled
+beta sampled
+905 -4411689.35071
+iter : 906
+Z sampled
+beta sampled
+906 -4411689.35071
+iter : 907
+Z sampled
+beta sampled
+907 -4411689.35071
+iter : 908
+Z sampled
+beta sampled
+908 -4411689.35071
+iter : 909
+Z sampled
+beta sampled
+909 -4411689.35071
+iter : 910
+Z sampled
+beta sampled
+910 -4411689.35071
+iter : 911
+Z sampled
+beta sampled
+911 -4411689.35071
+iter : 912
+Z sampled
+beta sampled
+912 -4411689.35071
+iter : 913
+Z sampled
+beta sampled
+913 -4411689.35071
+iter : 914
+Z sampled
+beta sampled
+914 -4411689.35071
+iter : 915
+Z sampled
+beta sampled
+915 -4411689.35071
+iter : 916
+Z sampled
+beta sampled
+916 -4411689.35071
+iter : 917
+Z sampled
+beta sampled
+917 -4411689.35071
+iter : 918
+Z sampled
+beta sampled
+918 -4411689.35071
+iter : 919
+Z sampled
+beta sampled
+919 -4411689.35071
+iter : 920
+Z sampled
+beta sampled
+920 -4411689.35071
+iter : 921
+Z sampled
+beta sampled
+921 -4411689.35071
+iter : 922
+Z sampled
+beta sampled
+922 -4411689.35071
+iter : 923
+Z sampled
+beta sampled
+923 -4411689.35071
+iter : 924
+Z sampled
+beta sampled
+924 -4411689.35071
+iter : 925
+Z sampled
+beta sampled
+925 -4411689.35071
+iter : 926
+Z sampled
+beta sampled
+926 -4411689.35071
+iter : 927
+Z sampled
+beta sampled
+927 -4411689.35071
+iter : 928
+Z sampled
+beta sampled
+928 -4411689.35071
+iter : 929
+Z sampled
+beta sampled
+929 -4411689.35071
+iter : 930
+Z sampled
+beta sampled
+930 -4411689.35071
+iter : 931
+Z sampled
+beta sampled
+931 -4411689.35071
+iter : 932
+Z sampled
+beta sampled
+932 -4411689.35071
+iter : 933
+Z sampled
+beta sampled
+933 -4411689.35071
+iter : 934
+Z sampled
+beta sampled
+934 -4411689.35071
+iter : 935
+Z sampled
+beta sampled
+935 -4411689.35071
+iter : 936
+Z sampled
+beta sampled
+936 -4411689.35071
+iter : 937
+Z sampled
+beta sampled
+937 -4411689.35071
+iter : 938
+Z sampled
+beta sampled
+938 -4411689.35071
+iter : 939
+Z sampled
+beta sampled
+939 -4411689.35071
+iter : 940
+Z sampled
+beta sampled
+940 -4411689.35071
+iter : 941
+Z sampled
+beta sampled
+941 -4411689.35071
+iter : 942
+Z sampled
+beta sampled
+942 -4411689.35071
+iter : 943
+Z sampled
+beta sampled
+943 -4411689.35071
+iter : 944
+Z sampled
+beta sampled
+944 -4411689.35071
+iter : 945
+Z sampled
+beta sampled
+945 -4411689.35071
+iter : 946
+Z sampled
+beta sampled
+946 -4411689.35071
+iter : 947
+Z sampled
+beta sampled
+947 -4411689.35071
+iter : 948
+Z sampled
+beta sampled
+948 -4411689.35071
+iter : 949
+Z sampled
+beta sampled
+949 -4411689.35071
+iter : 950
+Z sampled
+beta sampled
+950 -4411689.35071
+iter : 951
+Z sampled
+beta sampled
+951 -4411689.35071
+iter : 952
+Z sampled
+beta sampled
+952 -4411689.35071
+iter : 953
+Z sampled
+beta sampled
+953 -4411689.35071
+iter : 954
+Z sampled
+beta sampled
+954 -4411689.35071
+iter : 955
+Z sampled
+beta sampled
+955 -4411689.35071
+iter : 956
+Z sampled
+beta sampled
+956 -4411689.35071
+iter : 957
+Z sampled
+beta sampled
+957 -4411689.35071
+iter : 958
+Z sampled
+beta sampled
+958 -4411689.35071
+iter : 959
+Z sampled
+beta sampled
+959 -4411689.35071
+iter : 960
+Z sampled
+beta sampled
+960 -4411689.35071
+iter : 961
+Z sampled
+beta sampled
+961 -4411689.35071
+iter : 962
+Z sampled
+beta sampled
+962 -4411689.35071
+iter : 963
+Z sampled
+beta sampled
+963 -4411689.35071
+iter : 964
+Z sampled
+beta sampled
+964 -4411689.35071
+iter : 965
+Z sampled
+beta sampled
+965 -4411689.35071
+iter : 966
+Z sampled
+beta sampled
+966 -4411689.35071
+iter : 967
+Z sampled
+beta sampled
+967 -4411689.35071
+iter : 968
+Z sampled
+beta sampled
+968 -4411689.35071
+iter : 969
+Z sampled
+beta sampled
+969 -4411689.35071
+iter : 970
+Z sampled
+beta sampled
+970 -4411689.35071
+iter : 971
+Z sampled
+beta sampled
+971 -4411689.35071
+iter : 972
+Z sampled
+beta sampled
+972 -4411689.35071
+iter : 973
+Z sampled
+beta sampled
+973 -4411689.35071
+iter : 974
+Z sampled
+beta sampled
+974 -4411689.35071
+iter : 975
+Z sampled
+beta sampled
+975 -4411689.35071
+iter : 976
+Z sampled
+beta sampled
+976 -4411689.35071
+iter : 977
+Z sampled
+beta sampled
+977 -4411689.35071
+iter : 978
+Z sampled
+beta sampled
+978 -4411689.35071
+iter : 979
+Z sampled
+beta sampled
+979 -4411689.35071
+iter : 980
+Z sampled
+beta sampled
+980 -4411689.35071
+iter : 981
+Z sampled
+beta sampled
+981 -4411689.35071
+iter : 982
+Z sampled
+beta sampled
+982 -4411689.35071
+iter : 983
+Z sampled
+beta sampled
+983 -4411689.35071
+iter : 984
+Z sampled
+beta sampled
+984 -4411689.35071
+iter : 985
+Z sampled
+beta sampled
+985 -4411689.35071
+iter : 986
+Z sampled
+beta sampled
+986 -4411689.35071
+iter : 987
+Z sampled
+beta sampled
+987 -4411689.35071
+iter : 988
+Z sampled
+beta sampled
+988 -4411689.35071
+iter : 989
+Z sampled
+beta sampled
+989 -4411689.35071
+iter : 990
+Z sampled
+beta sampled
+990 -4411689.35071
+iter : 991
+Z sampled
+beta sampled
+991 -4411689.35071
+iter : 992
+Z sampled
+beta sampled
+992 -4411689.35071
+iter : 993
+Z sampled
+beta sampled
+993 -4411689.35071
+iter : 994
+Z sampled
+beta sampled
+994 -4411689.35071
+iter : 995
+Z sampled
+beta sampled
+995 -4411689.35071
+iter : 996
+Z sampled
+beta sampled
+996 -4411689.35071
+iter : 997
+Z sampled
+beta sampled
+997 -4411689.35071
+iter : 998
+Z sampled
+beta sampled
+998 -4411689.35071
+iter : 999
+Z sampled
+beta sampled
+999 -4411689.35071
