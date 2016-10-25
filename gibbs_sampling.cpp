@@ -10,6 +10,7 @@
 #include <math.h>
 #include <gsl_rng.h>
 #include <gsl_randist.h>
+#include <gsl_sf_gamma.h>
 
 using namespace std;
 
@@ -17,7 +18,7 @@ int num_docs = -1;
 int max_words = -1;
 double GAMMA = 0.0;
 double alpha = 0.0;
-int vocab_size = 20;    // TODO : fix this
+int vocab_size = 0;
 gsl_rng *GSL_RNG;
 
 void split(const string &s, char delim, vector<string> &elems) {
@@ -28,7 +29,6 @@ void split(const string &s, char delim, vector<string> &elems) {
     elems.push_back(item);
   }
 }
-
 
 vector<string> split(const string &s, char delim) {
   vector<string> elems;
@@ -58,11 +58,28 @@ void readData(const char* fileName, int* W) {
   for (string line; getline(dataFile, line); doc++) {
     vector<string> words = split(line, ' ');
     int words_size = words.size();
-    for (int i=0; i<words_size; i++) {
+    int i;
+    for (i=0; i<words_size; i++) {
       W[doc * max_words + i] = atoi(words[i].c_str());
+      vocab_size = max(vocab_size, W[doc * max_words + i]);
     }
-    //TODO: Add -1s
+    while (i<max_words) {
+      W[doc * max_words + i] = -1;
+      i++;
+    }
   }
+  vocab_size++;
+}
+
+int getNumWords(int* W_d) {
+  int num_words_in_doc = 0;
+  for (int n=0; n<max_words; n++) {
+    if (W_d[n] == -1) {
+      break;
+    }
+    num_words_in_doc++;
+  }
+  return num_words_in_doc;
 }
 
 class Model {
@@ -73,10 +90,89 @@ class Model {
   int num_paths;
   int num_nodes;
   int num_internal_nodes;
-  float *beta;
+  double *beta;
   int *Z;
   int *countsPerDoc;
-  
+  double *best_beta;
+  int* best_Z;
+  double best_log_likelihood;
+
+  int indexOf(int value, unsigned int *arr, int size) {
+    for (int i=0; i<size; i++) {
+      if (arr[i] == value) {
+        return i;
+      }
+    }
+    for (int i=0; i<size; i++) {
+      cout << arr[i] << " ";
+    }
+    cout << "\n";
+    assert(false);
+  }
+
+  /*
+  void normalize_distr(double *distr, int size) {
+    double sum = 0.0;
+    for (int i=0; i<size; i++) {
+      sum += distr[i];
+    }
+    for (int i=0; i<size; i++) {
+      distr[i] /= sum;
+    }
+  }
+  */
+
+  void printDocCounts(int doc) {
+    cout << "Doc : " << doc << "\n";
+    for (int p=0; p<num_nodes; p++) {
+      cout << countsPerDoc[doc * num_nodes + p] << "\t";
+    }
+    cout << "\n";
+  }
+
+  double compute_CRP_likelihood(int *counts) {
+    //return 0.0;
+    double ll = 0.0;
+    int num_nonzeros = 0;
+    int sum_counts = 0;
+    for (int i=0; i<branching_factor; i++) {
+      if (counts[i] == 0) {
+        num_nonzeros++;
+      } else {
+        ll += gsl_sf_lnfact(counts[i] - 1);
+        sum_counts += counts[i];
+      }
+    }
+    ll += log(GAMMA) * (num_nonzeros - 1);
+    for (int k=1; k<sum_counts; k++) {
+      ll -= log(k + GAMMA);
+    }
+    return ll;
+  }
+
+  double compute_NCRP_likelihood(int d, int num_words_in_doc) {
+    //return 0.0;
+    double ll = 0.0;
+    computeDocCounts(d, num_words_in_doc);
+    for (int start_idx=1; start_idx<num_nodes; start_idx+= branching_factor) {
+      ll += compute_CRP_likelihood(countsPerDoc + d * num_nodes);
+    }
+    return ll;
+  }
+
+  double compute_log_likelihood(int *W) {
+    //return 0.0;
+    double ll = 0.0;
+    for (int p=0; p<num_paths; p++) {
+      for (int v=0; v<vocab_size; v++) {
+        ll += (alpha - 1) * log(beta[p * vocab_size + v]);
+      }
+    }
+    for (int d=0; d<num_docs; d++) {
+      ll += compute_NCRP_likelihood(d, getNumWords(W + d * max_words));
+    }
+    return ll;
+  }
 
   public:
   
@@ -96,7 +192,7 @@ class Model {
     cout << "Num paths : " << this->num_paths << "\n";
     cout << "Num internal nodes : " << this->num_internal_nodes << "\n";
 
-    beta = new float[num_paths * vocab_size];
+    beta = new double[num_paths * vocab_size];
     Z = new int[num_docs * max_words];
     countsPerDoc = new int[num_docs * num_nodes];
 
@@ -107,14 +203,16 @@ class Model {
         beta[p * vocab_size + v] = 1.0 / vocab_size;
       }
     }
-  }
 
-  void printDocCounts(int doc) {
-    cout << "Doc : " << doc << "\n";
-    for (int p=0; p<num_nodes; p++) {
-      cout << countsPerDoc[doc * num_nodes + p] << "\t";
-    }
-    cout << "\n";
+    //TODO : allocate best Z and best beta
+    best_Z = new int[num_docs * max_words];
+    best_beta = new double[num_paths * vocab_size];
+
+    double curr_log_likelihood = - pow(10, 10);
+    best_log_likelihood = curr_log_likelihood;
+    memcpy(best_Z, Z, num_docs * max_words * sizeof(int));
+    memcpy(best_beta, beta, num_paths * vocab_size * sizeof(double));
+
   }
 
   void computeDocCounts(int doc, int num_words_in_doc) {
@@ -129,31 +227,37 @@ class Model {
     // printDocCounts(doc);
   }
 
-  int indexOf(int value, unsigned int *arr, int size) {
-    for (int i=0; i<size; i++) {
-      if (arr[i] == value) {
-        return i;
+  void sample_beta(int *W) {
+    double *counts = new double[num_paths * vocab_size];
+    for (int p=0; p<num_paths; p++) {
+      for (int v=0; v<vocab_size; v++) {
+        counts[p * vocab_size + v] = alpha;
       }
     }
-    for (int i=0; i<size; i++) {
-      cout << arr[i] << " ";
+    for (int d=0; d<num_docs; d++) {
+      for (int n=0; n<max_words; n++) {
+        if (W[d * max_words + n] != -1) {
+          counts[Z[d * max_words + n] * vocab_size + W[d * max_words + n]] ++;
+        }
+      }
     }
-    cout << "\n";
-    assert(false);
-  }
-
-  void normalize_distr(double *distr, int size) {
-    double sum = 0.0;
-    for (int i=0; i<size; i++) {
-      sum += distr[i];
+    for (int p=0; p<num_paths; p++) {
+      /*
+      cout << "Sampling beta " << p << "\n";
+      for (int v=0; v < vocab_size; v++) {
+        cout << beta[p * vocab_size + v] << " ";
+      }
+      cout << "\n";
+      */
+      gsl_ran_dirichlet(GSL_RNG, vocab_size, counts + p * vocab_size, \
+          beta + p * vocab_size);
+      /*
+      for (int v=0; v < vocab_size; v++) {
+        cout << beta[p * vocab_size + v] << " ";
+      }
+      cout << "\n";
+      */
     }
-    for (int i=0; i<size; i++) {
-      distr[i] /= sum;
-    }
-  }
-
-  void sample_beta_p() {
-  
   }
 
   void sample_Zdn(int* W_d, int d, int n, int num_words_in_doc) {
@@ -201,33 +305,35 @@ class Model {
     gsl_ran_multinomial(GSL_RNG, num_paths, 1, multinomial_prob, sample);
     Z[d * max_words + n] = indexOf(1, sample, num_paths);
 
-    cout << "Sampled " << d << " " << n << " " << Z[d * max_words + n] << "\n";
+    // cout << "Sampled " << d << " " << n << " " << Z[d * max_words + n] << "\n";
+  }
+
+  void update_best_configuration(int *W) {
+    double curr_log_likelihood = compute_log_likelihood(W);
+    if (curr_log_likelihood > best_log_likelihood) {
+      best_log_likelihood = curr_log_likelihood;
+      memcpy(best_Z, Z, num_docs * max_words * sizeof(int));
+      memcpy(best_beta, beta, num_paths * vocab_size * sizeof(double));
+    }
+  }
+
+  int* getBestZ() {
+    return best_Z;
   }
 };
-
-int getNumWords(int* W_d) {
-  int num_words_in_doc = 0;
-  for (int n=0; n<max_words; n++) {
-    if (W_d[n] == -1) {
-      break;
-    }
-    num_words_in_doc++;
-  }
-  return num_words_in_doc;
-}
 
 Model runGibbsSampling(int* W) {
   Model *model = new Model(alpha, GAMMA, 4, 3);
 
   const int NUM_STARTS = 1;
-  const int MAX_ITER = 1;
+  const int MAX_ITER = 100;
 
   for (int start = 0; start < NUM_STARTS; start++) {
     for (int iter = 0; iter < MAX_ITER; iter++) {
       // sample Z
       for (int d = 0; d < num_docs; d++) {
         int num_words_in_doc = getNumWords(W + d * max_words);
-        cout << "num_words_in_doc : " << num_words_in_doc << "\n";
+        // cout << "num_words_in_doc : " << num_words_in_doc << "\n";
         model->computeDocCounts(d, num_words_in_doc);
         for (int n=0; n < num_words_in_doc; n++) {
           model->sample_Zdn(W + d * max_words, d, n, num_words_in_doc);
@@ -235,9 +341,13 @@ Model runGibbsSampling(int* W) {
       }
 
       // sample beta
-      model->sample_beta_p();
+      model->sample_beta(W);
+
+      // compute likelihood of the new configuration and update best
+      model->update_best_configuration(W);
     }
   }
+  return *model;
 }
 
 int main(int argc, char* argv[]) {
@@ -280,7 +390,18 @@ int main(int argc, char* argv[]) {
   */
 
   // run Gibbs sampler
-  runGibbsSampling(W);
+  Model best_model = runGibbsSampling(W);
+
+  
+  int* best_Z = best_model.getBestZ();
+
+  for (int d=0; d<num_docs; d++) {
+    for (int n=0; n<getNumWords(W + d * max_words); n++) {
+      cout << best_Z[d * max_words + n] << " ";
+    }
+    cout << "\n";
+  }
+
 
   return 0;
 }
