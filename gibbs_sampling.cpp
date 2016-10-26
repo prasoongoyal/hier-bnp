@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
@@ -11,6 +12,7 @@
 #include <gsl_rng.h>
 #include <gsl_randist.h>
 #include <gsl_sf_gamma.h>
+#include <omp.h>
 
 using namespace std;
 
@@ -94,7 +96,7 @@ class Model {
   int *Z;
   int *countsPerDoc;
   double *best_beta;
-  int* best_Z;
+  int *best_Z;
   double best_log_likelihood;
 
   int indexOf(int value, unsigned int *arr, int size) {
@@ -204,7 +206,6 @@ class Model {
       }
     }
 
-    //TODO : allocate best Z and best beta
     best_Z = new int[num_docs * max_words];
     best_beta = new double[num_paths * vocab_size];
 
@@ -212,7 +213,14 @@ class Model {
     best_log_likelihood = curr_log_likelihood;
     memcpy(best_Z, Z, num_docs * max_words * sizeof(int));
     memcpy(best_beta, beta, num_paths * vocab_size * sizeof(double));
+  }
 
+  ~Model() {
+    delete [] Z;
+    delete [] beta;
+    delete [] best_Z;
+    delete [] best_beta;
+    delete [] countsPerDoc;
   }
 
   void computeDocCounts(int doc, int num_words_in_doc) {
@@ -242,74 +250,36 @@ class Model {
       }
     }
     for (int p=0; p<num_paths; p++) {
-      /*
-      cout << "Sampling beta " << p << "\n";
-      for (int v=0; v < vocab_size; v++) {
-        cout << beta[p * vocab_size + v] << " ";
-      }
-      cout << "\n";
-      */
       gsl_ran_dirichlet(GSL_RNG, vocab_size, counts + p * vocab_size, \
           beta + p * vocab_size);
-      /*
-      for (int v=0; v < vocab_size; v++) {
-        cout << beta[p * vocab_size + v] << " ";
-      }
-      cout << "\n";
-      */
     }
+
+    delete [] counts;
   }
 
   void sample_Zdn(int* W_d, int d, int n, int num_words_in_doc) {
-    /*
-    // remove current Z from counts
-    int idx = Z[d * max_words + n] + num_internal_nodes;
-    while (idx >= 0) {
-      countsPerDoc[d * max_words + idx] --;
-      idx = (idx - 1) / branching_factor;
-    }
-
-    // compute NCRP priors
-    */
     // approximate prior
     double *multinomial_prob = new double[num_paths];
-    /*
-    cout << "counts per doc: \n";
     for (int p=0; p<num_paths; p++) {
-      cout << countsPerDoc[d * num_nodes + num_internal_nodes + p] << " ";
-    }
-    cout << "\n";
-    */
-    for (int p=0; p<num_paths; p++) {
-      /*
-      cout << "p : " << p << " " << 
-          ((double)countsPerDoc[d * num_nodes + num_internal_nodes + p] + GAMMA) /
-          (num_words_in_doc + num_paths * GAMMA) << " " << 
-          beta[p * vocab_size +  W_d[n]] << " " <<
-          W_d[n] << "\n";
-      */
       multinomial_prob[p] = 
           ((double)countsPerDoc[d * num_nodes + num_internal_nodes + p] + GAMMA) / 
           (num_words_in_doc + num_paths * GAMMA) *
           beta[p * vocab_size +  W_d[n]];
     }
 
-    // normalize_distr(multinomial_prob, num_paths);
-    /*
-    for (int p=0; p<num_paths; p++) {
-      cout << multinomial_prob[p] << " ";
-    }
-    cout << "\n";
-    */
     unsigned int *sample = new unsigned int[num_paths];
     gsl_ran_multinomial(GSL_RNG, num_paths, 1, multinomial_prob, sample);
     Z[d * max_words + n] = indexOf(1, sample, num_paths);
 
     // cout << "Sampled " << d << " " << n << " " << Z[d * max_words + n] << "\n";
+
+    delete [] multinomial_prob;
+    delete [] sample;
   }
 
   void update_best_configuration(int *W) {
     double curr_log_likelihood = compute_log_likelihood(W);
+    // cout << curr_log_likelihood << " " << best_log_likelihood << "\n";
     if (curr_log_likelihood > best_log_likelihood) {
       best_log_likelihood = curr_log_likelihood;
       memcpy(best_Z, Z, num_docs * max_words * sizeof(int));
@@ -317,12 +287,45 @@ class Model {
     }
   }
 
-  int* getBestZ() {
-    return best_Z;
+  /*
+  void get_best_Z(int *ret) {
+    memcpy(ret, best_Z, num_docs * max_words * sizeof(int));
+  }
+
+  void get_best_beta(double *ret) {
+    memcpy(ret, best_beta, num_paths * vocab_size * sizeof(double));
+  }
+  */
+
+  void write_model_to_file(const char* prefix, int* W) {
+    char* beta_filename = new char[100];
+    sprintf(beta_filename, "%s_beta.out", prefix);
+    std::ofstream beta_file (beta_filename, ios::out);
+    for (int p=0; p<num_paths; p++) {
+      for (int v=0; v<vocab_size; v++) {
+        beta_file << fixed << setprecision(6) << best_beta[p * vocab_size + v] << " ";
+      }
+      beta_file << "\n";
+    }
+    beta_file.close();
+    delete [] beta_filename;
+
+    char* Z_filename = new char[100];
+    sprintf(Z_filename, "%s_Z.out", prefix);
+    std::ofstream Z_file (Z_filename, ios::out);
+    for (int d=0; d<num_docs; d++) {
+      for (int n=0; n<max_words; n++) {
+        Z_file  << ((W[d * max_words + n] == -1) ? -1 : best_Z[d * max_words + n])
+                << " ";
+      }
+      Z_file << "\n";
+    }
+    Z_file.close();
+    delete [] Z_filename;
   }
 };
 
-Model runGibbsSampling(int* W) {
+void runGibbsSampling(int* W, const char* prefix) {
   Model *model = new Model(alpha, GAMMA, 4, 3);
 
   const int NUM_STARTS = 1;
@@ -330,6 +333,8 @@ Model runGibbsSampling(int* W) {
 
   for (int start = 0; start < NUM_STARTS; start++) {
     for (int iter = 0; iter < MAX_ITER; iter++) {
+      cout << "Iter : " << iter << "\n";
+
       // sample Z
       for (int d = 0; d < num_docs; d++) {
         int num_words_in_doc = getNumWords(W + d * max_words);
@@ -346,16 +351,20 @@ Model runGibbsSampling(int* W) {
       // compute likelihood of the new configuration and update best
       model->update_best_configuration(W);
     }
+    model->write_model_to_file(prefix, W);
   }
-  return *model;
+  delete model;
 }
 
 int main(int argc, char* argv[]) {
   // parse commandline arguments
-  if (argc != 4) {
-    printf("Run as ./executable corpus alpha GAMMA\n");
+  if (argc != 5) {
+    printf("Run as ./executable corpus alpha GAMMA outfile_prefix\n");
     exit(1);
   }
+
+  //cout.precision(3);
+  //cout << fixed;
 
   istringstream alpha_str(argv[2]);
   alpha_str >> alpha;
@@ -389,10 +398,19 @@ int main(int argc, char* argv[]) {
   }
   */
 
-  // run Gibbs sampler
-  Model best_model = runGibbsSampling(W);
+  // int* opt_Z = new int[num_docs * max_words];
+  // double *opt_beta = new double[num_paths]
 
-  
+  // run Gibbs sampler
+  //Model best_model = runGibbsSampling(W);
+  runGibbsSampling(W, argv[4]);
+
+  delete [] W;
+  gsl_rng_free(GSL_RNG);
+  //delete &best_model;
+  return 0;
+
+  /*
   int* best_Z = best_model.getBestZ();
 
   for (int d=0; d<num_docs; d++) {
@@ -404,4 +422,5 @@ int main(int argc, char* argv[]) {
 
 
   return 0;
+  */
 }
