@@ -98,7 +98,8 @@ class Model {
   double *best_beta;
   int *best_Z;
   double best_log_likelihood;
-
+  int last_update_iter;
+  
   int indexOf(int value, unsigned int *arr, int size) {
     for (int i=0; i<size; i++) {
       if (arr[i] == value) {
@@ -187,6 +188,7 @@ class Model {
         (branching_factor - 1);
     this->num_paths = pow(branching_factor, num_levels - 1);
     this->num_internal_nodes = num_nodes - num_paths;
+    this->last_update_iter = -1;
 
     cout << "Num levels : " << this->num_levels << "\n";
     cout << "BF : " << this->branching_factor << "\n";
@@ -257,7 +259,7 @@ class Model {
     delete [] counts;
   }
 
-  void sample_Zdn(int* W_d, int d, int n, int num_words_in_doc) {
+  void sample_Zdn(int* W_d, int d, int n, int num_words_in_doc, double temp) {
     // approximate prior
     double *multinomial_prob = new double[num_paths];
     for (int p=0; p<num_paths; p++) {
@@ -265,6 +267,7 @@ class Model {
           ((double)countsPerDoc[d * num_nodes + num_internal_nodes + p] + GAMMA) / 
           (num_words_in_doc + num_paths * GAMMA) *
           beta[p * vocab_size +  W_d[n]];
+      multinomial_prob[p] = pow(multinomial_prob[p], 1.0/ temp);
     }
 
     unsigned int *sample = new unsigned int[num_paths];
@@ -277,14 +280,27 @@ class Model {
     delete [] sample;
   }
 
-  void update_best_configuration(int *W) {
+  void update_best_configuration(int *W, int iter) {
     double curr_log_likelihood = compute_log_likelihood(W);
     // cout << curr_log_likelihood << " " << best_log_likelihood << "\n";
     if (curr_log_likelihood > best_log_likelihood) {
+      last_update_iter = iter;
       best_log_likelihood = curr_log_likelihood;
       memcpy(best_Z, Z, num_docs * max_words * sizeof(int));
       memcpy(best_beta, beta, num_paths * vocab_size * sizeof(double));
     }
+  }
+
+  int get_last_update_iter() {
+    return last_update_iter;
+  }
+
+  void reset_last_update_iter(int iter) {
+    last_update_iter = iter;
+  }
+
+  double get_best_likelihood() {
+    return best_log_likelihood;
   }
 
   /*
@@ -329,11 +345,16 @@ void runGibbsSampling(int* W, const char* prefix) {
   Model *model = new Model(alpha, GAMMA, 4, 3);
 
   const int NUM_STARTS = 1;
-  const int MAX_ITER = 100;
+  const int MAX_ITER = 10000;
+
+  const double start_temp = 10.0;
+  const double end_temp = 0.1;
+
+  double curr_temp = start_temp;
 
   for (int start = 0; start < NUM_STARTS; start++) {
     for (int iter = 0; iter < MAX_ITER; iter++) {
-      cout << "Iter : " << iter << "\n";
+      //cout << "Iter : " << iter << "\n";
 
       // sample Z
       for (int d = 0; d < num_docs; d++) {
@@ -341,7 +362,7 @@ void runGibbsSampling(int* W, const char* prefix) {
         // cout << "num_words_in_doc : " << num_words_in_doc << "\n";
         model->computeDocCounts(d, num_words_in_doc);
         for (int n=0; n < num_words_in_doc; n++) {
-          model->sample_Zdn(W + d * max_words, d, n, num_words_in_doc);
+          model->sample_Zdn(W + d * max_words, d, n, num_words_in_doc, curr_temp);
         }
       }
 
@@ -349,7 +370,20 @@ void runGibbsSampling(int* W, const char* prefix) {
       model->sample_beta(W);
 
       // compute likelihood of the new configuration and update best
-      model->update_best_configuration(W);
+      model->update_best_configuration(W, iter);
+
+      cout  << fixed << setprecision(10)
+            << "Iter " << iter << "\t" 
+            << "Likelihood " << model->get_best_likelihood() << "\t"
+            << "Temp " << curr_temp << "\n";
+
+      if (iter - model->get_last_update_iter() > 10) {
+        model->reset_last_update_iter(iter);
+        curr_temp *= 0.9;
+        if (curr_temp < end_temp) {
+          break;
+        }
+      }
     }
     model->write_model_to_file(prefix, W);
   }
