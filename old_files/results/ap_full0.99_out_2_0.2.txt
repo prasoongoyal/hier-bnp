@@ -1,0 +1,9 @@
+iter : 0
+Z sampled
+beta sampled
+0 -1237343.4455
+iter : 1
+Z sampled
+beta sampled
+1 -1237343.4455
+iter : 2

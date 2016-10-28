@@ -1,0 +1,966 @@
+iter : 0
+Z sampled
+beta sampled
+0 -113553.053718
+iter : 1
+iter : 0
+iter : 0
+Z sampled
+beta sampled
+1 -93791.9862939
+iter : 2
+Z sampled
+beta sampled
+0 -237156.20834
+iter : 1
+Z sampled
+beta sampled
+0 -417397.388524
+iter : 1
+Z sampled
+beta sampled
+2 -82173.7608117
+iter : 3
+Z sampled
+beta sampled
+1 -218366.322237
+iter : 2
+Z sampled
+beta sampled
+1 -414937.767295
+iter : 2
+Z sampled
+beta sampled
+3 -75180.9785196
+iter : 4
+Z sampled
+beta sampled
+2 -214683.842833
+iter : 3
+Process PoolWorker-111:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+Process PoolWorker-117:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+Process PoolWorker-103:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+Process PoolWorker-106:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+Process PoolWorker-102:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+Process PoolWorker-116:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+Process PoolWorker-124:
+    self._writer.send_bytes(buffer.getvalue())
+Traceback (most recent call last):
+IOError: [Errno 32] Broken pipe
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+Process PoolWorker-108:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+Process PoolWorker-107:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+Process PoolWorker-112:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+Process PoolWorker-110:
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+Process PoolWorker-101:
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+Process PoolWorker-121:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self.run()
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+Process PoolWorker-120:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+Process PoolWorker-114:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+Process PoolWorker-118:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+Process PoolWorker-125:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+Process PoolWorker-105:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+Process PoolWorker-104:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+Process PoolWorker-122:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+Process PoolWorker-113:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+Process PoolWorker-80:
+Process PoolWorker-97:
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+Process PoolWorker-100:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    return send(obj)
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+IOError: [Errno 32] Broken pipe
+    return send(obj)
+Process PoolWorker-91:
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+Process PoolWorker-98:
+Process PoolWorker-99:
+Traceback (most recent call last):
+    self._writer.send_bytes(buffer.getvalue())
+Process PoolWorker-89:
+Traceback (most recent call last):
+Traceback (most recent call last):
+IOError: [Errno 32] Broken pipe
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self.run()
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    put((job, i, result))
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    return send(obj)
+    return send(obj)
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+    self._writer.send_bytes(buffer.getvalue())
+    self._writer.send_bytes(buffer.getvalue())
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+IOError: [Errno 32] Broken pipe
+IOError: [Errno 32] Broken pipe
+IOError: [Errno 32] Broken pipe
+Process PoolWorker-93:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+Process PoolWorker-85:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+Process PoolWorker-87:
+    self._writer.send_bytes(buffer.getvalue())
+Traceback (most recent call last):
+IOError: [Errno 32] Broken pipe
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+Process PoolWorker-88:
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+    put((job, i, result))
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+Process PoolWorker-90:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+Process PoolWorker-92:
+    return send(obj)
+Traceback (most recent call last):
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+IOError: [Errno 32] Broken pipe
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+Process PoolWorker-81:
+Traceback (most recent call last):
+    self._writer.send_bytes(buffer.getvalue())
+Process PoolWorker-82:
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+IOError: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+Process PoolWorker-94:
+    return send(obj)
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+Traceback (most recent call last):
+    self._writer.send_bytes(buffer.getvalue())
+    self._writer.send_bytes(buffer.getvalue())
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+IOError: [Errno 32] Broken pipe
+IOError: [Errno 32] Broken pipe
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+Process PoolWorker-78:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    return send(obj)
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+Process PoolWorker-84:
+    self._writer.send_bytes(buffer.getvalue())
+Traceback (most recent call last):
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+IOError: [Errno 32] Broken pipe
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    return send(obj)
+Process PoolWorker-86:
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+Traceback (most recent call last):
+    self._writer.send_bytes(buffer.getvalue())
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+IOError: [Errno 32] Broken pipe
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+Process PoolWorker-83:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    return send(obj)
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+IOError: [Errno 32] Broken pipe
+Process PoolWorker-79:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+Process PoolWorker-76:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+Process PoolWorker-77:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+Process PoolWorker-96:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+Process PoolWorker-95:
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+Z sampled
+beta sampled
+2 -414937.767295
+iter : 3
+Process PoolWorker-89:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+Process PoolWorker-86:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+Process PoolWorker-82:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+Process PoolWorker-77:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+Process PoolWorker-93:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+Process PoolWorker-80:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+Process PoolWorker-98:
+Traceback (most recent call last):
+Process PoolWorker-92:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+IOError: [Errno 32] Broken pipe
+Process PoolWorker-88:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+Process PoolWorker-84:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+Process PoolWorker-76:
+Traceback (most recent call last):
+Process PoolWorker-95:
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+Process PoolWorker-100:
+Process PoolWorker-90:
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+Process PoolWorker-85:
+Traceback (most recent call last):
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    return send(obj)
+    self._writer.send_bytes(buffer.getvalue())
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+IOError: [Errno 32] Broken pipe
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    return send(obj)
+Process PoolWorker-87:
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+Process PoolWorker-81:
+Process PoolWorker-83:
+Traceback (most recent call last):
+    self._writer.send_bytes(buffer.getvalue())
+Traceback (most recent call last):
+Traceback (most recent call last):
+IOError: [Errno 32] Broken pipe
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self.run()
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    put((job, i, result))
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+Process PoolWorker-94:
+    return send(obj)
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+Traceback (most recent call last):
+    self._writer.send_bytes(buffer.getvalue())
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+IOError: [Errno 32] Broken pipe
+IOError: [Errno 32] Broken pipe
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    return send(obj)
+Process PoolWorker-78:
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+Process PoolWorker-91:
+Process PoolWorker-79:
+Traceback (most recent call last):
+Process PoolWorker-99:
+    self._writer.send_bytes(buffer.getvalue())
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+IOError: [Errno 32] Broken pipe
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self.run()
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    put((job, i, result))
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+Process PoolWorker-97:
+    return send(obj)
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+Traceback (most recent call last):
+    self._writer.send_bytes(buffer.getvalue())
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe
+    self._writer.send_bytes(buffer.getvalue())
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+IOError: [Errno 32] Broken pipe
+IOError: [Errno 32] Broken pipe
+IOError: [Errno 32] Broken pipe
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+Process PoolWorker-96:
+IOError: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 232, in _bootstrap
+    self.run()
+  File "/usr/lib64/python2.6/multiprocessing/process.py", line 88, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python2.6/multiprocessing/pool.py", line 71, in worker
+    put((job, i, result))
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 386, in put
+    return send(obj)
+  File "/home/pg1338/.local/lib/python2.6/site-packages/joblib/pool.py", line 372, in send
+    self._writer.send_bytes(buffer.getvalue())
+IOError: [Errno 32] Broken pipe

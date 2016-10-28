@@ -1,0 +1,2568 @@
+iter : 0
+Z sampled
+beta sampled
+0 -350777.869719
+iter : 1
+Z sampled
+beta sampled
+1 -350777.869719
+iter : 2
+Z sampled
+beta sampled
+2 -350644.204294
+iter : 3
+Z sampled
+beta sampled
+3 -350644.204294
+iter : 4
+Z sampled
+beta sampled
+4 -350644.204294
+iter : 5
+Z sampled
+beta sampled
+5 -350644.204294
+iter : 6
+Z sampled
+beta sampled
+6 -350554.256912
+iter : 7
+Z sampled
+beta sampled
+7 -350554.256912
+iter : 8
+Z sampled
+beta sampled
+8 -350554.256912
+iter : 9
+Z sampled
+beta sampled
+9 -350554.256912
+iter : 10
+Z sampled
+beta sampled
+10 -350554.256912
+iter : 11
+Z sampled
+beta sampled
+11 -350554.256912
+iter : 12
+Z sampled
+beta sampled
+12 -350554.256912
+iter : 13
+Z sampled
+beta sampled
+13 -350554.256912
+iter : 14
+Z sampled
+beta sampled
+14 -350554.256912
+iter : 15
+Z sampled
+beta sampled
+15 -350358.00872
+iter : 16
+Z sampled
+beta sampled
+16 -350358.00872
+iter : 17
+Z sampled
+beta sampled
+17 -350358.00872
+iter : 18
+Z sampled
+beta sampled
+18 -350358.00872
+iter : 19
+Z sampled
+beta sampled
+19 -350358.00872
+iter : 20
+Z sampled
+beta sampled
+20 -350358.00872
+iter : 21
+Z sampled
+beta sampled
+21 -350358.00872
+iter : 22
+Z sampled
+beta sampled
+22 -350358.00872
+iter : 23
+Z sampled
+beta sampled
+23 -350358.00872
+iter : 24
+Z sampled
+beta sampled
+24 -350358.00872
+iter : 25
+Z sampled
+beta sampled
+25 -350358.00872
+iter : 26
+Z sampled
+beta sampled
+26 -350358.00872
+iter : 27
+Z sampled
+beta sampled
+27 -350358.00872
+iter : 28
+Z sampled
+beta sampled
+28 -350358.00872
+iter : 29
+Z sampled
+beta sampled
+29 -350358.00872
+iter : 30
+Z sampled
+beta sampled
+30 -350358.00872
+iter : 31
+Z sampled
+beta sampled
+31 -350358.00872
+iter : 32
+Z sampled
+beta sampled
+32 -350358.00872
+iter : 33
+Z sampled
+beta sampled
+33 -350358.00872
+iter : 34
+Z sampled
+beta sampled
+34 -350358.00872
+iter : 35
+Z sampled
+beta sampled
+35 -350358.00872
+iter : 36
+Z sampled
+beta sampled
+36 -350358.00872
+iter : 37
+Z sampled
+beta sampled
+37 -350358.00872
+iter : 38
+Z sampled
+beta sampled
+38 -350358.00872
+iter : 39
+Z sampled
+beta sampled
+39 -350358.00872
+iter : 40
+Z sampled
+beta sampled
+40 -350358.00872
+iter : 41
+Z sampled
+beta sampled
+41 -350358.00872
+iter : 42
+Z sampled
+beta sampled
+42 -350358.00872
+iter : 43
+Z sampled
+beta sampled
+43 -350358.00872
+iter : 44
+Z sampled
+beta sampled
+44 -350358.00872
+iter : 45
+Z sampled
+beta sampled
+45 -350358.00872
+iter : 46
+Z sampled
+beta sampled
+46 -350358.00872
+iter : 47
+Z sampled
+beta sampled
+47 -350358.00872
+iter : 48
+Z sampled
+beta sampled
+48 -350358.00872
+iter : 49
+Z sampled
+beta sampled
+49 -350358.00872
+iter : 50
+Z sampled
+beta sampled
+50 -350358.00872
+iter : 51
+Z sampled
+beta sampled
+51 -350126.465077
+iter : 52
+Z sampled
+beta sampled
+52 -350126.465077
+iter : 53
+Z sampled
+beta sampled
+53 -350126.465077
+iter : 54
+Z sampled
+beta sampled
+54 -350126.465077
+iter : 55
+Z sampled
+beta sampled
+55 -350126.465077
+iter : 56
+Z sampled
+beta sampled
+56 -350126.465077
+iter : 57
+Z sampled
+beta sampled
+57 -350126.465077
+iter : 58
+Z sampled
+beta sampled
+58 -350126.465077
+iter : 59
+Z sampled
+beta sampled
+59 -350126.465077
+iter : 60
+Z sampled
+beta sampled
+60 -350126.465077
+iter : 61
+Z sampled
+beta sampled
+61 -350126.465077
+iter : 62
+Z sampled
+beta sampled
+62 -350126.465077
+iter : 63
+Z sampled
+beta sampled
+63 -350126.465077
+iter : 64
+Z sampled
+beta sampled
+64 -350126.465077
+iter : 65
+Z sampled
+beta sampled
+65 -350126.465077
+iter : 66
+Z sampled
+beta sampled
+66 -350126.465077
+iter : 67
+Z sampled
+beta sampled
+67 -350126.465077
+iter : 68
+Z sampled
+beta sampled
+68 -350126.465077
+iter : 69
+Z sampled
+beta sampled
+69 -350126.465077
+iter : 70
+Z sampled
+beta sampled
+70 -350126.465077
+iter : 71
+Z sampled
+beta sampled
+71 -350126.465077
+iter : 72
+Z sampled
+beta sampled
+72 -350126.465077
+iter : 73
+Z sampled
+beta sampled
+73 -350126.465077
+iter : 74
+Z sampled
+beta sampled
+74 -350126.465077
+iter : 75
+Z sampled
+beta sampled
+75 -350126.465077
+iter : 76
+Z sampled
+beta sampled
+76 -350126.465077
+iter : 77
+Z sampled
+beta sampled
+77 -350126.465077
+iter : 78
+Z sampled
+beta sampled
+78 -350126.465077
+iter : 79
+Z sampled
+beta sampled
+79 -350126.465077
+iter : 80
+Z sampled
+beta sampled
+80 -350126.465077
+iter : 81
+Z sampled
+beta sampled
+81 -350126.465077
+iter : 82
+Z sampled
+beta sampled
+82 -350126.465077
+iter : 83
+Z sampled
+beta sampled
+83 -350126.465077
+iter : 84
+Z sampled
+beta sampled
+84 -350126.465077
+iter : 85
+Z sampled
+beta sampled
+85 -350126.465077
+iter : 86
+Z sampled
+beta sampled
+86 -350126.465077
+iter : 87
+Z sampled
+beta sampled
+87 -350126.465077
+iter : 88
+Z sampled
+beta sampled
+88 -350126.465077
+iter : 89
+Z sampled
+beta sampled
+89 -349929.860345
+iter : 90
+Z sampled
+beta sampled
+90 -349929.860345
+iter : 91
+Z sampled
+beta sampled
+91 -349929.860345
+iter : 92
+Z sampled
+beta sampled
+92 -349929.860345
+iter : 93
+Z sampled
+beta sampled
+93 -349929.860345
+iter : 94
+Z sampled
+beta sampled
+94 -349929.860345
+iter : 95
+Z sampled
+beta sampled
+95 -349929.860345
+iter : 96
+Z sampled
+beta sampled
+96 -349922.396166
+iter : 97
+Z sampled
+beta sampled
+97 -349922.396166
+iter : 98
+Z sampled
+beta sampled
+98 -349922.396166
+iter : 99
+Z sampled
+beta sampled
+99 -349922.396166
+iter : 100
+Z sampled
+beta sampled
+100 -349922.396166
+iter : 101
+Z sampled
+beta sampled
+101 -349922.396166
+iter : 102
+Z sampled
+beta sampled
+102 -349922.396166
+iter : 103
+Z sampled
+beta sampled
+103 -349922.396166
+iter : 104
+Z sampled
+beta sampled
+104 -349922.396166
+iter : 105
+Z sampled
+beta sampled
+105 -349922.396166
+iter : 106
+Z sampled
+beta sampled
+106 -349922.396166
+iter : 107
+Z sampled
+beta sampled
+107 -349922.396166
+iter : 108
+Z sampled
+beta sampled
+108 -349922.396166
+iter : 109
+Z sampled
+beta sampled
+109 -349922.396166
+iter : 110
+Z sampled
+beta sampled
+110 -349922.396166
+iter : 111
+Z sampled
+beta sampled
+111 -349922.396166
+iter : 112
+Z sampled
+beta sampled
+112 -349922.396166
+iter : 113
+Z sampled
+beta sampled
+113 -349803.058477
+iter : 114
+Z sampled
+beta sampled
+114 -349803.058477
+iter : 115
+Z sampled
+beta sampled
+115 -349803.058477
+iter : 116
+Z sampled
+beta sampled
+116 -349803.058477
+iter : 117
+Z sampled
+beta sampled
+117 -349702.501813
+iter : 118
+Z sampled
+beta sampled
+118 -349702.501813
+iter : 119
+Z sampled
+beta sampled
+119 -349702.501813
+iter : 120
+Z sampled
+beta sampled
+120 -349702.501813
+iter : 121
+Z sampled
+beta sampled
+121 -349702.501813
+iter : 122
+Z sampled
+beta sampled
+122 -349702.501813
+iter : 123
+Z sampled
+beta sampled
+123 -349702.501813
+iter : 124
+Z sampled
+beta sampled
+124 -349702.501813
+iter : 125
+Z sampled
+beta sampled
+125 -349702.501813
+iter : 126
+Z sampled
+beta sampled
+126 -349702.501813
+iter : 127
+Z sampled
+beta sampled
+127 -349702.501813
+iter : 128
+Z sampled
+beta sampled
+128 -349702.501813
+iter : 129
+Z sampled
+beta sampled
+129 -349702.501813
+iter : 130
+Z sampled
+beta sampled
+130 -349702.501813
+iter : 131
+Z sampled
+beta sampled
+131 -349702.501813
+iter : 132
+Z sampled
+beta sampled
+132 -349702.501813
+iter : 133
+Z sampled
+beta sampled
+133 -349456.086054
+iter : 134
+Z sampled
+beta sampled
+134 -349456.086054
+iter : 135
+Z sampled
+beta sampled
+135 -349456.086054
+iter : 136
+Z sampled
+beta sampled
+136 -349456.086054
+iter : 137
+Z sampled
+beta sampled
+137 -349456.086054
+iter : 138
+Z sampled
+beta sampled
+138 -349456.086054
+iter : 139
+Z sampled
+beta sampled
+139 -349456.086054
+iter : 140
+Z sampled
+beta sampled
+140 -349456.086054
+iter : 141
+Z sampled
+beta sampled
+141 -349456.086054
+iter : 142
+Z sampled
+beta sampled
+142 -349456.086054
+iter : 143
+Z sampled
+beta sampled
+143 -349456.086054
+iter : 144
+Z sampled
+beta sampled
+144 -349456.086054
+iter : 145
+Z sampled
+beta sampled
+145 -349456.086054
+iter : 146
+Z sampled
+beta sampled
+146 -349456.086054
+iter : 147
+Z sampled
+beta sampled
+147 -349456.086054
+iter : 148
+Z sampled
+beta sampled
+148 -349403.726093
+iter : 149
+Z sampled
+beta sampled
+149 -349403.726093
+iter : 150
+Z sampled
+beta sampled
+150 -349403.726093
+iter : 151
+Z sampled
+beta sampled
+151 -349403.726093
+iter : 152
+Z sampled
+beta sampled
+152 -349403.726093
+iter : 153
+Z sampled
+beta sampled
+153 -349403.726093
+iter : 154
+Z sampled
+beta sampled
+154 -349403.726093
+iter : 155
+Z sampled
+beta sampled
+155 -349403.726093
+iter : 156
+Z sampled
+beta sampled
+156 -349403.726093
+iter : 157
+Z sampled
+beta sampled
+157 -349403.726093
+iter : 158
+Z sampled
+beta sampled
+158 -349403.726093
+iter : 159
+Z sampled
+beta sampled
+159 -349403.726093
+iter : 160
+Z sampled
+beta sampled
+160 -349403.726093
+iter : 161
+Z sampled
+beta sampled
+161 -349157.298581
+iter : 162
+Z sampled
+beta sampled
+162 -349157.298581
+iter : 163
+Z sampled
+beta sampled
+163 -349157.298581
+iter : 164
+Z sampled
+beta sampled
+164 -349157.298581
+iter : 165
+Z sampled
+beta sampled
+165 -349157.298581
+iter : 166
+Z sampled
+beta sampled
+166 -349157.298581
+iter : 167
+Z sampled
+beta sampled
+167 -349157.298581
+iter : 168
+Z sampled
+beta sampled
+168 -349157.298581
+iter : 169
+Z sampled
+beta sampled
+169 -349157.298581
+iter : 170
+Z sampled
+beta sampled
+170 -349157.298581
+iter : 171
+Z sampled
+beta sampled
+171 -349157.298581
+iter : 172
+Z sampled
+beta sampled
+172 -349157.298581
+iter : 173
+Z sampled
+beta sampled
+173 -349144.954621
+iter : 174
+Z sampled
+beta sampled
+174 -349144.954621
+iter : 175
+Z sampled
+beta sampled
+175 -349144.954621
+iter : 176
+Z sampled
+beta sampled
+176 -349144.954621
+iter : 177
+Z sampled
+beta sampled
+177 -349144.954621
+iter : 178
+Z sampled
+beta sampled
+178 -349144.954621
+iter : 179
+Z sampled
+beta sampled
+179 -349144.954621
+iter : 180
+Z sampled
+beta sampled
+180 -349144.954621
+iter : 181
+Z sampled
+beta sampled
+181 -349144.954621
+iter : 182
+Z sampled
+beta sampled
+182 -349144.954621
+iter : 183
+Z sampled
+beta sampled
+183 -349005.231394
+iter : 184
+Z sampled
+beta sampled
+184 -349005.231394
+iter : 185
+Z sampled
+beta sampled
+185 -349005.231394
+iter : 186
+Z sampled
+beta sampled
+186 -349005.231394
+iter : 187
+Z sampled
+beta sampled
+187 -349005.231394
+iter : 188
+Z sampled
+beta sampled
+188 -349005.231394
+iter : 189
+Z sampled
+beta sampled
+189 -349005.231394
+iter : 190
+Z sampled
+beta sampled
+190 -349005.231394
+iter : 191
+Z sampled
+beta sampled
+191 -349005.231394
+iter : 192
+Z sampled
+beta sampled
+192 -349005.231394
+iter : 193
+Z sampled
+beta sampled
+193 -349005.231394
+iter : 194
+Z sampled
+beta sampled
+194 -349005.231394
+iter : 195
+Z sampled
+beta sampled
+195 -349005.231394
+iter : 196
+Z sampled
+beta sampled
+196 -349005.231394
+iter : 197
+Z sampled
+beta sampled
+197 -349005.231394
+iter : 198
+Z sampled
+beta sampled
+198 -349005.231394
+iter : 199
+Z sampled
+beta sampled
+199 -349005.231394
+iter : 200
+Z sampled
+beta sampled
+200 -348998.60817
+iter : 201
+Z sampled
+beta sampled
+201 -348800.629047
+iter : 202
+Z sampled
+beta sampled
+202 -348800.629047
+iter : 203
+Z sampled
+beta sampled
+203 -348800.629047
+iter : 204
+Z sampled
+beta sampled
+204 -348761.28096
+iter : 205
+Z sampled
+beta sampled
+205 -348761.28096
+iter : 206
+Z sampled
+beta sampled
+206 -348761.28096
+iter : 207
+Z sampled
+beta sampled
+207 -348761.28096
+iter : 208
+Z sampled
+beta sampled
+208 -348761.28096
+iter : 209
+Z sampled
+beta sampled
+209 -348761.28096
+iter : 210
+Z sampled
+beta sampled
+210 -348761.28096
+iter : 211
+Z sampled
+beta sampled
+211 -348692.042455
+iter : 212
+Z sampled
+beta sampled
+212 -348692.042455
+iter : 213
+Z sampled
+beta sampled
+213 -348692.042455
+iter : 214
+Z sampled
+beta sampled
+214 -348692.042455
+iter : 215
+Z sampled
+beta sampled
+215 -348692.042455
+iter : 216
+Z sampled
+beta sampled
+216 -348692.042455
+iter : 217
+Z sampled
+beta sampled
+217 -348692.042455
+iter : 218
+Z sampled
+beta sampled
+218 -348692.042455
+iter : 219
+Z sampled
+beta sampled
+219 -348692.042455
+iter : 220
+Z sampled
+beta sampled
+220 -348641.067477
+iter : 221
+Z sampled
+beta sampled
+221 -348641.067477
+iter : 222
+Z sampled
+beta sampled
+222 -348641.067477
+iter : 223
+Z sampled
+beta sampled
+223 -348641.067477
+iter : 224
+Z sampled
+beta sampled
+224 -348610.679503
+iter : 225
+Z sampled
+beta sampled
+225 -348610.679503
+iter : 226
+Z sampled
+beta sampled
+226 -348610.679503
+iter : 227
+Z sampled
+beta sampled
+227 -348610.679503
+iter : 228
+Z sampled
+beta sampled
+228 -348610.679503
+iter : 229
+Z sampled
+beta sampled
+229 -348610.679503
+iter : 230
+Z sampled
+beta sampled
+230 -348610.679503
+iter : 231
+Z sampled
+beta sampled
+231 -348610.679503
+iter : 232
+Z sampled
+beta sampled
+232 -348610.679503
+iter : 233
+Z sampled
+beta sampled
+233 -348610.679503
+iter : 234
+Z sampled
+beta sampled
+234 -348610.679503
+iter : 235
+Z sampled
+beta sampled
+235 -348610.679503
+iter : 236
+Z sampled
+beta sampled
+236 -348610.679503
+iter : 237
+Z sampled
+beta sampled
+237 -348610.679503
+iter : 238
+Z sampled
+beta sampled
+238 -348610.679503
+iter : 239
+Z sampled
+beta sampled
+239 -348234.625768
+iter : 240
+Z sampled
+beta sampled
+240 -348234.625768
+iter : 241
+Z sampled
+beta sampled
+241 -348234.625768
+iter : 242
+Z sampled
+beta sampled
+242 -348234.625768
+iter : 243
+Z sampled
+beta sampled
+243 -348234.625768
+iter : 244
+Z sampled
+beta sampled
+244 -348070.121374
+iter : 245
+Z sampled
+beta sampled
+245 -348070.121374
+iter : 246
+Z sampled
+beta sampled
+246 -348070.121374
+iter : 247
+Z sampled
+beta sampled
+247 -348070.121374
+iter : 248
+Z sampled
+beta sampled
+248 -348070.121374
+iter : 249
+Z sampled
+beta sampled
+249 -348070.121374
+iter : 250
+Z sampled
+beta sampled
+250 -348070.121374
+iter : 251
+Z sampled
+beta sampled
+251 -348070.121374
+iter : 252
+Z sampled
+beta sampled
+252 -348070.121374
+iter : 253
+Z sampled
+beta sampled
+253 -348070.121374
+iter : 254
+Z sampled
+beta sampled
+254 -348070.121374
+iter : 255
+Z sampled
+beta sampled
+255 -348070.121374
+iter : 256
+Z sampled
+beta sampled
+256 -348070.121374
+iter : 257
+Z sampled
+beta sampled
+257 -348070.121374
+iter : 258
+Z sampled
+beta sampled
+258 -348070.121374
+iter : 259
+Z sampled
+beta sampled
+259 -348018.641209
+iter : 260
+Z sampled
+beta sampled
+260 -347943.015792
+iter : 261
+Z sampled
+beta sampled
+261 -347943.015792
+iter : 262
+Z sampled
+beta sampled
+262 -347943.015792
+iter : 263
+Z sampled
+beta sampled
+263 -347943.015792
+iter : 264
+Z sampled
+beta sampled
+264 -347943.015792
+iter : 265
+Z sampled
+beta sampled
+265 -347943.015792
+iter : 266
+Z sampled
+beta sampled
+266 -347943.015792
+iter : 267
+Z sampled
+beta sampled
+267 -347943.015792
+iter : 268
+Z sampled
+beta sampled
+268 -347943.015792
+iter : 269
+Z sampled
+beta sampled
+269 -347943.015792
+iter : 270
+Z sampled
+beta sampled
+270 -347943.015792
+iter : 271
+Z sampled
+beta sampled
+271 -347764.239559
+iter : 272
+Z sampled
+beta sampled
+272 -347764.239559
+iter : 273
+Z sampled
+beta sampled
+273 -347764.239559
+iter : 274
+Z sampled
+beta sampled
+274 -347764.239559
+iter : 275
+Z sampled
+beta sampled
+275 -347764.239559
+iter : 276
+Z sampled
+beta sampled
+276 -347764.239559
+iter : 277
+Z sampled
+beta sampled
+277 -347764.239559
+iter : 278
+Z sampled
+beta sampled
+278 -347764.239559
+iter : 279
+Z sampled
+beta sampled
+279 -347764.239559
+iter : 280
+Z sampled
+beta sampled
+280 -347764.239559
+iter : 281
+Z sampled
+beta sampled
+281 -347764.239559
+iter : 282
+Z sampled
+beta sampled
+282 -347764.239559
+iter : 283
+Z sampled
+beta sampled
+283 -347764.239559
+iter : 284
+Z sampled
+beta sampled
+284 -347764.239559
+iter : 285
+Z sampled
+beta sampled
+285 -347764.239559
+iter : 286
+Z sampled
+beta sampled
+286 -347764.239559
+iter : 287
+Z sampled
+beta sampled
+287 -347764.239559
+iter : 288
+Z sampled
+beta sampled
+288 -347764.239559
+iter : 289
+Z sampled
+beta sampled
+289 -347764.239559
+iter : 290
+Z sampled
+beta sampled
+290 -347764.239559
+iter : 291
+Z sampled
+beta sampled
+291 -347764.239559
+iter : 292
+Z sampled
+beta sampled
+292 -347764.239559
+iter : 293
+Z sampled
+beta sampled
+293 -347764.239559
+iter : 294
+Z sampled
+beta sampled
+294 -347764.239559
+iter : 295
+Z sampled
+beta sampled
+295 -347764.239559
+iter : 296
+Z sampled
+beta sampled
+296 -347764.239559
+iter : 297
+Z sampled
+beta sampled
+297 -347764.239559
+iter : 298
+Z sampled
+beta sampled
+298 -347764.239559
+iter : 299
+Z sampled
+beta sampled
+299 -347764.239559
+iter : 300
+Z sampled
+beta sampled
+300 -347764.239559
+iter : 301
+Z sampled
+beta sampled
+301 -347764.239559
+iter : 302
+Z sampled
+beta sampled
+302 -347764.239559
+iter : 303
+Z sampled
+beta sampled
+303 -347764.239559
+iter : 304
+Z sampled
+beta sampled
+304 -347764.239559
+iter : 305
+Z sampled
+beta sampled
+305 -347764.239559
+iter : 306
+Z sampled
+beta sampled
+306 -347764.239559
+iter : 307
+Z sampled
+beta sampled
+307 -347764.239559
+iter : 308
+Z sampled
+beta sampled
+308 -347764.239559
+iter : 309
+Z sampled
+beta sampled
+309 -347764.239559
+iter : 310
+Z sampled
+beta sampled
+310 -347764.239559
+iter : 311
+Z sampled
+beta sampled
+311 -347764.239559
+iter : 312
+Z sampled
+beta sampled
+312 -347764.239559
+iter : 313
+Z sampled
+beta sampled
+313 -347764.239559
+iter : 314
+Z sampled
+beta sampled
+314 -347764.239559
+iter : 315
+Z sampled
+beta sampled
+315 -347764.239559
+iter : 316
+Z sampled
+beta sampled
+316 -347764.239559
+iter : 317
+Z sampled
+beta sampled
+317 -347764.239559
+iter : 318
+Z sampled
+beta sampled
+318 -347764.239559
+iter : 319
+Z sampled
+beta sampled
+319 -347764.239559
+iter : 320
+Z sampled
+beta sampled
+320 -347764.239559
+iter : 321
+Z sampled
+beta sampled
+321 -347764.239559
+iter : 322
+Z sampled
+beta sampled
+322 -347764.239559
+iter : 323
+Z sampled
+beta sampled
+323 -347764.239559
+iter : 324
+Z sampled
+beta sampled
+324 -347764.239559
+iter : 325
+Z sampled
+beta sampled
+325 -347764.239559
+iter : 326
+Z sampled
+beta sampled
+326 -347764.239559
+iter : 327
+Z sampled
+beta sampled
+327 -347764.239559
+iter : 328
+Z sampled
+beta sampled
+328 -347764.239559
+iter : 329
+Z sampled
+beta sampled
+329 -347764.239559
+iter : 330
+Z sampled
+beta sampled
+330 -347764.239559
+iter : 331
+Z sampled
+beta sampled
+331 -347764.239559
+iter : 332
+Z sampled
+beta sampled
+332 -347764.239559
+iter : 333
+Z sampled
+beta sampled
+333 -347764.239559
+iter : 334
+Z sampled
+beta sampled
+334 -347764.239559
+iter : 335
+Z sampled
+beta sampled
+335 -347764.239559
+iter : 336
+Z sampled
+beta sampled
+336 -347764.239559
+iter : 337
+Z sampled
+beta sampled
+337 -347764.239559
+iter : 338
+Z sampled
+beta sampled
+338 -347764.239559
+iter : 339
+Z sampled
+beta sampled
+339 -347764.239559
+iter : 340
+Z sampled
+beta sampled
+340 -347764.239559
+iter : 341
+Z sampled
+beta sampled
+341 -347764.239559
+iter : 342
+Z sampled
+beta sampled
+342 -347764.239559
+iter : 343
+Z sampled
+beta sampled
+343 -347764.239559
+iter : 344
+Z sampled
+beta sampled
+344 -347764.239559
+iter : 345
+Z sampled
+beta sampled
+345 -347764.239559
+iter : 346
+Z sampled
+beta sampled
+346 -347764.239559
+iter : 347
+Z sampled
+beta sampled
+347 -347764.239559
+iter : 348
+Z sampled
+beta sampled
+348 -347764.239559
+iter : 349
+Z sampled
+beta sampled
+349 -347764.239559
+iter : 350
+Z sampled
+beta sampled
+350 -347764.239559
+iter : 351
+Z sampled
+beta sampled
+351 -347764.239559
+iter : 352
+Z sampled
+beta sampled
+352 -347764.239559
+iter : 353
+Z sampled
+beta sampled
+353 -347764.239559
+iter : 354
+Z sampled
+beta sampled
+354 -347764.239559
+iter : 355
+Z sampled
+beta sampled
+355 -347764.239559
+iter : 356
+Z sampled
+beta sampled
+356 -347764.239559
+iter : 357
+Z sampled
+beta sampled
+357 -347764.239559
+iter : 358
+Z sampled
+beta sampled
+358 -347764.239559
+iter : 359
+Z sampled
+beta sampled
+359 -347764.239559
+iter : 360
+Z sampled
+beta sampled
+360 -347764.239559
+iter : 361
+Z sampled
+beta sampled
+361 -347764.239559
+iter : 362
+Z sampled
+beta sampled
+362 -347764.239559
+iter : 363
+Z sampled
+beta sampled
+363 -347764.239559
+iter : 364
+Z sampled
+beta sampled
+364 -347764.239559
+iter : 365
+Z sampled
+beta sampled
+365 -347764.239559
+iter : 366
+Z sampled
+beta sampled
+366 -347764.239559
+iter : 367
+Z sampled
+beta sampled
+367 -347764.239559
+iter : 368
+Z sampled
+beta sampled
+368 -347764.239559
+iter : 369
+Z sampled
+beta sampled
+369 -347764.239559
+iter : 370
+Z sampled
+beta sampled
+370 -347764.239559
+iter : 371
+Z sampled
+beta sampled
+371 -347764.239559
+iter : 372
+Z sampled
+beta sampled
+372 -347764.239559
+iter : 373
+Z sampled
+beta sampled
+373 -347764.239559
+iter : 374
+Z sampled
+beta sampled
+374 -347764.239559
+iter : 375
+Z sampled
+beta sampled
+375 -347764.239559
+iter : 376
+Z sampled
+beta sampled
+376 -347764.239559
+iter : 377
+Z sampled
+beta sampled
+377 -347764.239559
+iter : 378
+Z sampled
+beta sampled
+378 -347764.239559
+iter : 379
+Z sampled
+beta sampled
+379 -347764.239559
+iter : 380
+Z sampled
+beta sampled
+380 -347764.239559
+iter : 381
+Z sampled
+beta sampled
+381 -347764.239559
+iter : 382
+Z sampled
+beta sampled
+382 -347764.239559
+iter : 383
+Z sampled
+beta sampled
+383 -347764.239559
+iter : 384
+Z sampled
+beta sampled
+384 -347764.239559
+iter : 385
+Z sampled
+beta sampled
+385 -347764.239559
+iter : 386
+Z sampled
+beta sampled
+386 -347764.239559
+iter : 387
+Z sampled
+beta sampled
+387 -347764.239559
+iter : 388
+Z sampled
+beta sampled
+388 -347764.239559
+iter : 389
+Z sampled
+beta sampled
+389 -347764.239559
+iter : 390
+Z sampled
+beta sampled
+390 -347764.239559
+iter : 391
+Z sampled
+beta sampled
+391 -347764.239559
+iter : 392
+Z sampled
+beta sampled
+392 -347764.239559
+iter : 393
+Z sampled
+beta sampled
+393 -347764.239559
+iter : 394
+Z sampled
+beta sampled
+394 -347764.239559
+iter : 395
+Z sampled
+beta sampled
+395 -347764.239559
+iter : 396
+Z sampled
+beta sampled
+396 -347764.239559
+iter : 397
+Z sampled
+beta sampled
+397 -347764.239559
+iter : 398
+Z sampled
+beta sampled
+398 -347764.239559
+iter : 399
+Z sampled
+beta sampled
+399 -347764.239559
+iter : 400
+Z sampled
+beta sampled
+400 -347764.239559
+iter : 401
+Z sampled
+beta sampled
+401 -347764.239559
+iter : 402
+Z sampled
+beta sampled
+402 -347764.239559
+iter : 403
+Z sampled
+beta sampled
+403 -347764.239559
+iter : 404
+Z sampled
+beta sampled
+404 -347764.239559
+iter : 405
+Z sampled
+beta sampled
+405 -347764.239559
+iter : 406
+Z sampled
+beta sampled
+406 -347764.239559
+iter : 407
+Z sampled
+beta sampled
+407 -347764.239559
+iter : 408
+Z sampled
+beta sampled
+408 -347764.239559
+iter : 409
+Z sampled
+beta sampled
+409 -347764.239559
+iter : 410
+Z sampled
+beta sampled
+410 -347764.239559
+iter : 411
+Z sampled
+beta sampled
+411 -347764.239559
+iter : 412
+Z sampled
+beta sampled
+412 -347764.239559
+iter : 413
+Z sampled
+beta sampled
+413 -347764.239559
+iter : 414
+Z sampled
+beta sampled
+414 -347764.239559
+iter : 415
+Z sampled
+beta sampled
+415 -347764.239559
+iter : 416
+Z sampled
+beta sampled
+416 -347764.239559
+iter : 417
+Z sampled
+beta sampled
+417 -347764.239559
+iter : 418
+Z sampled
+beta sampled
+418 -347764.239559
+iter : 419
+Z sampled
+beta sampled
+419 -347764.239559
+iter : 420
+Z sampled
+beta sampled
+420 -347764.239559
+iter : 421
+Z sampled
+beta sampled
+421 -347764.239559
+iter : 422
+Z sampled
+beta sampled
+422 -347764.239559
+iter : 423
+Z sampled
+beta sampled
+423 -347764.239559
+iter : 424
+Z sampled
+beta sampled
+424 -347764.239559
+iter : 425
+Z sampled
+beta sampled
+425 -347764.239559
+iter : 426
+Z sampled
+beta sampled
+426 -347764.239559
+iter : 427
+Z sampled
+beta sampled
+427 -347764.239559
+iter : 428
+Z sampled
+beta sampled
+428 -347764.239559
+iter : 429
+Z sampled
+beta sampled
+429 -347764.239559
+iter : 430
+Z sampled
+beta sampled
+430 -347764.239559
+iter : 431
+Z sampled
+beta sampled
+431 -347764.239559
+iter : 432
+Z sampled
+beta sampled
+432 -347764.239559
+iter : 433
+Z sampled
+beta sampled
+433 -347764.239559
+iter : 434
+Z sampled
+beta sampled
+434 -347764.239559
+iter : 435
+Z sampled
+beta sampled
+435 -347764.239559
+iter : 436
+Z sampled
+beta sampled
+436 -347764.239559
+iter : 437
+Z sampled
+beta sampled
+437 -347764.239559
+iter : 438
+Z sampled
+beta sampled
+438 -347764.239559
+iter : 439
+Z sampled
+beta sampled
+439 -347764.239559
+iter : 440
+Z sampled
+beta sampled
+440 -347764.239559
+iter : 441
+Z sampled
+beta sampled
+441 -347764.239559
+iter : 442
+Z sampled
+beta sampled
+442 -347764.239559
+iter : 443
+Z sampled
+beta sampled
+443 -347764.239559
+iter : 444
+Z sampled
+beta sampled
+444 -347764.239559
+iter : 445
+Z sampled
+beta sampled
+445 -347764.239559
+iter : 446
+Z sampled
+beta sampled
+446 -347764.239559
+iter : 447
+Z sampled
+beta sampled
+447 -347764.239559
+iter : 448
+Z sampled
+beta sampled
+448 -347764.239559
+iter : 449
+Z sampled
+beta sampled
+449 -347764.239559
+iter : 450
+Z sampled
+beta sampled
+450 -347764.239559
+iter : 451
+Z sampled
+beta sampled
+451 -347764.239559
+iter : 452
+Z sampled
+beta sampled
+452 -347764.239559
+iter : 453
+Z sampled
+beta sampled
+453 -347764.239559
+iter : 454
+Z sampled
+beta sampled
+454 -347764.239559
+iter : 455
+Z sampled
+beta sampled
+455 -347764.239559
+iter : 456
+Z sampled
+beta sampled
+456 -347764.239559
+iter : 457
+Z sampled
+beta sampled
+457 -347764.239559
+iter : 458
+Z sampled
+beta sampled
+458 -347764.239559
+iter : 459
+Z sampled
+beta sampled
+459 -347764.239559
+iter : 460
+Z sampled
+beta sampled
+460 -347764.239559
+iter : 461
+Z sampled
+beta sampled
+461 -347764.239559
+iter : 462
+Z sampled
+beta sampled
+462 -347764.239559
+iter : 463
+Z sampled
+beta sampled
+463 -347764.239559
+iter : 464
+Z sampled
+beta sampled
+464 -347764.239559
+iter : 465
+Z sampled
+beta sampled
+465 -347764.239559
+iter : 466
+Z sampled
+beta sampled
+466 -347764.239559
+iter : 467
+Z sampled
+beta sampled
+467 -347764.239559
+iter : 468
+Z sampled
+beta sampled
+468 -347764.239559
+iter : 469
+Z sampled
+beta sampled
+469 -347764.239559
+iter : 470
+Z sampled
+beta sampled
+470 -347764.239559
+iter : 471
+Z sampled
+beta sampled
+471 -347764.239559
+iter : 472
+Z sampled
+beta sampled
+472 -347764.239559
+iter : 473
+Z sampled
+beta sampled
+473 -347764.239559
+iter : 474
+Z sampled
+beta sampled
+474 -347764.239559
+iter : 475
+Z sampled
+beta sampled
+475 -347764.239559
+iter : 476
+Z sampled
+beta sampled
+476 -347764.239559
+iter : 477
+Z sampled
+beta sampled
+477 -347764.239559
+iter : 478
+Z sampled
+beta sampled
+478 -347764.239559
+iter : 479
+Z sampled
+beta sampled
+479 -347764.239559
+iter : 480
+Z sampled
+beta sampled
+480 -347764.239559
+iter : 481
+Z sampled
+beta sampled
+481 -347764.239559
+iter : 482
+Z sampled
+beta sampled
+482 -347764.239559
+iter : 483
+Z sampled
+beta sampled
+483 -347764.239559
+iter : 484
+Z sampled
+beta sampled
+484 -347764.239559
+iter : 485
+Z sampled
+beta sampled
+485 -347764.239559
+iter : 486
+Z sampled
+beta sampled
+486 -347764.239559
+iter : 487
+Z sampled
+beta sampled
+487 -347764.239559
+iter : 488
+Z sampled
+beta sampled
+488 -347764.239559
+iter : 489
+Z sampled
+beta sampled
+489 -347764.239559
+iter : 490
+Z sampled
+beta sampled
+490 -347764.239559
+iter : 491
+Z sampled
+beta sampled
+491 -347764.239559
+iter : 492
+Z sampled
+beta sampled
+492 -347764.239559
+iter : 493
+Z sampled
+beta sampled
+493 -347764.239559
+iter : 494
+Z sampled
+beta sampled
+494 -347764.239559
+iter : 495
+Z sampled
+beta sampled
+495 -347764.239559
+iter : 496
+Z sampled
+beta sampled
+496 -347764.239559
+iter : 497
+Z sampled
+beta sampled
+497 -347764.239559
+iter : 498
+Z sampled
+beta sampled
+498 -347764.239559
+iter : 499
+Z sampled
+beta sampled
+499 -347764.239559
+iter : 500
+Z sampled
+beta sampled
+500 -347764.239559
+iter : 501
+Z sampled
+beta sampled
+501 -347764.239559
+iter : 502
+Z sampled
+beta sampled
+502 -347764.239559
+iter : 503
+Z sampled
+beta sampled
+503 -347764.239559
+iter : 504
+Z sampled
+beta sampled
+504 -347764.239559
+iter : 505
+Z sampled
+beta sampled
+505 -347764.239559
+iter : 506
+Z sampled
+beta sampled
+506 -347764.239559
+iter : 507
+Z sampled
+beta sampled
+507 -347764.239559
+iter : 508
+Z sampled
+beta sampled
+508 -347764.239559
+iter : 509
+Z sampled
+beta sampled
+509 -347764.239559
+iter : 510
+Z sampled
+beta sampled
+510 -347764.239559
+iter : 511
+Z sampled
+beta sampled
+511 -347764.239559
+iter : 512
+Z sampled
+beta sampled
+512 -347764.239559
+iter : 513
+Z sampled
+beta sampled
+513 -347764.239559
+iter : 514
+Z sampled
+beta sampled
+514 -347764.239559
+iter : 515
+Z sampled
+beta sampled
+515 -347764.239559
+iter : 516
+Z sampled
+beta sampled
+516 -347764.239559
+iter : 517
+Z sampled
+beta sampled
+517 -347764.239559
+iter : 518
+Z sampled
+beta sampled
+518 -347764.239559
+iter : 519
+Z sampled
+beta sampled
+519 -347764.239559
+iter : 520
+Z sampled
+beta sampled
+520 -347764.239559
+iter : 521
+Z sampled
+beta sampled
+521 -347764.239559
+iter : 522
+Z sampled
+beta sampled
+522 -347764.239559
+iter : 523
+Z sampled
+beta sampled
+523 -347764.239559
+iter : 524
+Z sampled
+beta sampled
+524 -347764.239559
+iter : 525
+Z sampled
+beta sampled
+525 -347764.239559
+iter : 526
+Z sampled
+beta sampled
+526 -347764.239559
+iter : 527
+Z sampled
+beta sampled
+527 -347764.239559
+iter : 528
+Z sampled
+beta sampled
+528 -347764.239559
+iter : 529
+Z sampled
+beta sampled
+529 -347764.239559
+iter : 530
+Z sampled
+beta sampled
+530 -347764.239559
+iter : 531
+Z sampled
+beta sampled
+531 -347764.239559
+iter : 532
+Z sampled
+beta sampled
+532 -347764.239559
+iter : 533
+Z sampled
+beta sampled
+533 -347764.239559
+iter : 534
+Z sampled
+beta sampled
+534 -347764.239559
+iter : 535
+Z sampled
+beta sampled
+535 -347764.239559
+iter : 536
+Z sampled
+beta sampled
+536 -347764.239559
+iter : 537
+Z sampled
+beta sampled
+537 -347764.239559
+iter : 538
+Z sampled
+beta sampled
+538 -347764.239559
+iter : 539
+Z sampled
+beta sampled
+539 -347764.239559
+iter : 540
+Z sampled
+beta sampled
+540 -347764.239559
+iter : 541
+Z sampled
+beta sampled
+541 -347764.239559
+iter : 542
+Z sampled
+beta sampled
+542 -347764.239559
+iter : 543
+Z sampled
+beta sampled
+543 -347764.239559
+iter : 544
+Z sampled
+beta sampled
+544 -347764.239559
+iter : 545
+Z sampled
+beta sampled
+545 -347764.239559
+iter : 546
+Z sampled
+beta sampled
+546 -347764.239559
+iter : 547
+Z sampled
+beta sampled
+547 -347764.239559
+iter : 548
+Z sampled
+beta sampled
+548 -347764.239559
+iter : 549
+Z sampled
+beta sampled
+549 -347764.239559
+iter : 550
+Z sampled
+beta sampled
+550 -347764.239559
+iter : 551
+Z sampled
+beta sampled
+551 -347764.239559
+iter : 552
+Z sampled
+beta sampled
+552 -347764.239559
+iter : 553
+Z sampled
+beta sampled
+553 -347764.239559
+iter : 554
+Z sampled
+beta sampled
+554 -347764.239559
+iter : 555
+Z sampled
+beta sampled
+555 -347764.239559
+iter : 556
+Z sampled
+beta sampled
+556 -347764.239559
+iter : 557
+Z sampled
+beta sampled
+557 -347764.239559
+iter : 558
+Z sampled
+beta sampled
+558 -347764.239559
+iter : 559
+Z sampled
+beta sampled
+559 -347764.239559
+iter : 560
+Z sampled
+beta sampled
+560 -347764.239559
+iter : 561
+Z sampled
+beta sampled
+561 -347764.239559
+iter : 562
+Z sampled
+beta sampled
+562 -347764.239559
+iter : 563
+Z sampled
+beta sampled
+563 -347764.239559
+iter : 564
+Z sampled
+beta sampled
+564 -347764.239559
+iter : 565
+Z sampled
+beta sampled
+565 -347764.239559
+iter : 566
+Z sampled
+beta sampled
+566 -347764.239559
+iter : 567
+Z sampled
+beta sampled
+567 -347764.239559
+iter : 568
+Z sampled
+beta sampled
+568 -347764.239559
+iter : 569
+Z sampled
+beta sampled
+569 -347764.239559
+iter : 570
+Z sampled
+beta sampled
+570 -347764.239559
+iter : 571
+Z sampled
+beta sampled
+571 -347764.239559
+iter : 572
+Z sampled
+beta sampled
+572 -347764.239559
+iter : 573
+Z sampled
+beta sampled
+573 -347764.239559
+iter : 574
+Z sampled
+beta sampled
+574 -347764.239559
+iter : 575
+Z sampled
+beta sampled
+575 -347764.239559
+iter : 576
+Z sampled
+beta sampled
+576 -347764.239559
+iter : 577
+Z sampled
+beta sampled
+577 -347764.239559
+iter : 578
+Z sampled
+beta sampled
+578 -347764.239559
+iter : 579
+Z sampled
+beta sampled
+579 -347764.239559
+iter : 580
+Z sampled
+beta sampled
+580 -347764.239559
+iter : 581
+Z sampled
+beta sampled
+581 -347764.239559
+iter : 582
+Z sampled
+beta sampled
+582 -347764.239559
+iter : 583
+Z sampled
+beta sampled
+583 -347764.239559
+iter : 584
+Z sampled
+beta sampled
+584 -347764.239559
+iter : 585
+Z sampled
+beta sampled
+585 -347764.239559
+iter : 586
+Z sampled
+beta sampled
+586 -347764.239559
+iter : 587
+Z sampled
+beta sampled
+587 -347764.239559
+iter : 588
+Z sampled
+beta sampled
+588 -347764.239559
+iter : 589
+Z sampled
+beta sampled
+589 -347764.239559
+iter : 590
+Z sampled
+beta sampled
+590 -347764.239559
+iter : 591
+Z sampled
+beta sampled
+591 -347764.239559
+iter : 592
+Z sampled
+beta sampled
+592 -347764.239559
+iter : 593
+Z sampled
+beta sampled
+593 -347764.239559
+iter : 594
+Z sampled
+beta sampled
+594 -347764.239559
+iter : 595
+Z sampled
+beta sampled
+595 -347764.239559
+iter : 596
+Z sampled
+beta sampled
+596 -347764.239559
+iter : 597
+Z sampled
+beta sampled
+597 -347764.239559
+iter : 598
+Z sampled
+beta sampled
+598 -347764.239559
+iter : 599
+Z sampled
+beta sampled
+599 -347764.239559
+iter : 600
+Z sampled
+beta sampled
+600 -347764.239559
+iter : 601
+Z sampled
+beta sampled
+601 -347764.239559
+iter : 602
+Z sampled
+beta sampled
+602 -347764.239559
+iter : 603
+Z sampled
+beta sampled
+603 -347764.239559
+iter : 604
+Z sampled
+beta sampled
+604 -347764.239559
+iter : 605
+Z sampled
+beta sampled
+605 -347764.239559
+iter : 606
+Z sampled
+beta sampled
+606 -347764.239559
+iter : 607
+Z sampled
+beta sampled
+607 -347764.239559
+iter : 608
+Z sampled
+beta sampled
+608 -347764.239559
+iter : 609
+Z sampled
+beta sampled
+609 -347764.239559
+iter : 610
+Z sampled
+beta sampled
+610 -347764.239559
+iter : 611
+Z sampled
+beta sampled
+611 -347764.239559
+iter : 612
+Z sampled
+beta sampled
+612 -347764.239559
+iter : 613
+Z sampled
+beta sampled
+613 -347764.239559
+iter : 614
+Z sampled
+beta sampled
+614 -347764.239559
+iter : 615
+Z sampled
+beta sampled
+615 -347764.239559
+iter : 616
+Z sampled
+beta sampled
+616 -347764.239559
+iter : 617
+Z sampled
+beta sampled
+617 -347764.239559
+iter : 618
+Z sampled
+beta sampled
+618 -347764.239559
+iter : 619
+Z sampled
+beta sampled
+619 -347764.239559
+iter : 620
+Z sampled
+beta sampled
+620 -347764.239559
+iter : 621
+Z sampled
+beta sampled
+621 -347764.239559
+iter : 622
+Z sampled
+beta sampled
+622 -347764.239559
+iter : 623
+Z sampled
+beta sampled
+623 -347764.239559
+iter : 624
+Z sampled
+beta sampled
+624 -347764.239559
+iter : 625
+Z sampled
+beta sampled
+625 -347764.239559
+iter : 626
+Z sampled
+beta sampled
+626 -347764.239559
+iter : 627
+Z sampled
+beta sampled
+627 -347764.239559
+iter : 628
+Z sampled
+beta sampled
+628 -347764.239559
+iter : 629
+Z sampled
+beta sampled
+629 -347764.239559
+iter : 630
+Z sampled
+beta sampled
+630 -347764.239559
+iter : 631
+Z sampled
+beta sampled
+631 -347764.239559
+iter : 632
+Z sampled
+beta sampled
+632 -347764.239559
+iter : 633
+Z sampled
+beta sampled
+633 -347764.239559
+iter : 634
+Z sampled
+beta sampled
+634 -347764.239559
+iter : 635
+Z sampled
+beta sampled
+635 -347764.239559
+iter : 636
+Z sampled
+beta sampled
+636 -347764.239559
+iter : 637
+Z sampled
+beta sampled
+637 -347764.239559
+iter : 638
+Z sampled
+beta sampled
+638 -347764.239559
+iter : 639
+Z sampled
+beta sampled
+639 -347764.239559
+iter : 640
+Z sampled
+beta sampled
+640 -347764.239559
+iter : 641
+Z sampled
+beta sampled
+641 -347764.239559
