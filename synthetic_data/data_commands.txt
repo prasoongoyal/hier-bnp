@@ -1,7 +1,0 @@
-python create_dataset.py corpus1.txt wp1.txt beta1.txt 1000 30 10 1
-python create_dataset.py corpus2.txt wp2.txt beta2.txt 100 30 2 1
-python create_dataset.py corpus3.txt wp3.txt beta3.txt 100 20 0.2 0.2
-python create_dataset.py corpus4.txt wp4.txt beta4.txt 10 20 0.2 3
-python create_dataset.py corpus5.txt wp5.txt beta5.txt 5 4 0.2 0.2
-python create_dataset.py corpus6.txt wp6.txt beta6.txt 3 2 0.2 0.2
-python create_dataset.py corpus7.txt wp7.txt beta7.txt 1000 30 0.2 0.2
