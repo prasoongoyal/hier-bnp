@@ -154,28 +154,98 @@ void generate_doc(int* result, double* beta, int* Z, int num_words_in_doc) {
       selected_node = counts_start_idx + indexOf(1, sample, branching_factor);
       counts[selected_node]++;
       counts_start_idx = counts_start_idx * branching_factor + 1;
+      delete [] multinomial_prob;
+      delete [] sample;
     }
     // sample from beta[selected_node]
     unsigned int* sample = new unsigned int[vocab_size];
     gsl_ran_multinomial(GSL_RNG, vocab_size, 1, beta + (selected_node  - num_internal_nodes) * vocab_size, sample);
     result[n] = indexOf(1, sample, vocab_size);
+    delete [] sample;
   }
 }
 
-double estimate_likelihood_corpus(double* beta, int* Z, int* test_corpus) {
+double estimate_likelihood_corpus(double* beta, int* Z, int* testcorpus) {
   int K = 1000;
   int num_words_in_doc = max_words / 2;
   // generate K documents from trained model
   int* generated_docs = new int[K * num_words_in_doc];
+  #pragma omp parallel for
   for (int k=0; k<K; k++) {
-    cout << k << "\n";
+    // cout << k << "\n";
     generate_doc(generated_docs + k * num_words_in_doc, beta, Z, num_words_in_doc);
+    /*
+    for (int n=0; n<num_words_in_doc; n++) {
+      cout << generated_docs[k * num_words_in_doc + n] << " ";
+    }
+    cout << "\n";
+    */
   }
 
-  /*
+  cout << "Generated docs.\n";
+
   // estimate multinomials over words for generated docs
-  // double* probs = new double[K * vocab_size];
-  // for ()
+  double* probs = new double[K * vocab_size];
+  for (int k=0; k<K; k++) {
+    for (int v=0; v<vocab_size; v++) {
+      probs[k * vocab_size + v] = 0.1;
+    }
+  }
+  for (int k=0; k<K; k++) {
+    for (int n=0; n<num_words_in_doc; n++) {
+      probs[k * vocab_size + generated_docs[k * num_words_in_doc + n]]++;
+    }
+  }
+  for (int k=0; k<K; k++) {
+    double sum = 0.0;
+    for (int v=0; v<vocab_size; v++) {
+      sum += probs[k * vocab_size + v];
+    }
+    for (int v=0; v<vocab_size; v++) {
+      probs[k * vocab_size + v] = log(probs[k * vocab_size + v] / sum);
+    }
+  }
+
+  cout << "Computed multinomials.\n";
+
+  double testcorpus_log_prob = 0.0;
+
+  for (int d=0; d<num_test_docs; d++) {
+    double avg_prob = 0.0;
+    for (int k=0; k<K; k++) {
+      double doc_log_prob = 0.0;
+      int num_words_in_curr_doc = 0;
+      for (int n=0; n<max_words; n++) {
+        if (testcorpus[d * max_words + n] != -1) {
+          double curr_word_prob = 
+              probs[k * vocab_size + testcorpus[d * max_words + n]];
+          //cout << "Cur word : " << curr_word_prob << " " << log(curr_word_prob) 
+          //      << "\n"; 
+          doc_log_prob += probs[k * vocab_size + 
+              testcorpus[d * max_words + n]];
+          num_words_in_curr_doc++;
+        } else {
+          break;
+        }
+      }
+      avg_prob += exp(doc_log_prob / num_words_in_curr_doc);
+    }
+    avg_prob /= K;
+    // cout << "Avg prob : " << avg_prob << "\n";
+    if (!isnan(avg_prob)) {
+      testcorpus_log_prob += avg_prob;
+    }
+  }
+
+  cout << "Test corpus avg prob : " << testcorpus_log_prob / num_test_docs << "\n";
+
+  /*
+  for (int k=0; k<K; k++) {
+    for (int v=0; v<vocab_size; v++) {
+      cout << fixed << setprecision(5) << probs[k * vocab_size + v] << " ";
+    }
+    cout << "\n";
+  }
 
   double ll = 0.0;
   for (int d=0; d<num_doc_test; d++) {
@@ -185,7 +255,7 @@ double estimate_likelihood_corpus(double* beta, int* Z, int* test_corpus) {
   }
   ll /= K;
   return ll;
-  */
+  */ 
 }
 
 int main(int argc, char* argv[]) {

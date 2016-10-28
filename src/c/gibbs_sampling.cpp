@@ -394,6 +394,13 @@ void runGibbsSampling(int* W, const char* prefix) {
             << "Likelihood " << model->get_best_likelihood() << "\t"
             << "Temp " << curr_temp << "\n";
 
+      if (iter % 100 == 0) {
+        char* prefix_iter = new char[100];
+        sprintf(prefix_iter, "%s_%d", prefix, iter);
+        model->write_model_to_file(prefix_iter, W);
+        delete [] prefix_iter;
+      }
+
       if (iter - model->get_last_update_iter() > 10) {
         model->reset_last_update_iter(iter);
         curr_temp *= 0.9;
@@ -436,6 +443,8 @@ int main(int argc, char* argv[]) {
 
   printf("Read %d docs.\n", num_docs);
   printf("Read %d words.\n", max_words);
+
+  printf("Vocab size : %d\n", vocab_size);
 
   GSL_RNG = gsl_rng_alloc(gsl_rng_mt19937);
   
