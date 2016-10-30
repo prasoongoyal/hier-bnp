@@ -86,7 +86,7 @@ int getNumWords(int* W_d) {
   return num_words_in_doc;
 }
 
-int indexOf(int value, unsigned int *arr, int size) {
+int indexOf(unsigned int value, unsigned int *arr, int size) {
   for (int i=0; i<size; i++) {
     if (arr[i] == value) {
       return i;
@@ -163,7 +163,8 @@ class Model {
 
   public:
   
-  Model(float alpha, float GAMMA, int num_levels, int branching_factor) {
+  Model(float alpha, float GAMMA, int num_levels, int branching_factor, 
+      bool isTrain) {
     this->alpha = alpha;
     this->GAMMA = GAMMA;
     this->num_levels = num_levels;
@@ -179,17 +180,19 @@ class Model {
     cout << "Num paths : " << this->num_paths << "\n";
     cout << "Num internal nodes : " << this->num_internal_nodes << "\n";
 
-    beta = new double[num_paths * vocab_size];
+    if (isTrain) {
+      beta = new double[num_paths * vocab_size];
 
-    for (int p=0; p<num_paths; p++) {
-      for (int v=0; v<vocab_size; v++) {
-        beta[p * vocab_size + v] = 1.0 / vocab_size;
+      for (int p=0; p<num_paths; p++) {
+        for (int v=0; v<vocab_size; v++) {
+          beta[p * vocab_size + v] = 1.0 / vocab_size;
+        }
       }
+
+      best_beta = new double[num_paths * vocab_size];
+
+      memcpy(best_beta, beta, num_paths * vocab_size * sizeof(double));
     }
-
-    best_beta = new double[num_paths * vocab_size];
-
-    memcpy(best_beta, beta, num_paths * vocab_size * sizeof(double));
   }
 
   ~Model() {
@@ -264,14 +267,16 @@ class Model {
   }
 
   void update_best_configuration(int *W, int iter, int* countsPerDoc, int* Z, 
-      int* best_Z, double &best_log_likelihood, int &last_update_iter) {
+      int* best_Z, double &best_log_likelihood, int &last_update_iter, 
+      bool isTrain) {
     double curr_log_likelihood = compute_log_likelihood(W, countsPerDoc, Z);
-    // cout << curr_log_likelihood << " " << best_log_likelihood << "\n";
     if (curr_log_likelihood > best_log_likelihood) {
       last_update_iter = iter;
       best_log_likelihood = curr_log_likelihood;
       memcpy(best_Z, Z, num_docs * max_words * sizeof(int));
-      memcpy(best_beta, beta, num_paths * vocab_size * sizeof(double));
+      if (isTrain) {
+        memcpy(best_beta, beta, num_paths * vocab_size * sizeof(double));
+      }
     }
   }
 
@@ -307,12 +312,47 @@ class Model {
     delete [] Z_filename;
   }
 
+  void load_beta_from_file(const char* prefix) {
+    char* beta_filename = new char[100];
+    sprintf(beta_filename, "%s_beta.out", prefix);
+    ifstream dataFile (beta_filename, ios::in);
+
+    bool beta_initialized = false;
+
+    int p=0;
+    for (string line; getline(dataFile, line); p++) {
+      vector<string> probs = split(line, ' ');
+      vocab_size = probs.size();
+      if (!beta_initialized) {
+        beta = new double[num_paths * vocab_size];
+        best_beta = new double[num_paths * vocab_size];
+        beta_initialized = true;
+      }
+      for (int v=0; v<vocab_size; v++) {
+        beta[p * vocab_size + v] = max(atof(probs[v].c_str()), 0.000001);
+      }
+      double beta_sum = 0.0;
+      for (int v=0; v<vocab_size; v++) {
+        beta_sum += beta[p * vocab_size + v];
+      }
+      for (int v=0; v<vocab_size; v++) {
+        beta[p * vocab_size + v] /= beta_sum;
+      }
+    }
+
+    for (p=0; p<num_paths; p++) {
+      for (int v=0; v<vocab_size; v++) {
+        cout << fixed << setprecision(3) << beta[p * vocab_size + v] << " ";
+      }
+      cout << "\n";
+    }
+  }
 };
 
 void runGibbsSampling(int* W, const char* prefix, bool isTrain) {
   int num_levels = 4;
   int branching_factor = 3;
-  Model *model = new Model(alpha, GAMMA, num_levels, branching_factor);
+  Model *model = new Model(alpha, GAMMA, num_levels, branching_factor, isTrain);
 
   const int NUM_STARTS = 1;
   const int MAX_ITER = 10000;
@@ -329,9 +369,17 @@ void runGibbsSampling(int* W, const char* prefix, bool isTrain) {
   double best_log_likelihood = -pow(10, 10);
   int last_update_iter = -1;
 
+  memset(Z, 0, num_docs * max_words * sizeof(int));
+  memset(best_Z, 0, num_docs * max_words * sizeof(int));
+
+  if (!isTrain) {
+    model->load_beta_from_file(prefix);
+  }
+
   for (int start = 0; start < NUM_STARTS; start++) {
     for (int iter = 0; iter < MAX_ITER; iter++) {
       // sample Z
+      memset(countsPerDoc, 0, num_docs * model->getNumNodes() * sizeof(int));
       for (int d = 0; d < num_docs; d++) {
         int num_words_in_doc = getNumWords(W + d * max_words);
         model->computeDocCounts(d, num_words_in_doc, countsPerDoc, Z);
@@ -348,14 +396,14 @@ void runGibbsSampling(int* W, const char* prefix, bool isTrain) {
 
       // compute likelihood of the new configuration and update best
       model->update_best_configuration(W, iter, countsPerDoc, Z, best_Z,
-          best_log_likelihood, last_update_iter);
+          best_log_likelihood, last_update_iter, isTrain);
 
       cout  << fixed << setprecision(10)
             << "Iter " << iter << "\t" 
             << "Likelihood " << best_log_likelihood << "\t"
             << "Temp " << curr_temp << "\n";
 
-      if (iter % 100 == 0) {
+      if (iter % 100 == 0 && isTrain) {
         char* prefix_iter = new char[100];
         sprintf(prefix_iter, "%s_%d", prefix, iter);
         model->write_model_to_file(prefix_iter, W, best_Z);
@@ -375,12 +423,16 @@ void runGibbsSampling(int* W, const char* prefix, bool isTrain) {
     }
   }
   delete model;
+  delete [] countsPerDoc;
+  delete [] Z;
+  delete [] best_Z;
 }
 
 int main(int argc, char* argv[]) {
   // parse commandline arguments
-  if (argc != 5) {
-    printf("Run as ./executable corpus alpha GAMMA outfile_prefix\n");
+  if (argc != 6) {
+    printf("Run as ./executable corpus alpha GAMMA outfile_prefix train\n");
+    printf("Run as ./executable corpus alpha GAMMA infile_prefix test\n");
     exit(1);
   }
 
@@ -408,39 +460,16 @@ int main(int argc, char* argv[]) {
 
   GSL_RNG = gsl_rng_alloc(gsl_rng_mt19937);
   
-  /*
-  // print data
-  for (int d=0; d<num_docs; d++) {
-    for (int n=0; n<max_words; n++) {
-      cout << W[d*max_words + n] << " ";
-    }
-    cout << "\n";
+  if (strcmp(argv[5], "train") == 0) {
+    // run Gibbs sampler
+    runGibbsSampling(W, argv[4], true);
+  } else if (strcmp(argv[5], "test") == 0) {
+    runGibbsSampling(W, argv[4], false);
+  } else {
+    exit(1);
   }
-  */
-
-  // int* opt_Z = new int[num_docs * max_words];
-  // double *opt_beta = new double[num_paths]
-
-  // run Gibbs sampler
-  //Model best_model = runGibbsSampling(W);
-  runGibbsSampling(W, argv[4], true);
 
   delete [] W;
   gsl_rng_free(GSL_RNG);
-  //delete &best_model;
   return 0;
-
-  /*
-  int* best_Z = best_model.getBestZ();
-
-  for (int d=0; d<num_docs; d++) {
-    for (int n=0; n<getNumWords(W + d * max_words); n++) {
-      cout << best_Z[d * max_words + n] << " ";
-    }
-    cout << "\n";
-  }
-
-
-  return 0;
-  */
 }
