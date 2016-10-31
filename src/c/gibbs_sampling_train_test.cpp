@@ -249,9 +249,8 @@ class Model {
 
     if (temporal) {
       for (int n1=0; n1<n; n1++) {
-        int leaf_nodes_in_subtree_start = (Z[d * max_words + n1] - 
-            num_internal_nodes) / branching_factor * branching_factor + 
-            num_internal_nodes;
+        int leaf_nodes_in_subtree_start = (Z[d * max_words + n1]) 
+            / branching_factor * branching_factor;
         for (int p=leaf_nodes_in_subtree_start; p<Z[d * max_words + n1]; p++) {
           multinomial_prob[p] = 0.0;
         }
@@ -380,6 +379,7 @@ void runGibbsSampling(int* W, const char* prefix, bool isTrain) {
     for (int iter = 0; iter < MAX_ITER; iter++) {
       // sample Z
       memset(countsPerDoc, 0, num_docs * model->getNumNodes() * sizeof(int));
+      #pragma omp parallel for
       for (int d = 0; d < num_docs; d++) {
         int num_words_in_doc = getNumWords(W + d * max_words);
         model->computeDocCounts(d, num_words_in_doc, countsPerDoc, Z);
@@ -403,7 +403,7 @@ void runGibbsSampling(int* W, const char* prefix, bool isTrain) {
             << "Likelihood " << best_log_likelihood << "\t"
             << "Temp " << curr_temp << "\n";
 
-      if (iter % 100 == 0 && isTrain) {
+      if (iter % 500 == 0 && isTrain) {
         char* prefix_iter = new char[100];
         sprintf(prefix_iter, "%s_%d", prefix, iter);
         model->write_model_to_file(prefix_iter, W, best_Z);
