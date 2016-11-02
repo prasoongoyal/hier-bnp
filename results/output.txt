@@ -1,0 +1,27 @@
+0 articleid replyto keywords usa department online urbana california summary illinois
+1 m 11 xnewsreader version 14 tin wm giz 31 15 
+2 things point didnt give thing lot made youre doesnt back 
+3 replyto gordon keywords gebcspittedu banks science usa pittsburgh originator 18 
+4 m 14 giz email drive w color 7ey info c 
+5 government gun state law control rights american states public bill                     <= "governance/law"
+6 replyto tin version 15 question 11 keywords rochester mark state 
+7 keith baseball schneider jon frank allan john livesey sun school 
+8 key chip encryption clipper information keys data phone internet technology             <= "cryptography"
+9 replyto articleid na john david att western tapped institute robert 
+10 ive id question wrote jim 31 20 post summary driver 
+11 space research information 1993 nasa center send program science national              <= "aeronautics"
+12 replyto keywords dept david originator institute dave state corporation eric 
+13 apr 1993 gmt 11 wrote 93 message robert group inreplyto 
+14 car back bike ive cars price dod speed buy high 
+15 usa center articleid keywords replyto inreplyto 15 18 1993 19 
+16 sale card drive offer mouse email windows price video software 
+17 jesus true life christian bible christians church faith question man                   <= "christianity"
+18 usa david james na express vaxvms paul research vnews replyto 
+19 jim great heard coverage cubs question hell espn dare mike 
+20 file windows program window files version software drive c set                         <= "software"
+21 replyto state college keywords mark western ohio usa 28 c 
+22 science michael find access group read question usa questions unix 
+23 game team 7 6 year games play 10 25 8 
+24 usa na john michael keywords j replyto d c kevin 
+25 card windows email ive speed video drive memory mac ram                                <= "computers"
+26 israel q mr jews turkish armenian israeli war armenians president                      <= "moddle-east"
