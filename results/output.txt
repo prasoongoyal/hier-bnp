@@ -26,4 +26,4 @@ path_id                                 top words on path                       
 23        game team 7 6 year games play 10 25 8 
 24        usa na john michael keywords j replyto d c kevin 
 25        card windows email ive speed video drive memory mac ram                                 <= "computers"
-26        israel q mr jews turkish armenian israeli war armenians president                       <= "moddle-east"
+26        israel q mr jews turkish armenian israeli war armenians president                       <= "middle-east"
