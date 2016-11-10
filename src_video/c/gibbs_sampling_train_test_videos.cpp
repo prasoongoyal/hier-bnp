@@ -23,11 +23,11 @@ int doc_start_id = -1;
 vector<int> words_in_doc;
 double GAMMA = 0.0;
 double alpha = 0.0;
-double sigma = 0.0;
+double SIGMA = 0.0;
 //int vocab_size = 0;
 gsl_rng *GSL_RNG;
 
-bool temporal = true;
+bool temporal = false;
 
 void split(const string &s, char delim, vector<string> &elems) {
   std::stringstream ss;
@@ -57,7 +57,7 @@ void computeParams(const char* fileName) {
       frames_in_curr_video++;
     } else {
       if (curr_video_id == -1) {
-        doc_start_id = curr_video_id;
+        doc_start_id = atoi(features[0].c_str());
       } else {
         max_words = max(max_words, frames_in_curr_video);
         words_in_doc.push_back(frames_in_curr_video);
@@ -90,8 +90,9 @@ void readData(const char* fileName, double* W) {
       vector<string> features = split(line, ' ');
       //cout << features[0].c_str() << " " << d << "\n";
       printf ("d : %d \t n : %d\n", d, n);
-      assert (atoi(features[0].c_str()) == d);
-      assert (atoi(features[1].c_str()) == n);
+      //printf ("doc_start_id : %d f0 : %d\n", doc_start_id, atoi(features[0].c_str()));
+      assert (atoi(features[0].c_str()) == doc_start_id + d);
+      //assert (atoi(features[1].c_str()) == n);
       for (int f=0; f<num_features; f++) {
         W[d * max_words * num_features + n * num_features + f] = 
             atof(features[f+2].c_str());
@@ -171,7 +172,7 @@ class Model {
     return ll;
   }
 
-  double compute_log_likelihood(double* W, int* countsPerDoc, int* Z) {
+  double compute_log_likelihood(double* W, int* countsPerDoc, int* Z, double sigma) {
     double ll = 0.0;
     for (int p=0; p<num_paths; p++) {
       for (int f=0; f<num_features; f++) {
@@ -244,7 +245,7 @@ class Model {
     // printDocCounts(doc);
   }
 
-  void sample_beta(double* W, int* Z) {
+  void sample_beta(double* W, int* Z, double sigma) {
     double* counts = new double[num_paths];
     memset(counts, 0, num_paths * sizeof(double));
     double* sumW = new double[num_paths * num_features];
@@ -272,28 +273,41 @@ class Model {
     delete [] sumW;
   }
 
-  double likelihood_gaussian(double* W_dn, double* beta_p) {
+  double likelihood_gaussian(double* W_dn, double* beta_p, double sigma) {
     double result = 0;
+    //printf ("Lik. Gaussian : \n");
     for (int f=0; f<num_features; f++) {
       result += pow(beta_p[f], 2.0);
     }
+    //printf ("Lik. Gaussian : after loop 1, result : %f\n", result);
     for (int f=0; f<num_features; f++) {
       result -= 2 * beta_p[f] * W_dn[f];
     }
-    result = exp(-1.0 / (2.0 * sigma) * result);
+    //printf ("Lik. Gaussian : after loop 2, result : %f\n", result);
+    result = (-1.0 / (2.0 * sigma) * result);
     return result;
   }
 
   void sample_Zdn(double* W_dn, int d, int n, int num_words_in_doc, double temp,
-      int* countsPerDoc, int* Z) {
+      int* countsPerDoc, int* Z, double sigma) {
     // approximate prior
     double *multinomial_prob = new double[num_paths];
+    double* likelihoods = new double[num_paths];
+    double max_likelihood = -pow(10, 10);
+    for (int p=0; p<num_paths; p++) {
+      likelihoods[p] = likelihood_gaussian(W_dn, beta + p * num_features, sigma);
+      max_likelihood = max(max_likelihood, likelihoods[p]);
+    }
     for (int p=0; p<num_paths; p++) {
       multinomial_prob[p] = 
-          ((double)countsPerDoc[d * num_nodes + num_internal_nodes + p] + GAMMA) / 
-          (num_words_in_doc + num_paths * GAMMA) *
-          likelihood_gaussian(W_dn, beta + p * num_features);
-      multinomial_prob[p] = pow(multinomial_prob[p], 1.0/temp);
+          pow(((double)countsPerDoc[d * num_nodes + num_internal_nodes + p] + GAMMA) / 
+          (num_words_in_doc + num_paths * GAMMA), 1.0/temp) *
+          exp((likelihoods[p] - max_likelihood)/temp);
+      //multinomial_prob[p] = pow(multinomial_prob[p], 1.0/temp);
+      //printf ("p : %d, mult[p]: %f\n", p, multinomial_prob[p]);
+      //printf ("countsPerDoc : %d, Gamma : %f, num_words_in_doc : %d, lik_gauss: %f\n", 
+      //    countsPerDoc[d * num_nodes + num_internal_nodes + p], GAMMA, num_words_in_doc,
+      //    exp(likelihoods[p] - max_likelihood));
     }
 
     if (temporal) {
@@ -306,15 +320,18 @@ class Model {
       }
     }
 
+    //printf ("Before sampling\n");
     Z[d * max_words + n] = generateMultinomialSample(multinomial_prob, num_paths);
+    //printf ("After sampling\n");
 
     delete [] multinomial_prob;
   }
 
   void update_best_configuration(double* W, int iter, int* countsPerDoc, int* Z, 
       int* best_Z, double &best_log_likelihood, int &last_update_iter, 
-      bool isTrain) {
-    double curr_log_likelihood = compute_log_likelihood(W, countsPerDoc, Z);
+      bool isTrain, double sigma) {
+    double curr_log_likelihood = compute_log_likelihood(W, countsPerDoc, Z, sigma);
+    //printf ("Curr LL : %f\n", curr_log_likelihood);
     if (curr_log_likelihood > best_log_likelihood) {
       last_update_iter = iter;
       best_log_likelihood = curr_log_likelihood;
@@ -421,31 +438,42 @@ void runGibbsSampling(double* W, const char* prefix, bool isTrain) {
     model->load_beta_from_file(prefix);
   }
 
+  double sigma_variable_comp = num_features;
+  printf ("Starting optimization\n");
   for (int start = 0; start < NUM_STARTS; start++) {
     for (int iter = 0; iter < MAX_ITER; iter++) {
+      //printf ("Iter : %d -- Sampling Z\n", iter);
+      double sigma = SIGMA + sigma_variable_comp;
       // sample Z
       memset(countsPerDoc, 0, num_docs * model->getNumNodes() * sizeof(int));
 
       for (int d = 0; d < num_docs; d++) {
         model->computeDocCounts(d, words_in_doc[d], countsPerDoc, Z);
         for (int n=0; n < words_in_doc[d]; n++) {
-          model->sample_Zdn(W + d * max_words * num_features, d, n, words_in_doc[d], 
-              curr_temp, countsPerDoc, Z);
+          //printf ("\t d : %d, n : %d\n", d, n);
+          model->sample_Zdn(W + d * max_words * num_features + n, d, n, words_in_doc[d], 
+              curr_temp, countsPerDoc, Z, sigma);
         }
       }
+      //printf ("Iter : %d -- Sampled Z\n", iter);
 
+      //printf ("Iter : %d -- Sampling beta\n", iter);
       // sample beta
       if (isTrain) {
-        model->sample_beta(W, Z);
+        model->sample_beta(W, Z, sigma);
       }
+      //printf ("Iter : %d -- Sampled beta\n", iter);
 
+      //printf ("Updating best config\n", iter);
       // compute likelihood of the new configuration and update best
       model->update_best_configuration(W, iter, countsPerDoc, Z, best_Z,
-          best_log_likelihood, last_update_iter, isTrain);
+          best_log_likelihood, last_update_iter, isTrain, sigma);
+      //printf ("Updated best config\n", iter);
 
       cout  << fixed << setprecision(10)
             << "Iter " << iter << "\t" 
             << "Likelihood " << best_log_likelihood << "\t"
+            << "Sigma " << sigma << "\t"
             << "Temp " << curr_temp << "\n";
 
       if (iter % 500 == 0 && isTrain) {
@@ -458,6 +486,7 @@ void runGibbsSampling(double* W, const char* prefix, bool isTrain) {
       if (iter - last_update_iter > 10) {
         last_update_iter = iter;
         curr_temp *= 0.9;
+        sigma_variable_comp *= 0.5;
         if (curr_temp < end_temp) {
           break;
         }
@@ -484,7 +513,7 @@ int main(int argc, char* argv[]) {
   istringstream alpha_str(argv[2]);
   alpha_str >> alpha;
   istringstream sigma_str(argv[3]);
-  sigma_str >> sigma;
+  sigma_str >> SIGMA;
   istringstream gamma_str(argv[4]);
   gamma_str >> GAMMA;
 
