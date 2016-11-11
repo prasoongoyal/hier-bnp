@@ -73,9 +73,11 @@ void computeParams(const char* fileName) {
   printf("num_docs : %d\n", num_docs);
   printf("max_words: %d\n", max_words);
   printf("num_features : %d\n", num_features);
+  /*
   for(int i=0; i<num_docs; i++) {
     cout << i << " " << words_in_doc[i] << "\n";
   }
+  */
 
   dataFile.close();
 }
@@ -85,11 +87,12 @@ void readData(const char* fileName, double* W) {
 
   string line;
   for (int d=0; d<num_docs; d++) {
+    //printf ("Reading doc %d\n", d);
     for (int n=0; n<words_in_doc[d]; n++) {
       getline(dataFile, line);
       vector<string> features = split(line, ' ');
       //cout << features[0].c_str() << " " << d << "\n";
-      printf ("d : %d \t n : %d\n", d, n);
+      //printf ("d : %d \t n : %d\n", d, n);
       //printf ("doc_start_id : %d f0 : %d\n", doc_start_id, atoi(features[0].c_str()));
       assert (atoi(features[0].c_str()) == doc_start_id + d);
       //assert (atoi(features[1].c_str()) == n);
@@ -242,7 +245,7 @@ class Model {
       countsPerDoc[doc * num_nodes + (p-1)/branching_factor] += 
           countsPerDoc[doc * num_nodes + p];
     }
-    // printDocCounts(doc);
+    //printDocCounts(doc, countsPerDoc);
   }
 
   void sample_beta(double* W, int* Z, double sigma) {
@@ -263,9 +266,16 @@ class Model {
 
     for (int p=0; p<num_paths; p++) {
       double sigma_p = sigma / (1 + counts[p]);
+      double sum_beta_p = 0.0;
       for (int f=0; f<num_features; f++) {
         double mu_pf = (alpha + sumW[p * num_features + f]) / (1.0 + counts[p]);
+        //printf ("p : %d f : %d Unsmoothed mu : %f, Smoothed mu : %f\n", )
         beta[p * num_features + f] = mu_pf + gsl_ran_gaussian(GSL_RNG, sigma_p);
+        sum_beta_p += beta[p * num_features + f];
+      }
+      //normalize beta
+      for (int f=0; f<num_features; f++) {
+        beta[p * num_features + f] *= (alpha / sum_beta_p);
       }
     }
 
@@ -294,10 +304,16 @@ class Model {
     double *multinomial_prob = new double[num_paths];
     double* likelihoods = new double[num_paths];
     double max_likelihood = -pow(10, 10);
+    //#pragma omp parallel for
     for (int p=0; p<num_paths; p++) {
       likelihoods[p] = likelihood_gaussian(W_dn, beta + p * num_features, sigma);
+      //printf ("LL : %d \t %f\n", p, likelihoods[p]);
+      //max_likelihood = max(max_likelihood, likelihoods[p]);
+    }
+    for (int p=0; p<num_paths; p++) {
       max_likelihood = max(max_likelihood, likelihoods[p]);
     }
+    //printf ("Max ll : %f\n", max_likelihood);
     for (int p=0; p<num_paths; p++) {
       multinomial_prob[p] = 
           pow(((double)countsPerDoc[d * num_nodes + num_internal_nodes + p] + GAMMA) / 
@@ -321,6 +337,13 @@ class Model {
     }
 
     //printf ("Before sampling\n");
+    /*
+    for (int p=0; p<num_paths; p++) {
+      cout << fixed << setprecision(2) << multinomial_prob[p] << " ";
+    }
+    cout << "\n";
+    */
+
     Z[d * max_words + n] = generateMultinomialSample(multinomial_prob, num_paths);
     //printf ("After sampling\n");
 
@@ -417,7 +440,7 @@ void runGibbsSampling(double* W, const char* prefix, bool isTrain) {
   Model *model = new Model(alpha, GAMMA, num_levels, branching_factor, isTrain);
 
   const int NUM_STARTS = 1;
-  const int MAX_ITER = 10000;
+  const int MAX_ITER = 100000;
 
   const double start_temp = 10.0;
   const double end_temp = 0.1;
@@ -447,12 +470,19 @@ void runGibbsSampling(double* W, const char* prefix, bool isTrain) {
       // sample Z
       memset(countsPerDoc, 0, num_docs * model->getNumNodes() * sizeof(int));
 
+      #pragma omp parallel for
       for (int d = 0; d < num_docs; d++) {
         model->computeDocCounts(d, words_in_doc[d], countsPerDoc, Z);
+        /*
+        for (int node=0; node<model->getNumNodes(); node++) {
+          cout << countsPerDoc[d * getNumNodes]  
+        }
+        */
+        //getchar();
         for (int n=0; n < words_in_doc[d]; n++) {
           //printf ("\t d : %d, n : %d\n", d, n);
-          model->sample_Zdn(W + d * max_words * num_features + n, d, n, words_in_doc[d], 
-              curr_temp, countsPerDoc, Z, sigma);
+          model->sample_Zdn(W + d * max_words * num_features + n * num_features, d, n, 
+              words_in_doc[d], curr_temp, countsPerDoc, Z, sigma);
         }
       }
       //printf ("Iter : %d -- Sampled Z\n", iter);
@@ -475,8 +505,9 @@ void runGibbsSampling(double* W, const char* prefix, bool isTrain) {
             << "Likelihood " << best_log_likelihood << "\t"
             << "Sigma " << sigma << "\t"
             << "Temp " << curr_temp << "\n";
+      //getchar();
 
-      if (iter % 500 == 0 && isTrain) {
+      if (iter % 100 == 0 && isTrain) {
         char* prefix_iter = new char[100];
         sprintf(prefix_iter, "%s_%d", prefix, iter);
         model->write_model_to_file(prefix_iter, W, best_Z);
@@ -533,6 +564,18 @@ int main(int argc, char* argv[]) {
 
   printf("Read %d docs.\n", num_docs);
   printf("Read %d words.\n", max_words);
+
+  /*
+  for (int d=0; d<num_docs; d++) {
+    for (int n=0; n<words_in_doc[d]; n++) {
+      for (int f=0; f<10; f++) {
+        printf ("W : \t d : %d \t n : %d \t f : %d \t\t Val : %f\n", d, n, f,
+            W[d * max_words * num_features + n * num_features + f]);
+      }
+    }
+  }
+  return 0;
+  */
 
   GSL_RNG = gsl_rng_alloc(gsl_rng_mt19937);
   
