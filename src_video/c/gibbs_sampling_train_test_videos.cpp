@@ -139,8 +139,9 @@ class Model {
   double *best_beta;
   
   void printDocCounts(int doc, int* countsPerDoc) {
+    return;
     cout << "Doc : " << doc << "\n";
-    for (int p=0; p<num_nodes; p++) {
+    for (int p=num_internal_nodes; p<num_nodes; p++) {
       cout << countsPerDoc[doc * num_nodes + p] << "\t";
     }
     cout << "\n";
@@ -168,7 +169,7 @@ class Model {
   double compute_NCRP_likelihood(int d, int num_words_in_doc, 
       int* countsPerDoc, int* Z) {
     double ll = 0.0;
-    computeDocCounts(d, num_words_in_doc, countsPerDoc, Z);
+    computeDocCounts(d, num_words_in_doc, countsPerDoc, Z, false);
     for (int start_idx=1; start_idx<num_nodes; start_idx+= branching_factor) {
       ll += compute_CRP_likelihood(countsPerDoc + d * num_nodes);
     }
@@ -236,7 +237,7 @@ class Model {
   }
 
   void computeDocCounts(int doc, int num_words_in_doc, int* countsPerDoc, 
-      int* Z) {
+      int* Z, bool printCounts) {
     memset(countsPerDoc + doc * num_nodes, 0, num_nodes * sizeof(int));
     for (int n=0; n<num_words_in_doc; n++) {
       countsPerDoc[doc * num_nodes + num_internal_nodes + Z[doc * max_words + n]]++;
@@ -245,63 +246,33 @@ class Model {
       countsPerDoc[doc * num_nodes + (p-1)/branching_factor] += 
           countsPerDoc[doc * num_nodes + p];
     }
-    //printDocCounts(doc, countsPerDoc);
-  }
-
-  void sample_beta(double* W, int* Z, double sigma) {
-    double* counts = new double[num_paths];
-    memset(counts, 0, num_paths * sizeof(double));
-    double* sumW = new double[num_paths * num_features];
-    memset(sumW, 0, num_paths * num_features * sizeof(double));
-
-    for (int d=0; d<num_docs; d++) {
-      for (int n=0; n<words_in_doc[d]; n++) {
-        counts[Z[d * max_words + n]] ++;
-        for (int f=0; f<num_features; f++) {
-          sumW[Z[d * max_words + n] * num_features + f] += W[d * max_words + 
-              n * num_features + f];
-        }
-      }
+    if (printCounts) {
+      printDocCounts(doc, countsPerDoc);
     }
-
-    for (int p=0; p<num_paths; p++) {
-      double sigma_p = sigma / (1 + counts[p]);
-      double sum_beta_p = 0.0;
-      for (int f=0; f<num_features; f++) {
-        double mu_pf = (alpha + sumW[p * num_features + f]) / (1.0 + counts[p]);
-        //printf ("p : %d f : %d Unsmoothed mu : %f, Smoothed mu : %f\n", )
-        beta[p * num_features + f] = mu_pf + gsl_ran_gaussian(GSL_RNG, sigma_p);
-        sum_beta_p += beta[p * num_features + f];
-      }
-      //normalize beta
-      for (int f=0; f<num_features; f++) {
-        beta[p * num_features + f] *= (alpha / sum_beta_p);
-      }
-    }
-
-    delete [] counts;
-    delete [] sumW;
   }
 
   double likelihood_gaussian(double* W_dn, double* beta_p, double sigma) {
     double result = 0;
     //printf ("Lik. Gaussian : \n");
+    /*
     for (int f=0; f<num_features; f++) {
       result += pow(beta_p[f], 2.0);
     }
+    */
     //printf ("Lik. Gaussian : after loop 1, result : %f\n", result);
+    
     for (int f=0; f<num_features; f++) {
-      result -= 2 * beta_p[f] * W_dn[f];
+      result += beta_p[f] * (beta_p[f] - 2 * W_dn[f]);
     }
     //printf ("Lik. Gaussian : after loop 2, result : %f\n", result);
-    result = (-1.0 / (2.0 * sigma) * result);
+    result = (-1.0 / (2.0 * sigma * sigma) * result);
     return result;
   }
 
   void sample_Zdn(double* W_dn, int d, int n, int num_words_in_doc, double temp,
-      int* countsPerDoc, int* Z, double sigma) {
+      int* countsPerDoc, int* Z, double sigma, bool printDebug) {
     // approximate prior
-    double *multinomial_prob = new double[num_paths];
+    double* multinomial_prob = new double[num_paths];
     double* likelihoods = new double[num_paths];
     double max_likelihood = -pow(10, 10);
     //#pragma omp parallel for
@@ -314,16 +285,46 @@ class Model {
       max_likelihood = max(max_likelihood, likelihoods[p]);
     }
     //printf ("Max ll : %f\n", max_likelihood);
+    double* first_term = new double[num_paths];
+    double* second_term = new double[num_paths];
+    double sum_mult_prob = 0.0;
+    double first_term_sum = 0.0;
+    double second_term_sum = 0.0;
     for (int p=0; p<num_paths; p++) {
       multinomial_prob[p] = 
           pow(((double)countsPerDoc[d * num_nodes + num_internal_nodes + p] + GAMMA) / 
           (num_words_in_doc + num_paths * GAMMA), 1.0/temp) *
           exp((likelihoods[p] - max_likelihood)/temp);
+      first_term[p] = pow(((double)countsPerDoc[d * num_nodes + num_internal_nodes + p] + GAMMA) / 
+                      (num_words_in_doc + num_paths * GAMMA), 1.0/temp);
+      second_term[p] = exp((likelihoods[p] - max_likelihood)/temp);
+      sum_mult_prob += multinomial_prob[p];
+      first_term_sum += first_term[p];
+      second_term_sum += second_term[p];
+      //cout << fixed << setprecision(2) << multinomial_prob[p] << " ";
       //multinomial_prob[p] = pow(multinomial_prob[p], 1.0/temp);
       //printf ("p : %d, mult[p]: %f\n", p, multinomial_prob[p]);
       //printf ("countsPerDoc : %d, Gamma : %f, num_words_in_doc : %d, lik_gauss: %f\n", 
       //    countsPerDoc[d * num_nodes + num_internal_nodes + p], GAMMA, num_words_in_doc,
       //    exp(likelihoods[p] - max_likelihood));
+    }
+    printDebug = false;
+    if (printDebug) {
+      cout << "First : \t";
+      for (int p=0; p<num_paths; p++) {
+        cout << fixed << setprecision(2) << first_term[p] / first_term_sum << " ";
+      }
+      cout << "\n";
+      cout << "Second : \t";
+      for (int p=0; p<num_paths; p++) {
+        cout << fixed << setprecision(2) << second_term[p] / second_term_sum << " ";
+      }
+      cout << "\n";
+      cout << "Combined : \t";
+      for (int p=0; p<num_paths; p++) {
+        cout << fixed << setprecision(2) << multinomial_prob[p] / sum_mult_prob << " ";
+      }
+      cout << "\nSigma : " << sigma << "\n\n";
     }
 
     if (temporal) {
@@ -348,6 +349,51 @@ class Model {
     //printf ("After sampling\n");
 
     delete [] multinomial_prob;
+  }
+
+  void sample_beta(double* W, int* Z, double sigma) {
+    double* counts = new double[num_paths];
+    memset(counts, 0, num_paths * sizeof(double));
+    double* sumW = new double[num_paths * num_features];
+    memset(sumW, 0, num_paths * num_features * sizeof(double));
+
+    for (int d=0; d<num_docs; d++) {
+      for (int n=0; n<words_in_doc[d]; n++) {
+        counts[Z[d * max_words + n]] ++;
+        for (int f=0; f<num_features; f++) {
+          sumW[Z[d * max_words + n] * num_features + f] += W[d * max_words + 
+              n * num_features + f];
+        }
+      }
+    }
+
+    for (int p=0; p<num_paths; p++) {
+      for (int f=0; f<num_features; f++) {
+        cout << fixed << setprecision(2) << "(" << sumW[p * num_features + f] << ","
+            << counts[p] << ")" << "\t";
+      }
+      cout << "\n";
+    }
+
+    for (int p=0; p<num_paths; p++) {
+      double sigma_p = sigma / (1 + counts[p]);
+      double normsq_beta_p = 0.0;
+      for (int f=0; f<num_features; f++) {
+        double mu_pf = (alpha + sumW[p * num_features + f]) / (1.0 + counts[p]);
+        //printf ("p : %d f : %d Unsmoothed mu : %f, Smoothed mu : %f\n", )
+        beta[p * num_features + f] = mu_pf + gsl_ran_gaussian(GSL_RNG, sigma_p);
+        normsq_beta_p += pow(beta[p * num_features + f],2.0);
+      }
+      /*
+      //normalize beta
+      for (int f=0; f<num_features; f++) {
+        beta[p * num_features + f] *= (65.0 / pow(normsq_beta_p, 0.5));
+      }
+      */
+    }
+
+    delete [] counts;
+    delete [] sumW;
   }
 
   void update_best_configuration(double* W, int iter, int* countsPerDoc, int* Z, 
@@ -436,7 +482,7 @@ class Model {
 
 void runGibbsSampling(double* W, const char* prefix, bool isTrain) {
   int num_levels = 4;
-  int branching_factor = 3;
+  int branching_factor = 2;
   Model *model = new Model(alpha, GAMMA, num_levels, branching_factor, isTrain);
 
   const int NUM_STARTS = 1;
@@ -470,9 +516,9 @@ void runGibbsSampling(double* W, const char* prefix, bool isTrain) {
       // sample Z
       memset(countsPerDoc, 0, num_docs * model->getNumNodes() * sizeof(int));
 
-      #pragma omp parallel for
+      //#pragma omp parallel for
       for (int d = 0; d < num_docs; d++) {
-        model->computeDocCounts(d, words_in_doc[d], countsPerDoc, Z);
+        model->computeDocCounts(d, words_in_doc[d], countsPerDoc, Z, false);
         /*
         for (int node=0; node<model->getNumNodes(); node++) {
           cout << countsPerDoc[d * getNumNodes]  
@@ -482,15 +528,22 @@ void runGibbsSampling(double* W, const char* prefix, bool isTrain) {
         for (int n=0; n < words_in_doc[d]; n++) {
           //printf ("\t d : %d, n : %d\n", d, n);
           model->sample_Zdn(W + d * max_words * num_features + n * num_features, d, n, 
-              words_in_doc[d], curr_temp, countsPerDoc, Z, sigma);
+              words_in_doc[d], curr_temp, countsPerDoc, Z, sigma, d>=97);
         }
+        if (d >= 97) {
+          model->computeDocCounts(d, words_in_doc[d], countsPerDoc, Z, true);
+        }
+      }
+      if (iter % 10 == -1) {
+        printf("Waiting...\n");
+        getchar();
       }
       //printf ("Iter : %d -- Sampled Z\n", iter);
 
       //printf ("Iter : %d -- Sampling beta\n", iter);
       // sample beta
       if (isTrain) {
-        model->sample_beta(W, Z, sigma);
+        model->sample_beta(W, Z, SIGMA);
       }
       //printf ("Iter : %d -- Sampled beta\n", iter);
 
@@ -507,17 +560,17 @@ void runGibbsSampling(double* W, const char* prefix, bool isTrain) {
             << "Temp " << curr_temp << "\n";
       //getchar();
 
-      if (iter % 100 == 0 && isTrain) {
+      if (iter % 100 == -1 && isTrain) {
         char* prefix_iter = new char[100];
         sprintf(prefix_iter, "%s_%d", prefix, iter);
         model->write_model_to_file(prefix_iter, W, best_Z);
         delete [] prefix_iter;
       }
 
-      if (iter - last_update_iter > 10) {
+      if (iter - last_update_iter >= 2) {
         last_update_iter = iter;
-        curr_temp *= 0.9;
-        sigma_variable_comp *= 0.5;
+        curr_temp *= 0.7;
+        sigma_variable_comp *= 0.4;
         if (curr_temp < end_temp) {
           break;
         }
