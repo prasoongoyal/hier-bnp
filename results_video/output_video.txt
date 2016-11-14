@@ -1,8 +1,48 @@
-0 [1279, 1246, 1223, 1273, 1286, 1294, 1288, 1222, 1282, 1287]
-1 [1264, 1236, 1281, 1280, 1209, 1263, 1255, 1233, 1287, 1279]
+0 [1279, 1246, 1223, 1273, 1286, 1294, 1288, 1222, 1282, 1287]      <== cooking
+1 [1264, 1236, 1281, 1280, 1209, 1263, 1255, 1233, 1287, 1279]      <== outdoors
 2 [1298, 1268, 1229, 1285, 1288, 1265, 1280, 1239, 1287, 1297]
-3 [1275, 1254, 1250, 1297, 1217, 1283, 1203, 1239, 1287, 1259]
-4 [1274, 1271, 1272, 1273, 1286, 1279, 1246, 1287, 1280, 1222]
-5 [1225, 1203, 1208, 1221, 1220, 1216, 1276, 1295, 1287, 1264]
-6 [1294, 1288, 1287, 1299, 1290, 1227, 1223, 1292, 1203, 1216]
-7 [1248, 1239, 1280, 1210, 1287, 1298, 1229, 1288, 1289, 1297]
+3 [1275, 1254, 1250, 1297, 1217, 1283, 1203, 1239, 1287, 1259]      <== performances
+4 [1274, 1271, 1272, 1273, 1286, 1279, 1246, 1287, 1280, 1222]      <== cooking
+5 [1225, 1203, 1208, 1221, 1220, 1216, 1276, 1295, 1287, 1264]      <== interaction between 2 people
+6 [1294, 1288, 1287, 1299, 1290, 1227, 1223, 1292, 1203, 1216]      <== cutting
+7 [1248, 1239, 1280, 1210, 1287, 1298, 1229, 1288, 1289, 1297]      <== interaction between 2 people
+
+0:
+vid1279 a boy is adding juice in the cup
+vid1246 a man is cutting a piece of meat
+vid1223 a man is cutting broccoli
+
+1:
+vid1264 a man is jogging on a road
+vid1236 an animal is walking on the ground
+vid1281 a boy tosses tennis balls at another boy
+
+2:
+vid1298 a child is getting shots in his arm
+vid1268 a man is speaking
+vid1229 a man is playing a guitar
+
+3:
+vid1275 a girl is playing a flute
+vid1254 a man is performing some magic trick on stage
+vid1250 a girl is dancing on stage
+
+4:
+vid1274 a person is slicing a cucumber
+vid1271 a man is slicing an onion
+vid1272 a man is slicing a tomato
+
+5:
+vid1225 a man is carrying a man over his shoulder
+vid1203 a man and a woman are talking
+vid1208 two men are having a discussion
+
+6:
+vid1294 a carrot is being sliced
+vid1288 a man cuts a carpet with a knife
+vid1287 a man is cutting a piece of leather
+
+7:
+vid1248 a baby is dancing in the hands of mother
+vid1239 a woman and boy are tossing a small pumpkin around
+vid1280 a man is beating another man
