@@ -46,3 +46,8 @@ vid1287 a man is cutting a piece of leather
 vid1248 a baby is dancing in the hands of mother
 vid1239 a woman and boy are tossing a small pumpkin around
 vid1280 a man is beating another man
+
+
+
+
+(Params: a3.0_s0.1_g1.0_l4_bf2)
