@@ -352,6 +352,15 @@ class Model {
   }
 
   void sample_beta(double* W, int* Z, double sigma) {
+    /*
+    for (int d=0; d<num_docs; d++) {
+      for (int n=0; n<words_in_doc[d]; n++) {
+        cout << Z[d * max_words + n] << "\t";
+      }
+      cout << "\n";
+    }
+    */
+
     double* counts = new double[num_paths];
     memset(counts, 0, num_paths * sizeof(double));
     double* sumW = new double[num_paths * num_features];
@@ -361,7 +370,7 @@ class Model {
       for (int n=0; n<words_in_doc[d]; n++) {
         counts[Z[d * max_words + n]] ++;
         for (int f=0; f<num_features; f++) {
-          sumW[Z[d * max_words + n] * num_features + f] += W[d * max_words + 
+          sumW[Z[d * max_words + n] * num_features + f] += W[d * max_words * num_features + 
               n * num_features + f];
         }
       }
