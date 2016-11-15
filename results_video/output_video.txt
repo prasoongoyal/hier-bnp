@@ -50,4 +50,4 @@ vid1280 a man is beating another man
 
 
 
-(Params: a3.0_s0.1_g1.0_l4_bf2)
+(Params: a3.0_s0.1_g1.0_l4_bf2, 0.7, 0.4)
