@@ -180,21 +180,23 @@ class Model {
 
   double compute_log_likelihood(double* W, int* countsPerDoc, int* Z, double sigma) {
     double ll = 0.0;
+    /*
     for (int f=0; f<num_features; f++) {
       ll = log(gsl_ran_gaussian_pdf(beta_internal[0 * num_features + f] - alpha, sigma));
     }
-    for (int p=1; p<num_internal_nodes; p++) {
-      int parent_id = (p - 1) / branching_factor;
+    */
+    for (int p=0; p<num_internal_nodes; p++) {
+      //int parent_id = (p - 1) / branching_factor;
       for (int f=0; f<num_features; f++) {
         ll += log(gsl_ran_gaussian_pdf(beta_internal[p * num_features + f] - 
-            beta_internal[parent_id * num_features + f], sigma));
+            alpha, sigma));
       }
     }
     for (int p=0; p<num_paths; p++) {
       int parent_id = (p + num_internal_nodes - 1) / branching_factor;
       for (int f=0; f<num_features; f++) {
         ll += log(gsl_ran_gaussian_pdf(beta[p * num_features + f] - 
-            beta_internal[parent_id * num_features + f], sigma));
+            alpha, sigma));
       }
     }
     for (int d=0; d<num_docs; d++) {
@@ -202,9 +204,18 @@ class Model {
     }
     for (int d=0; d<num_docs; d++) {
       for (int n=0; n<words_in_doc[d]; n++) {
+        int path = Z[d * max_words + n];
         for (int f=0; f<num_features; f++) {
           ll += log(gsl_ran_gaussian_pdf(W[d * max_words * num_features + 
-              n * num_features + f] - beta[Z[d * max_words + n] * num_features + f], sigma));
+              n * num_features + f] - beta[path * num_features + f], sigma));
+        }
+        path += num_internal_nodes;
+        while (path > 0) {
+          path = (path - 1) / branching_factor;
+          for (int f=0; f<num_features; f++) {
+            ll += log(gsl_ran_gaussian_pdf(W[d * max_words * num_features + 
+              n * num_features + f] - beta[path * num_features + f], sigma));
+          }
         }
       }
     }
@@ -393,7 +404,7 @@ class Model {
     double* counts = new double[num_paths];
     memset(counts, 0, num_paths * sizeof(double));
     double* counts_internal = new double[num_internal_nodes];
-    memset(counts_internal_nodes, 0, num_internal_nodes * sizeof(double));
+    memset(counts_internal, 0, num_internal_nodes * sizeof(double));
     double* sumW = new double[num_paths * num_features];
     memset(sumW, 0, num_paths * num_features * sizeof(double));
     double* sumW_internal = new double[num_internal_nodes * num_features];
@@ -408,12 +419,22 @@ class Model {
         }
       }
     }
-    for (int p = num_internal_ndoes - 1; p>=0; p--) {
+    for (int p=0; p<num_paths; p++) {
       for (int f=0; f<num_features; f++) {
-        
+        sumW_internal[(p + num_internal_nodes - 1)/branching_factor * num_features + f] += 
+            sumW[p * num_features + f];
       }
+      counts_internal[(p + num_internal_nodes - 1)/branching_factor] += counts[p];
     }
-
+    for (int p=num_internal_nodes - 1; p>0; p--) {
+      for (int f=0; f<num_features; f++) {
+        sumW_internal[(p - 1)/branching_factor * num_features + f] += 
+            sumW_internal[p * num_features + f];
+      }
+      counts_internal[(p - 1)/branching_factor] += counts[p];
+    }
+    
+    
     /*
     for (int p=0; p<num_paths; p++) {
       for (int f=0; f<num_features; f++) {
@@ -427,22 +448,35 @@ class Model {
     for (int p=0; p<num_paths; p++) {
       double sigma_p = sigma / sqrt(1 + counts[p]);
       double normsq_beta_p = 0.0;
-      int parent_id = (p + num_internal_nodes) / branching_factor;
+      int parent_id = (p + num_internal_nodes - 1) / branching_factor;
       for (int f=0; f<num_features; f++) {
-        double mu_pf = (beta_internal[parent_id * num_features + f] + 
+        double mu_pf = (alpha + 
             sumW[p * num_features + f]) / (1.0 + counts[p]);
-        //printf ("p : %d f : %d Unsmoothed mu : %f, Smoothed mu : %f\n", )
         beta[p * num_features + f] = mu_pf + gsl_ran_gaussian(GSL_RNG, sigma_p);
-        //normsq_beta_p += pow(beta[p * num_features + f],2.0);
       }
-      /*
-      //normalize beta
-      for (int f=0; f<num_features; f++) {
-        beta[p * num_features + f] *= (65.0 / pow(normsq_beta_p, 0.5));
-      }
-      */
     }
 
+    for (int p=num_internal_nodes; p>=0; p--) {
+      double sigma_p = sigma / sqrt(1 + counts_internal[p]);
+      double normsq_beta_p = 0.0;
+      //int parent_id = (p - 1) / branching_factor;
+      for (int f=0; f<num_features; f++) {
+        double mu_pf = (alpha + 
+            sumW_internal[p * num_features + f]) / (1.0 + counts_internal[p]);
+        beta_internal[p * num_features + f] = mu_pf + gsl_ran_gaussian(GSL_RNG, sigma_p);
+      }
+    }
+    /*
+    // root node
+    for (int f=0; f<num_features; f++) {
+      double sigma_0 = sigma / sqrt(1 + counts_internal[0]);
+      double mu_0f = (alpha + sumW_internal[0 * num_features + f]) / 
+          (1.0 + counts_internal[0]);
+      beta_internal[0 * num_features + f] = mu_0f + gsl_ran_gaussian(GSL_RNG, sigma_0);
+    }
+    */
+
+    /*
     double sigma_p = sigma / sqrt(1 + branching_factor);
     double* beta_sum_children = new double[num_internal_nodes * num_features];
     memset (beta_sum_children, 0, num_internal_nodes * num_features * sizeof(double));
@@ -468,10 +502,13 @@ class Model {
           (1 + branching_factor);
       beta_internal[0 * num_features + f] = mu_pf + gsl_ran_gaussian(GSL_RNG, sigma_p);
     }
+    */
 
     delete [] counts;
     delete [] sumW;
-    delete [] beta_sum_children;
+    delete [] counts_internal;
+    delete [] sumW_internal;
+    //delete [] beta_sum_children;
   }
 
   void update_best_configuration(double* W, int iter, int* countsPerDoc, int* Z, 
