@@ -27,7 +27,7 @@ double SIGMA = 0.0;
 //int vocab_size = 0;
 gsl_rng *GSL_RNG;
 
-bool temporal = false;
+bool temporal = true;
 
 void split(const string &s, char delim, vector<string> &elems) {
   std::stringstream ss;
@@ -116,7 +116,8 @@ int indexOf(unsigned int value, unsigned int *arr, int size) {
     cout << arr[i] << " ";
   }
   cout << "\n";
-  assert(false);
+  //assert(false);
+  return -1;
 }
 
 int generateMultinomialSample(double* prob, int size) {
@@ -332,7 +333,7 @@ class Model {
         int leaf_nodes_in_subtree_start = (Z[d * max_words + n1]) 
             / branching_factor * branching_factor;
         for (int p=leaf_nodes_in_subtree_start; p<Z[d * max_words + n1]; p++) {
-          multinomial_prob[p] = 0.0;
+          multinomial_prob[p] /= 10.0;
         }
       }
     }
@@ -346,6 +347,13 @@ class Model {
     */
 
     Z[d * max_words + n] = generateMultinomialSample(multinomial_prob, num_paths);
+    if (Z[d * max_words + n] < 0) {
+      // sample uniformly
+      for (int p=0; p<num_paths; p++) {
+        multinomial_prob[p] = 1.0;
+      }
+      Z[d * max_words + n] = generateMultinomialSample(multinomial_prob, num_paths);
+    }
     //printf ("After sampling\n");
 
     delete [] multinomial_prob;
@@ -519,7 +527,7 @@ void runGibbsSampling(double* W, const char* prefix, int branching_factor) {
     model->load_beta_from_file(prefix);
   }
 
-  double sigma_variable_comp = num_features;
+  double sigma_variable_comp = sqrt(num_features);
   printf ("Starting optimization\n");
   for (int start = 0; start < NUM_STARTS; start++) {
     for (int iter = 0; iter < MAX_ITER; iter++) {
@@ -579,10 +587,10 @@ void runGibbsSampling(double* W, const char* prefix, int branching_factor) {
         delete [] prefix_iter;
       }
 
-      if (iter - last_update_iter >= 10) {
+      if (iter - last_update_iter >= 2) {
         last_update_iter = iter;
         curr_temp *= 0.9;
-        sigma_variable_comp *= 0.5;
+        sigma_variable_comp *= 0.75;
         if (curr_temp < end_temp) {
           break;
         }
