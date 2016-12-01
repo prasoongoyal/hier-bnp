@@ -499,9 +499,15 @@ class Model {
   }
 };
 
-void runGibbsSampling(double* W, const char* prefix, int branching_factor) {
+void runGibbsSampling(double* W, const char* prefix, int branching_factor,
+    const char* mode) {
   int num_levels = 2;
-  bool isTrain = true;
+  bool isTrain;
+  if (strcmp(mode, "train") == 0) {
+    isTrain = true;
+  } else if (strcmp(mode, "test") == 0) {
+    isTrain = false;
+  }
 
   Model *model = new Model(alpha, GAMMA, num_levels, branching_factor, isTrain);
 
@@ -608,8 +614,8 @@ void runGibbsSampling(double* W, const char* prefix, int branching_factor) {
 
 int main(int argc, char* argv[]) {
   // parse commandline arguments
-  if (argc != 7) {
-    printf("Run as ./executable corpus alpha sigma GAMMA outfile_prefix bf\n");
+  if (argc != 8) {
+    printf("Run as ./executable corpus alpha sigma GAMMA outfile_prefix bf mode\n");
     //printf("Run as ./executable corpus alpha sigma GAMMA infile_prefix test\n");
     exit(1);
   }
@@ -666,7 +672,7 @@ int main(int argc, char* argv[]) {
     exit(1);
   }
   */
-  runGibbsSampling(W, argv[5], branching_factor);
+  runGibbsSampling(W, argv[5], branching_factor, argv[7]);
 
   delete [] W;
   gsl_rng_free(GSL_RNG);
