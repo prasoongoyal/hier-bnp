@@ -7,7 +7,7 @@ bf = eval(sys.argv[3])
 mapping_file = sys.argv[4]
 prefix_test = sys.argv[5]
 num_test_videos = eval(sys.argv[6])
-
+true_classes_file = sys.argv[7]
 
 def plen(s):
   return len(s.split('-'))
@@ -17,12 +17,14 @@ path_queue = ['0']
 #mappings = []
 while len(path_queue) > 0:
   path = path_queue[0]
-  path_queue = path_queue[1:]
   if plen(path) < num_levels:
     for b in range(bf):
       path_queue.append(path + '-' + str(b))
   else:
     break
+  path_queue = path_queue[1:]
+
+print path_queue
 
 mapping_vidid_to_class = {}
 with open(mapping_file) as f:
@@ -35,7 +37,7 @@ classes = list(np.unique(mapping_vidid_to_class.values()))
 mapping_path_class_counts = {}
 for path in path_queue:
   class_counts = [0] * len(classes)
-  a = np.loadtxt(prefix + path + '.txt')
+  a = np.loadtxt(prefix + '_' + path + '.txt')
   (vidids, counts) = np.unique(a[:, 0], return_counts=True)
   for (v,c) in zip(vidids, counts):
     vid_class_idx = classes.index(mapping_vidid_to_class[int(v)])
@@ -57,7 +59,7 @@ for path in path_queue:
 all_vid_counts = np.zeros((num_test_videos, len(classes)))
 
 for path in path_queue:
-  a = np.loadtxt(prefix_test + path + '.txt')
+  a = np.loadtxt(prefix_test + '_' + path + '.txt')
   (vidids, counts) = np.unique(a[:, 0], return_counts=True)
   for (v,c) in zip(vidids, counts):
     v = int(v)
@@ -75,3 +77,14 @@ np.set_printoptions(threshold=np.nan)
 for v in range(num_test_videos):
   print v, classes[np.argmax(all_vid_counts[v, :])]
 
+true_classes = []
+with open(true_classes_file) as f:
+  for line in f.readlines():
+    (_, curr_class) = (line.strip()).split()
+    true_classes.append(eval(curr_class))
+
+correct_predictions = 0
+for v in range(num_test_videos):
+  if (classes[np.argmax(all_vid_counts[v, :])] == true_classes[v]):
+    correct_predictions += 1
+print correct_predictions / float(num_test_videos)
